@@ -1,3 +1,15 @@
+<div class="not-fullscreen background parallax" style="background-image:url('/image/catalog/dolardasorte/background-footer.jpg');" data-img-width="1920" data-img-height="870" data-diff="100">
+    <div class="content-a">
+        <div class="content-b">
+            &nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;
+        </div>
+    </div>
+</div>
+
+<div style="width: 1200px; margin: auto; margin-top: 30px;">
+	<div class="fb-like" data-href="https://facebook.com/lojavirtual.digital" data-width="1200" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+</div>
+
 <footer>
   <div class="container">
 	<div class="row">

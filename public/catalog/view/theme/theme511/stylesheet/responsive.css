@@ -333,13 +333,13 @@
 	}
 	aside .box-heading i {
 		float:right;
-		color:#3eb6de;
+		color:#007941;
 		font-size:26px;
 		line-height:30px;
 		cursor:pointer;
 	}
 	aside .box-heading:hover i{
-		color:#52caf2;
+		color:#00b867;
 	}
 	#content {
 		margin-top:0;
@@ -413,7 +413,7 @@
 	}
 	#cart > button:hover {
 		background:none;
-		color:#3eb6de;
+		color:#007941;
 	}
 	#cart > button i.fa-angle-down {
 		display:none;
@@ -440,7 +440,7 @@
 		width:1.2em;
 		height:1.2em;
 		border:none;
-		color:#3eb6de;
+		color:#007941;
 		background:none;
 	}
 	.related-products .bx-wrapper .bx-controls-direction a:hover {

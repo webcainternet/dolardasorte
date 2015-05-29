@@ -155,7 +155,7 @@
 	font-weight:500;
 	color:#fff;	
 	padding:15px 20px;	
-	background:#3eb6de;
+	background:#007941;
 }
 #menu-icon:after {
 	float:right;
@@ -212,7 +212,7 @@
 #menu-gadget .menu  li  a:hover,
 #menu-gadget .menu  li  a.active
 {
-	color:#3eb6de;
+	color:#007941;
 }
 #menu-gadget .menu  li li  a {
 	padding: 10px 15px 10px 45px; 
@@ -251,7 +251,7 @@
 	line-height:40px;
 }
 #menu-gadget .menu  li  i:hover {
-	color:#3eb6de;
+	color:#007941;
 }
 #menu-gadget .menu  li i.fa-angle-up:before {
 	content:'\f106' !important
@@ -278,7 +278,7 @@
 #menu-gadget .menu  li.active > a,
 #menu-gadget .menu li li.active > a,
 #menu-gadget .menu li li a:hover {
-	color: #3eb6de;
+	color: #007941;
 }
 
 
