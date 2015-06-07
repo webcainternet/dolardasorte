@@ -1,16 +1,13 @@
-<div class="not-fullscreen background parallax" style="background-image:url('/image/catalog/dolardasorte/background-footer.jpg');" data-img-width="1920" data-img-height="870" data-diff="100">
-    <div class="content-a">
-        <div class="content-b">
-            &nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;<BR>&nbsp;
-        </div>
-    </div>
-</div>
 
-<div style="width: 1200px; margin: auto; margin-top: 30px;">
-	<div class="fb-like" data-href="https://facebook.com/lojavirtual.digital" data-width="1200" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-</div>
 
-<footer>
+<footer style="background-color: #FFFFFF;">
+
+	<div style="padding-top: 10px; padding-bottom: 30px;">
+		<div style="width: 1200px; margin: auto; margin-top: 30px;">
+			<div class="fb-like" data-href="https://facebook.com/lojavirtual.digital" data-width="1200" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+		</div>
+	</div>
+
   <div class="container">
 	<div class="row">
 		<div class="col-sm-3">
@@ -39,10 +36,8 @@
 			<div class="footer_box">
 				<h5><?php echo $text_extra; ?></h5>
 				<ul class="list-unstyled">
-				<li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
 				<li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
 				<li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
-				<li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
 				</ul>
 			</div>
 		</div>
@@ -63,7 +58,12 @@
   </div>
 	<div class="copyright">
 		<div class="container">
-			<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
+			<div style="float: left; width: 49%;">
+				<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
+			</div>
+			<div style="float: left; width: 49%; text-align: right;">
+				<img src="/image/footer-bandeiras.png"  style="width: 250px;">
+			</div>
 		</div> 
 	</div>
 </footer>

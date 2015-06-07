@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: May 29, 2015 at 02:23 PM
+-- Generation Time: Jun 07, 2015 at 07:23 PM
 -- Server version: 5.5.38
 -- PHP Version: 5.3.29
 
@@ -39,7 +39,7 @@ CREATE TABLE `oc_address` (
   `country_id` int(11) NOT NULL DEFAULT '0',
   `zone_id` int(11) NOT NULL DEFAULT '0',
   `custom_field` text NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_address`
@@ -47,7 +47,8 @@ CREATE TABLE `oc_address` (
 
 INSERT INTO `oc_address` (`address_id`, `customer_id`, `firstname`, `lastname`, `company`, `address_1`, `address_2`, `city`, `postcode`, `country_id`, `zone_id`, `custom_field`) VALUES
 (1, 1, 'Demo', 'Demo', 'Demo', 'Demo', '', 'Demo', '5555555555', 222, 3529, ''),
-(2, 2, 'admin', 'admin', '111', '111', '111', '111', '111', 222, 3514, '');
+(2, 2, 'admin', 'admin', '111', '111', '111', '111', '111', 222, 3514, ''),
+(3, 3, 'Fernando', 'de Figueiredo Mendes', 'WebCA Internet', 'Lomas Valentinas', '', 'Sao Caetano do Sul', '09560260', 30, 464, '');
 
 -- --------------------------------------------------------
 
@@ -149,7 +150,7 @@ CREATE TABLE `oc_api` (
   `status` tinyint(1) NOT NULL,
   `date_added` datetime NOT NULL,
   `date_modified` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_api`
@@ -161,7 +162,8 @@ INSERT INTO `oc_api` (`api_id`, `username`, `firstname`, `lastname`, `password`,
 (3, '1GbOxanTqHWXgwTxvfrXX4RezEO7GjSIofq2beHf6lz2JbfUeGYs7KMWBuIIoa6W', '', '', 'TRy376eEFdKtnekOFE7Zay9mGx5qFoc70byRWvsAFsY8A4hgjZYevypPCOjlYP05Q7qDn7zU8VdkPrWL5Hr78MNP1CG4jOGRi1bMwhyAtVbjW1ENJN3wD7nmiOfkmkP9sJDsxepFWsS6VZomPp69BG5XHwxniTQFuxilryYg1cApNUGZNf3j0mGfjs6DVaJjpz52dfAUPjlw7majEtrgieIA3B81C44ZcNLgHkegfEEQjRmGxTX1JvD3Fr2Bkvin', 1, '2014-12-18 10:06:22', '2014-12-18 10:06:22'),
 (4, 'FirDBcAWQDtTaFOVluVbWvZDzWRLjPTQroTSyRps8XLgynOKZRnmVBvVtGaUJO9B', '', '', 'rmTZ89r6EiBljDl1kqTprKdfAt6VGFEoEcpYgjGChmNisVWaJ7WlaLjhoO0PazfKyLZQaB3BXixYNge1EHxYhEDcqlGBHaTh5vgAtVD1kWvGGj9LXJkEAz3PF0upL4fxaOAmYikkKDFrWe2XEDvn1dH418wLnRE5Sk1HbmeMImxJARHcHzTDG9sbA8KkcfB6hxGd0jwpdD2eA7uYieOWrXq1h061pmUyK3ssnZbBLWUrYeuNWBhhqoCJblEAOlBj', 1, '2014-12-23 00:13:52', '2014-12-23 00:13:52'),
 (5, 'OGX4qx4wCvCKi0so4XbVVNJyksUJzq78yfdWt915Vfltz3oY5dd90HDITJ03hay3', '', '', 'QSbMpjrafnDp9Tcey6YBNXzz58NBIhiLkbSaehZTiIW8AHI8jxLadBd3ZJdglBK0x9BAK19jdBio5RqzNB0MkC9VvsmX63p313m8tjcNQQnsr0HDtmXVkbYKApmnKICTyLGTKoxO63jIWvapHkx2dNpXG8fPQuRGozcBeGAle4Y72DlnY5FwNVy6FpQPOtYQV2qHp6FX4RFISto9goPD02z36t3mEFXy5RwjtJCfMCoqjwkthuRrVvtNqKYWwzPt', 1, '2015-01-23 12:23:32', '2015-01-23 12:23:32'),
-(6, 'EhHzGtgBPmccIosNhin6s1d7dHLkjEbnmjcsS9uilMAt0t7YRlU9cy765IheM9Iy', '', '', 'ikh1kRZLda5UJ3sbeDb72Y3ygaTtabh8CF0mWQy0qtLzn4RH7sE0G8omZ8Vza3xc9oFV43MlnXaQRsYPadGgbvJ0tfpJYdmXIrtCl6nOUEflw41NX7tzs3pcYVmwzOK754Ah1nvLsRxfLosimcYVVDxtZZgOnrLjmMGdz2oiJbEVFw4sPSDkW0UvQ1A3iMdKYjnOcRwlt06yn0g2JjdfayQqpRkOdDY1nCGFU2rDto2WfZPo9tJZhaGMrqbLtzDX', 1, '2015-05-29 16:49:46', '2015-05-29 16:49:46');
+(6, 'EhHzGtgBPmccIosNhin6s1d7dHLkjEbnmjcsS9uilMAt0t7YRlU9cy765IheM9Iy', '', '', 'ikh1kRZLda5UJ3sbeDb72Y3ygaTtabh8CF0mWQy0qtLzn4RH7sE0G8omZ8Vza3xc9oFV43MlnXaQRsYPadGgbvJ0tfpJYdmXIrtCl6nOUEflw41NX7tzs3pcYVmwzOK754Ah1nvLsRxfLosimcYVVDxtZZgOnrLjmMGdz2oiJbEVFw4sPSDkW0UvQ1A3iMdKYjnOcRwlt06yn0g2JjdfayQqpRkOdDY1nCGFU2rDto2WfZPo9tJZhaGMrqbLtzDX', 1, '2015-05-29 16:49:46', '2015-05-29 16:49:46'),
+(7, 'bling', '', '', 'RG5bDAU0jBUSaz7i6cR8VAsqNi0maO8kX0NLGWOUD0lADhcKLBmqHu3n6tFDbBQTlcj0VzSVyhfRDMvDJGiSlHVHLeOzw0LEZPPIThASkptbTmBc6bvFhuS3fuh82VEPRpYd1Wb3EwK8rHcU2khlt7p0PQfw8CiifQU1Q5e5WdwDNEJkgIecgHysjPNJm2uqADmqQklFL3V8mqHGkJxXNf6xbsRc1DOyA8OfKaF8ksHrRoGb4k6DR8CqY2DSffof', 1, '2015-05-29 17:50:02', '2015-05-29 17:50:23');
 
 -- --------------------------------------------------------
 
@@ -209,39 +211,17 @@ CREATE TABLE `oc_attribute_description` (
 --
 
 INSERT INTO `oc_attribute_description` (`attribute_id`, `language_id`, `name`) VALUES
-(1, 2, 'Mauris a dapibus'),
-(2, 2, 'Etiam eu volutpat'),
-(4, 1, 'Attributes 5'),
-(5, 1, 'Attributes 1'),
-(6, 1, 'black'),
-(7, 1, 'Attributes 3'),
-(8, 1, 'Attributes 4'),
-(9, 1, 'Attributes 2'),
-(10, 1, 'Attributes 6'),
-(11, 1, 'Attributes 2'),
-(3, 2, ' Quisque nec'),
-(6, 2, 'black'),
-(1, 1, 'Mauris a dapibus'),
-(2, 1, 'Etiam eu volutpat'),
-(4, 2, 'Attributes 5'),
-(5, 2, 'Attributes 1'),
-(6, 3, 'black'),
-(7, 2, 'Attributes 3'),
-(8, 2, 'Attributes 4'),
-(9, 2, 'Attributes 2'),
-(10, 2, 'Attributes 6'),
-(11, 2, 'Attributes 2'),
-(3, 1, ' Quisque nec'),
-(3, 3, ' Quisque nec'),
-(1, 3, 'Mauris a dapibus'),
-(2, 3, 'Etiam eu volutpat'),
-(5, 3, 'Attributes 1'),
-(9, 3, 'Attributes 2'),
-(11, 3, 'Attributes 2'),
-(7, 3, 'Attributes 3'),
-(8, 3, 'Attributes 4'),
-(4, 3, 'Attributes 5'),
-(10, 3, 'Attributes 6');
+(4, 4, 'Attributes 5'),
+(5, 4, 'Attributes 1'),
+(6, 4, 'black'),
+(7, 4, 'Attributes 3'),
+(8, 4, 'Attributes 4'),
+(9, 4, 'Attributes 2'),
+(10, 4, 'Attributes 6'),
+(11, 4, 'Attributes 2'),
+(1, 4, 'Mauris a dapibus'),
+(2, 4, 'Etiam eu volutpat'),
+(3, 4, ' Quisque nec');
 
 -- --------------------------------------------------------
 
@@ -281,18 +261,10 @@ CREATE TABLE `oc_attribute_group_description` (
 --
 
 INSERT INTO `oc_attribute_group_description` (`attribute_group_id`, `language_id`, `name`) VALUES
-(3, 1, 'Phasellus'),
-(4, 2, 'Mauris a dapibus'),
-(5, 1, ' Etiam eu volutpat'),
-(6, 3, 'Lorem ipsum'),
-(6, 2, 'Lorem ipsum'),
-(3, 2, 'Phasellus'),
-(4, 1, 'Mauris a dapibus'),
-(5, 2, ' Etiam eu volutpat'),
-(6, 1, 'Lorem ipsum'),
-(4, 3, 'Mauris a dapibus'),
-(3, 3, 'Phasellus'),
-(5, 3, ' Etiam eu volutpat');
+(3, 4, 'Phasellus'),
+(5, 4, ' Etiam eu volutpat'),
+(4, 4, 'Mauris a dapibus'),
+(6, 4, 'Lorem ipsum');
 
 -- --------------------------------------------------------
 
@@ -312,7 +284,7 @@ CREATE TABLE `oc_banner` (
 
 INSERT INTO `oc_banner` (`banner_id`, `name`, `status`) VALUES
 (15, 'Slideshow', 1),
-(14, 'banners', 1);
+(14, 'banners', 0);
 
 -- --------------------------------------------------------
 
@@ -326,22 +298,16 @@ CREATE TABLE `oc_banner_image` (
   `link` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
   `sort_order` int(3) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=175 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=184 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_banner_image`
 --
 
 INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `link`, `image`, `sort_order`) VALUES
-(173, 14, 'index.php?route=product/product&amp;product_id=43', 'catalog/banner-5.jpg', 5),
-(150, 15, '', 'catalog/slide-3.jpg', 3),
-(172, 14, 'index.php?route=product/product&amp;product_id=42index.php?route=product/product&amp;product_id=42', 'catalog/banner-4.jpg', 4),
-(149, 15, '', 'catalog/slide-2.jpg', 2),
-(148, 15, '', 'catalog/slide-1.jpg', 1),
-(171, 14, 'index.php?route=product/product&amp;product_id=42index.php?route=product/product&amp;product_id=42', 'catalog/banner-3.jpg', 3),
-(170, 14, 'index.php?route=product/product&amp;product_id=42index.php?route=product/product&amp;product_id=42', 'catalog/banner-2.jpg', 2),
-(169, 14, 'index.php?route=product/product&amp;product_id=42index.php?route=product/product&amp;product_id=42', 'catalog/banner-1.jpg', 1),
-(174, 14, 'index.php?route=product/product&amp;product_id=42', 'catalog/banner-6.jpg', 6);
+(177, 15, '', 'catalog/slide-3.jpg', 3),
+(176, 15, '', 'catalog/slide-2.jpg', 2),
+(175, 15, '', 'catalog/slide-1.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -362,42 +328,12 @@ CREATE TABLE `oc_banner_image_description` (
 --
 
 INSERT INTO `oc_banner_image_description` (`banner_image_id`, `language_id`, `banner_id`, `title`, `description`) VALUES
-(99, 1, 9, 'slide-1', ''),
-(100, 1, 9, 'slide-2', ''),
-(101, 1, 9, 'slide-3', ''),
-(99, 2, 9, 'slide-1', ''),
-(100, 2, 9, 'slide-2', ''),
-(101, 2, 9, 'slide-3', ''),
-(99, 3, 9, 'slide-1', ''),
-(100, 3, 9, 'slide-2', ''),
-(101, 3, 9, 'slide-3', ''),
-(172, 1, 14, 'banner-4', 'School &amp; Office'),
-(172, 2, 14, 'banner-4', 'School &amp; Office'),
-(172, 3, 14, 'banner-4', 'School &amp; Office'),
-(173, 1, 14, 'banner-5', 'Accessories'),
-(173, 2, 14, 'banner-5', 'Accessories'),
-(173, 3, 14, 'banner-5', 'Accessories'),
-(174, 1, 14, 'banner-6', 'Cards &amp; Postage'),
-(174, 2, 14, 'banner-6', 'Cards &amp; Postage'),
-(174, 3, 14, 'banner-6', 'Cards &amp; Postage'),
-(150, 2, 15, 'slide-3', '&lt;div&gt;\r\n&lt;h1&gt;Sit amet con&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=&quot;index.php?route=product/product&amp;product_id=30&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;'),
-(150, 3, 15, 'slide-3', '&lt;div&gt;\r\n&lt;h1&gt;Sit amet con&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=&quot;index.php?route=product/product&amp;product_id=30&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;'),
-(149, 3, 15, 'slide-2', '&lt;div&gt;\r\n&lt;h1&gt;Lorem ipsum dolor&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=&quot;index.php?route=product/product&amp;product_id=42&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;'),
-(150, 1, 15, 'slide-3', '&lt;div&gt;\r\n&lt;h1&gt;Sit amet con&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=&quot;index.php?route=product/product&amp;product_id=30&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;'),
-(149, 1, 15, 'slide-2', '&lt;div&gt;\r\n&lt;h1&gt;Lorem ipsum dolor&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=&quot;index.php?route=product/product&amp;product_id=42&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;'),
-(149, 2, 15, 'slide-2', '&lt;div&gt;\r\n&lt;h1&gt;Lorem ipsum dolor&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=&quot;index.php?route=product/product&amp;product_id=42&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;'),
-(148, 1, 15, 'slide-1', '&lt;div&gt;\r\n&lt;h1&gt;Destibulum lacin&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=&quot;index.php?route=product/product&amp;product_id=43&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;'),
-(148, 2, 15, 'slide-1', '&lt;div&gt;\r\n&lt;h1&gt;Destibulum lacin&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=&quot;index.php?route=product/product&amp;product_id=43&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;'),
-(148, 3, 15, 'slide-1', '&lt;div&gt;\r\n&lt;h1&gt;Destibulum lacin&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=&quot;index.php?route=product/product&amp;product_id=43&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;'),
-(171, 3, 14, 'banner-3', 'Clothing &amp; T-Shirts'),
-(171, 2, 14, 'banner-3', 'Clothing &amp; T-Shirts'),
-(171, 1, 14, 'banner-3', 'Clothing &amp; T-Shirts'),
-(170, 3, 14, 'banner-2', 'Gifts'),
-(170, 2, 14, 'banner-2', 'Gifts'),
-(170, 1, 14, 'banner-2', 'Gifts'),
-(169, 3, 14, 'banner-1', 'Mugs &amp; Cups'),
-(169, 2, 14, 'banner-1', 'Mugs &amp; Cups'),
-(169, 1, 14, 'banner-1', 'Mugs &amp; Cups');
+(176, 4, 15, 'slide-2', '&lt;div&gt;\r\n&lt;h1&gt;Lorem ipsum dolor&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=\\&quot;index.php?route=product/product&amp;product_id=42\\&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;'),
+(175, 4, 15, 'slide-1', '&lt;div&gt;\r\n&lt;h1&gt;Destibulum lacin&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=\\&quot;index.php?route=product/product&amp;product_id=43\\&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;'),
+(99, 4, 9, 'slide-1', ''),
+(100, 4, 9, 'slide-2', ''),
+(101, 4, 9, 'slide-3', ''),
+(177, 4, 15, 'slide-3', '&lt;div&gt;\r\n&lt;h1&gt;Sit amet con&lt;/h1&gt;\r\n&lt;p&gt;Lorem ipsum dolor sit amet con&lt;/p&gt;\r\n&lt;a href=\\&quot;index.php?route=product/product&amp;product_id=30\\&quot;&gt;Shop Now!&lt;/a&gt;\r\n&lt;/div&gt;');
 
 -- --------------------------------------------------------
 
@@ -464,67 +400,26 @@ CREATE TABLE `oc_category_description` (
 --
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(34, 3, 'Bookmarks', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Bookmarks', '', ''),
-(18, 3, 'Booklet Folders', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Booklet Folders', '', ''),
-(33, 2, 'Acrylic Signs', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Acrylic Signs', '', ''),
-(31, 2, 'Brochures', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Brochures', '', ''),
-(25, 3, 'Banner Designing', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Banner Designing', '', ''),
-(25, 2, 'Banner Designing', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Banner Designing', '', ''),
-(20, 2, 'Booklets', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Booklets', 'Example of category description', ''),
-(34, 2, 'Bookmarks', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Bookmarks', '', ''),
-(18, 2, 'Booklet Folders', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Booklet Folders', '', ''),
-(33, 3, 'Acrylic Signs', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Acrylic Signs', '', ''),
-(20, 3, 'Booklets', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Booklets', 'Example of category description', ''),
-(35, 3, 'Lorem ipsum', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Lorem ipsum', '', ''),
-(35, 2, 'Lorem ipsum', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Lorem ipsum', '', ''),
-(35, 1, 'Lorem ipsum', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Lorem ipsum', '', ''),
-(36, 3, 'Aliquam eget', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Aliquam eget', '', ''),
-(36, 2, 'Aliquam eget', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Aliquam eget', '', ''),
-(36, 1, 'Aliquam eget', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Aliquam eget', '', ''),
-(28, 3, 'Praesent imperdiet', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Praesent imperdiet', '', ''),
-(29, 1, 'Brochure Holders', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Brochure Holders', '', ''),
-(29, 2, 'Brochure Holders', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Brochure Holders', '', ''),
-(29, 3, 'Brochure Holders', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Brochure Holders', '', ''),
-(30, 3, 'Boxes', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Boxes', '', ''),
-(31, 3, 'Brochures', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Brochures', '', ''),
-(32, 3, 'Aenean viverra', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Aenean viverra', '', ''),
-(33, 1, 'Acrylic Signs', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Acrylic Signs', '', ''),
-(25, 1, 'Banner Designing', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Banner Designing', '', ''),
-(20, 1, 'Booklets', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Booklets', 'Example of category description', ''),
-(18, 1, 'Booklet Folders', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Booklet Folders', '', ''),
-(34, 1, 'Bookmarks', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Bookmarks', '', ''),
-(28, 2, 'Praesent imperdiet', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Praesent imperdiet', '', ''),
-(30, 2, 'Boxes', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Boxes', '', ''),
-(31, 1, 'Brochures', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Brochures', '', ''),
-(32, 2, 'Aenean viverra', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Aenean viverra', '', ''),
-(30, 1, 'Boxes', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Boxes', '', ''),
-(28, 1, 'Praesent imperdiet', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Praesent imperdiet', '', ''),
-(32, 1, 'Aenean viverra', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Aenean viverra', '', ''),
-(40, 1, 'Calendars', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Calendars', '', ''),
-(40, 2, 'Calendars', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Calendars', '', ''),
-(40, 3, 'Calendars', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Calendars', '', ''),
-(41, 1, 'Carbonless Forms', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Carbonless Forms', '', ''),
-(44, 3, 'Business Checks', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Business Checks', '', ''),
-(44, 2, 'Business Checks', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Business Checks', '', ''),
-(44, 1, 'Business Checks', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Business Checks', '', ''),
-(43, 3, 'Card Magnets', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Card Magnets', '', ''),
-(43, 2, 'Card Magnets', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Card Magnets', '', ''),
-(43, 1, 'Card Magnets', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Card Magnets', '', ''),
-(41, 2, 'Carbonless Forms', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Carbonless Forms', '', ''),
-(41, 3, 'Carbonless Forms', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Carbonless Forms', '', ''),
-(42, 3, 'Address Stamps', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Address Stamps', '', ''),
-(42, 2, 'Address Stamps', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Address Stamps', '', ''),
-(42, 1, 'Address Stamps', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Address Stamps', '', ''),
-(39, 3, 'Business Postcards', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Business Postcards', '', ''),
-(39, 2, 'Business Postcards', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Business Postcards', '', ''),
-(39, 1, 'Business Postcards', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Business Postcards', '', ''),
-(38, 3, 'Business Card Stickers', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Business Card Stickers', '', ''),
-(38, 2, 'Business Card Stickers', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Business Card Stickers', '', '');
-INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(38, 1, 'Business Card Stickers', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Business Card Stickers', '', ''),
-(37, 3, 'Bumper Stickers', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Bumper Stickers', '', ''),
-(37, 2, 'Bumper Stickers', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Bumper Stickers', '', ''),
-(37, 1, 'Bumper Stickers', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', 'Bumper Stickers', '', '');
+(35, 4, 'Lorem ipsum', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(36, 4, 'Aliquam eget', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(29, 4, 'Brochure Holders', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(33, 4, 'Acrylic Signs', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(25, 4, 'Banner Designing', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(20, 4, 'Booklets', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Example of category description', ''),
+(18, 4, 'Booklet Folders', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(34, 4, 'Bookmarks', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(31, 4, 'Brochures', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(30, 4, 'Boxes', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(28, 4, 'Praesent imperdiet', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(32, 4, 'Aenean viverra', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(40, 4, 'Calendars', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', ''),
+(41, 4, 'Carbonless Forms', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(44, 4, 'Business Checks', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(43, 4, 'Card Magnets', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(42, 4, 'Address Stamps', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(39, 4, 'Business Postcards', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(38, 4, 'Business Card Stickers', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', ''),
+(37, 4, 'Bumper Stickers', '&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;\r\n&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;\r\n&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -1017,16 +912,14 @@ CREATE TABLE `oc_currency` (
   `value` float(15,8) NOT NULL,
   `status` tinyint(1) NOT NULL,
   `date_modified` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_currency`
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.65490001, 1, '2015-05-29 13:50:05'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2015-05-29 13:50:05'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.91039997, 1, '2015-05-29 13:50:05');
+(4, 'Real', 'BRL', 'R$ ', '', '2', 1.00000000, 1, '2015-06-07 18:42:29');
 
 -- --------------------------------------------------------
 
@@ -1056,7 +949,7 @@ CREATE TABLE `oc_customer` (
   `safe` tinyint(1) NOT NULL,
   `token` varchar(255) NOT NULL,
   `date_added` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_customer`
@@ -1064,7 +957,8 @@ CREATE TABLE `oc_customer` (
 
 INSERT INTO `oc_customer` (`customer_id`, `customer_group_id`, `store_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `password`, `salt`, `cart`, `wishlist`, `newsletter`, `address_id`, `custom_field`, `ip`, `status`, `approved`, `safe`, `token`, `date_added`) VALUES
 (1, 1, 0, 'Demo', 'Demo', 'demo@demo.com', '5555555555', '', '34247e515a0925a99c78acda4e62ecfde1051cb2', '5788e96af', 'a:2:{s:104:"YToyOntzOjEwOiJwcm9kdWN0X2lkIjtpOjMwO3M6Njoib3B0aW9uIjthOjI6e2k6MjM3O3M6MjoiNDQiO2k6MjM4O3M6MjoiNDkiO319";i:1;s:104:"YToyOntzOjEwOiJwcm9kdWN0X2lkIjtpOjI4O3M6Njoib3B0aW9uIjthOjI6e2k6MjM0O3M6MjoiMzYiO2k6MjMzO3M6MjoiMzQiO319";i:12;}', 'a:18:{i:1;i:46;i:2;i:43;i:3;i:33;i:4;i:32;i:5;i:29;i:6;i:44;i:7;i:48;i:8;i:49;i:9;i:40;i:10;i:34;i:11;s:2:"35";i:12;s:2:"30";i:13;s:3:"42;";i:14;s:3:"30;";i:15;s:2:"45";i:16;s:2:"42";i:17;i:28;i:18;i:47;}', 0, 1, '', '::1', 1, 1, 0, '', '2014-12-04 15:09:03'),
-(2, 1, 0, 'admin', 'admin', 'admin@demolink.org', '111', '111', '6c39c12e088588ba4e066dd53464f488d50582a2', 'ef4407b12', 'a:5:{s:104:"YToyOntzOjEwOiJwcm9kdWN0X2lkIjtpOjQzO3M6Njoib3B0aW9uIjthOjI6e2k6MjU0O3M6MjoiOTYiO2k6MjUzO3M6MjoiOTQiO319";i:1;s:84:"YToyOntzOjEwOiJwcm9kdWN0X2lkIjtpOjQ0O3M6Njoib3B0aW9uIjthOjE6e2k6MjM5O3M6MjoiNTEiO319";i:1;s:108:"YToyOntzOjEwOiJwcm9kdWN0X2lkIjtpOjMxO3M6Njoib3B0aW9uIjthOjI6e2k6MjU2O3M6MzoiMTAzIjtpOjI1NTtzOjM6IjEwMCI7fX0=";i:1;s:40:"YToxOntzOjEwOiJwcm9kdWN0X2lkIjtpOjI4O30=";i:1;s:88:"YToyOntzOjEwOiJwcm9kdWN0X2lkIjtpOjQ2O3M6Njoib3B0aW9uIjthOjE6e2k6MjU3O3M6MzoiMTA2Ijt9fQ==";i:1;}', 'a:8:{i:0;i:30;i:1;i:42;i:2;s:2:"40";i:3;s:2:"48";i:4;i:35;i:5;i:33;i:6;i:31;i:7;i:47;}', 0, 2, '', '192.168.9.23', 1, 1, 0, '', '2015-01-23 16:57:09');
+(2, 1, 0, 'admin', 'admin', 'admin@demolink.org', '111', '111', '6c39c12e088588ba4e066dd53464f488d50582a2', 'ef4407b12', 'a:5:{s:104:"YToyOntzOjEwOiJwcm9kdWN0X2lkIjtpOjQzO3M6Njoib3B0aW9uIjthOjI6e2k6MjU0O3M6MjoiOTYiO2k6MjUzO3M6MjoiOTQiO319";i:1;s:84:"YToyOntzOjEwOiJwcm9kdWN0X2lkIjtpOjQ0O3M6Njoib3B0aW9uIjthOjE6e2k6MjM5O3M6MjoiNTEiO319";i:1;s:108:"YToyOntzOjEwOiJwcm9kdWN0X2lkIjtpOjMxO3M6Njoib3B0aW9uIjthOjI6e2k6MjU2O3M6MzoiMTAzIjtpOjI1NTtzOjM6IjEwMCI7fX0=";i:1;s:40:"YToxOntzOjEwOiJwcm9kdWN0X2lkIjtpOjI4O30=";i:1;s:88:"YToyOntzOjEwOiJwcm9kdWN0X2lkIjtpOjQ2O3M6Njoib3B0aW9uIjthOjE6e2k6MjU3O3M6MzoiMTA2Ijt9fQ==";i:1;}', 'a:8:{i:0;i:30;i:1;i:42;i:2;s:2:"40";i:3;s:2:"48";i:4;i:35;i:5;i:33;i:6;i:31;i:7;i:47;}', 0, 2, '', '192.168.9.23', 1, 1, 0, '', '2015-01-23 16:57:09'),
+(3, 1, 0, 'Fernando', 'de Figueiredo Mendes', 'fernando.mendes@webca.com.br', '11976495157', '', '161e45b72288bfb1e3aad29d77ae88cf29791bff', 'b84d94ad8', 'a:1:{s:40:"YToxOntzOjEwOiJwcm9kdWN0X2lkIjtpOjUwO30=";i:1;}', '', 0, 3, '', '127.0.0.1', 1, 1, 0, '', '2015-06-07 19:12:04');
 
 -- --------------------------------------------------------
 
@@ -1079,7 +973,7 @@ CREATE TABLE `oc_customer_activity` (
   `data` text NOT NULL,
   `ip` varchar(40) NOT NULL,
   `date_added` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_customer_activity`
@@ -1102,7 +996,8 @@ INSERT INTO `oc_customer_activity` (`activity_id`, `customer_id`, `key`, `data`,
 (14, 2, 'login', 'a:2:{s:11:"customer_id";s:1:"2";s:4:"name";s:11:"admin admin";}', '192.168.9.23', '2015-01-27 15:50:10'),
 (15, 2, 'login', 'a:2:{s:11:"customer_id";s:1:"2";s:4:"name";s:11:"admin admin";}', '192.168.9.23', '2015-01-28 11:16:12'),
 (16, 2, 'login', 'a:2:{s:11:"customer_id";s:1:"2";s:4:"name";s:11:"admin admin";}', '192.168.9.23', '2015-01-28 11:26:22'),
-(17, 2, 'login', 'a:2:{s:11:"customer_id";s:1:"2";s:4:"name";s:11:"admin admin";}', '192.168.9.23', '2015-01-28 17:20:06');
+(17, 2, 'login', 'a:2:{s:11:"customer_id";s:1:"2";s:4:"name";s:11:"admin admin";}', '192.168.9.23', '2015-01-28 17:20:06'),
+(18, 3, 'register', 'a:2:{s:11:"customer_id";i:3;s:4:"name";s:29:"Fernando de Figueiredo Mendes";}', '127.0.0.1', '2015-06-07 19:12:04');
 
 -- --------------------------------------------------------
 
@@ -1152,9 +1047,7 @@ CREATE TABLE `oc_customer_group_description` (
 --
 
 INSERT INTO `oc_customer_group_description` (`customer_group_id`, `language_id`, `name`, `description`) VALUES
-(1, 1, 'Default', 'test'),
-(1, 2, 'Default', 'test'),
-(1, 3, 'Default', 'test');
+(1, 4, 'Default', 'test');
 
 -- --------------------------------------------------------
 
@@ -1180,7 +1073,7 @@ CREATE TABLE `oc_customer_ip` (
   `customer_id` int(11) NOT NULL,
   `ip` varchar(40) NOT NULL,
   `date_added` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_customer_ip`
@@ -1189,7 +1082,8 @@ CREATE TABLE `oc_customer_ip` (
 INSERT INTO `oc_customer_ip` (`customer_ip_id`, `customer_id`, `ip`, `date_added`) VALUES
 (1, 1, '192.168.9.1', '2014-12-04 15:09:54'),
 (2, 1, '::1', '2014-12-18 14:07:55'),
-(3, 2, '192.168.9.23', '2015-01-23 16:57:10');
+(3, 2, '192.168.9.23', '2015-01-23 16:57:10'),
+(4, 3, '127.0.0.1', '2015-06-07 19:12:04');
 
 -- --------------------------------------------------------
 
@@ -1369,14 +1263,13 @@ CREATE TABLE `oc_extension` (
 `extension_id` int(11) NOT NULL,
   `type` varchar(32) NOT NULL,
   `code` varchar(32) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=440 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=443 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_extension`
 --
 
 INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
-(23, 'payment', 'cod'),
 (22, 'total', 'shipping'),
 (57, 'total', 'sub_total'),
 (58, 'total', 'tax'),
@@ -1384,7 +1277,7 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (410, 'module', 'banner'),
 (426, 'module', 'carousel'),
 (390, 'total', 'credit'),
-(387, 'shipping', 'flat'),
+(441, 'payment', 'pagseguro'),
 (349, 'total', 'handling'),
 (350, 'total', 'low_order_fee'),
 (389, 'total', 'coupon'),
@@ -1392,7 +1285,7 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (408, 'module', 'account'),
 (393, 'total', 'reward'),
 (398, 'total', 'voucher'),
-(407, 'payment', 'free_checkout'),
+(442, 'payment', 'pp_express'),
 (427, 'module', 'featured'),
 (428, 'module', 'parallax'),
 (429, 'module', 'html'),
@@ -1403,7 +1296,8 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (436, 'module', 'affiliate'),
 (437, 'module', 'information'),
 (438, 'module', 'tm_slideshow'),
-(439, 'module', 'category');
+(439, 'module', 'category'),
+(440, 'shipping', 'free');
 
 -- --------------------------------------------------------
 
@@ -1486,7 +1380,7 @@ CREATE TABLE `oc_information` (
   `bottom` int(1) NOT NULL DEFAULT '0',
   `sort_order` int(3) NOT NULL DEFAULT '0',
   `status` tinyint(1) NOT NULL DEFAULT '1'
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_information`
@@ -1501,7 +1395,8 @@ INSERT INTO `oc_information` (`information_id`, `bottom`, `sort_order`, `status`
 (8, 0, 0, 1),
 (9, 0, 0, 1),
 (10, 0, 0, 1),
-(11, 0, 0, 1);
+(11, 0, 0, 1),
+(12, 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -1524,35 +1419,17 @@ CREATE TABLE `oc_information_description` (
 --
 
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(3, 2, 'Datenschutz-Bestimmungen', '&lt;table class=&quot;table table-responsive privacy_page&quot;&gt;\r\n\r\n	&lt;tbody&gt;\r\n&lt;tr&gt;\r\n\r\n		&lt;td class=&quot;col-sm-6&quot;&gt;\r\n			&lt;h4&gt;1. General information&lt;/h4&gt;\r\n\r\n			\r\n		&lt;/td&gt;\r\n\r\n		&lt;td class=&quot;col-sm-6&quot;&gt;\r\n			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel.&lt;/p&gt;\r\n\r\n			&lt;p&gt; Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula. &lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;2. Right to access, correct and delete data and to object to data processing&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;3. Management of personal data&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;4. Information We Collect&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;5. How We Use Your Information&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non mauris ut augue dapibus posuere et sed quam. Curabitur rhoncus fringilla ligula id aliquet. Sed risus nulla, tempus vitae porta id, lobortis non nulla. Nullam aliquet est magna, hendrerit bibendum orci molestie eget. Quisque sodales, libero convallis eleifend aliquam, arcu libero venenatis tortor, ut gravida sem quam sed ante. Sed a elit ac magna pellentesque fermentum. Sed et diam at odio aliquet consectetur eu non metus. Donec sed nulla justo&lt;/p&gt;\r\n\r\n			&lt;p&gt; Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;6. Sharing of Your Information&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n&lt;/tbody&gt;\r\n&lt;/table&gt;', 'Privacy Policy', '', ''),
-(6, 1, 'Delivery Information', '&lt;div class=&quot;delivery_page&quot;&gt;&lt;p&gt; &lt;span style=&quot;font-weight: bold;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt; consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;In ut justo ac nibh rhoncus tincidunt.&lt;/span&gt; Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n\r\n&lt;h2&gt;Cost&lt;/h2&gt;\r\n\r\n&lt;table class=&quot;table table-responsive table-bordered&quot;&gt;\r\n\r\n	&lt;tbody&gt;\r\n\r\n&lt;tr&gt;\r\n\r\n		&lt;th&gt;Service&lt;/th&gt;\r\n\r\n		&lt;th&gt;Locations&lt;/th&gt;\r\n\r\n		&lt;th&gt;Delivery Schedule&lt;/th&gt;\r\n\r\n		&lt;th&gt;Cost per Shipment&lt;/th&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail Tracker (Order value $50 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$4.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Standard Courier Delivery&lt;/td&gt;\r\n\r\n		&lt;td&gt;UK mainland only&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Delivery 7.30am - 5.30am &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$5.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Standard Courier Delivery&lt;/td&gt;\r\n\r\n		&lt;td&gt;Northern Ireland, Eire, Scilly Isles&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Delivery 7.30am - 5.30am &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$9.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Priority courier pre 12pm Next Working Day&lt;/td&gt;\r\n\r\n		&lt;td&gt;UK mainland only&lt;/td&gt;\r\n\r\n		&lt;td&gt;Pre 12pm &lt;br&gt; Delivery 7.30am - 12pm &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$8.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n&lt;/tbody&gt;\r\n\r\n&lt;/table&gt;\r\n\r\n&lt;h2&gt;Free Delivery&lt;/h2&gt;\r\n\r\n&lt;p&gt;Donec gravida finibus libero, sit amet consectetur erat maximus vel. Quisque congue lobortis sem non molestie. Vestibulum dignissim risus sit amet purus efficitur, vitae eleifend ex semper. Sed sit amet sollicitudin purus. Pellentesque at gravida nibh, sed feugiat dui. Praesent ut molestie risus. Mauris tempus luctus quam, ac aliquet nibh ultricies eu. Pellentesque ut imperdiet velit. Vivamus et dolor dignissim, efficitur dui vel, volutpat metus. Nullam sed magna sed turpis consequat feugiat ut at orci. Sed ut facilisis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.&lt;/p&gt;\r\n\r\n&lt;/div&gt;', 'Delivery Information', '', ''),
-(4, 2, ' Uber Uns', '&lt;div class=&quot;row about-page&quot;&gt;	&lt;div class=&quot;col-sm-4&quot;&gt;		&lt;h3&gt;WHY CHOOSE US?&lt;/h3&gt;\r\n		&lt;span class=&quot;dropcap&quot;&gt;01&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=&quot;extra-wrap&quot;&gt;			&lt;h4&gt;Lorem ipsum dolor amet consectetur.&lt;/h4&gt;\r\n			&lt;p&gt;Et dolore magna aliqua. Ut enim adim veniam, quis nostrudexercitation amc.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;		&lt;span class=&quot;dropcap&quot;&gt;02&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=&quot;extra-wrap&quot;&gt;			&lt;h4&gt;Vestibulum libero nisl porta sceleris.&lt;/h4&gt;\r\n			&lt;p&gt;Duis aute iruredolor in reprehenderit in. voluptate velit esse. Fusce euismod co.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;		&lt;span class=&quot;dropcap&quot;&gt;03&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=&quot;extra-wrap&quot;&gt;			&lt;h4&gt;Etiam cursus leo vel metus.&lt;/h4&gt;\r\n			&lt;p&gt;Amet, consectetuer adipiscing elit. Pel lentesque sed dolor. Aliquam congue.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;	&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-8&quot;&gt;		&lt;h3&gt;a few words about us&lt;/h3&gt;\r\n		&lt;img src=&quot;image/catalog/article/page2_pic1.jpg&quot; alt=&quot;&quot; class=&quot;alignleft&quot;&gt;		&lt;h4&gt;Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude xercitation ullamco laboris nisi utaquip ex ea.&lt;/h4&gt;\r\n		&lt;p&gt;Duis aute iruredolor in reprehenderit in. voluptate velit esse. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl.emo eniptaiades kunasa niausyse hauysgasa.&lt;/p&gt;\r\n		&lt;p&gt;Miuahs onsequ untur magni doloresqui. Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi utaquip ex ea. commodo consequa. Duis aute iruredolor in reprehenderit in. voluptate velit esse. Turie ntots nascetur riculus mullamale ada odi dio gravida atcur ecuus.&lt;/p&gt;\r\n		&lt;a target=&quot;_self&quot; class=&quot;btn btn-default btn-small btn-inline &quot; title=&quot;read more&quot; href=&quot;index.php?route=information/contact&quot;&gt;read more&lt;/a&gt;&lt;!-- .btn --&gt;			&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-12&quot;&gt;&lt;div class=&quot;sm_hr&quot;&gt;&lt;/div&gt;\r\n&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-4&quot;&gt;		&lt;h3&gt;TESTIMONIALS&lt;/h3&gt;\r\n		&lt;div class=&quot;testimonials &quot;&gt;			&lt;div class=&quot;testi-item&quot;&gt;				&lt;blockquote class=&quot;testi-item_blockquote&quot;&gt;					&lt;a href=&quot;&quot;&gt;Aenean nonummy hendrerit mau phasellu porta. Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.... &lt;/a&gt;					&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n				&lt;/blockquote&gt;				&lt;small class=&quot;testi-meta&quot;&gt;					&lt;div class=&quot;user&quot;&gt;Tim Barkley&lt;/div&gt;\r\n					&lt;a href=&quot;http://demolink.org&quot;&gt;http://demolink.org&lt;/a&gt;				&lt;/small&gt;			&lt;/div&gt;\r\n			&lt;div class=&quot;testi-item&quot;&gt;				&lt;blockquote class=&quot;testi-item_blockquote&quot;&gt;					&lt;a href=&quot;&quot;&gt;Aenean nonummy hendrerit mau phasellu porta. Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.... &lt;/a&gt;					&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n				&lt;/blockquote&gt;				&lt;small class=&quot;testi-meta&quot;&gt;					&lt;div class=&quot;user&quot;&gt;Lisa Whistler&lt;/div&gt;\r\n					&lt;a href=&quot;http://demolink.org&quot;&gt;http://demolink.org&lt;/a&gt;				&lt;/small&gt;			&lt;/div&gt;\r\n		&lt;/div&gt;\r\n	&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-8&quot;&gt;		&lt;h3&gt;OUR TEAM&lt;/h3&gt;\r\n		&lt;div class=&quot;recent-posts row&quot;&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Robert Johnson&quot; href=&quot;index.php?route=information/information&amp;information_id=7&quot;&gt;						&lt;img alt=&quot;Robert Johnson&quot; src=&quot;image/catalog/article/Depositphotos_6325694_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Robert Johnson&quot; href=&quot;index.php?route=information/information&amp;information_id=7&quot;&gt;Robert Johnson&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Jessica Priston&quot; href=&quot;index.php?route=information/information&amp;information_id=8&quot;&gt;						&lt;img alt=&quot;Jessica Priston&quot; src=&quot;image/catalog/article/Depositphotos_10953362_EL4-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Jessica Priston&quot; href=&quot;index.php?route=information/information&amp;information_id=8&quot;&gt;Jessica Priston&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Sam Kromstain&quot; href=&quot;index.php?route=information/information&amp;information_id=9&quot;&gt;						&lt;img alt=&quot;Sam Kromstain&quot; src=&quot;image/catalog/article/Depositphotos_1382984_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Sam Kromstain&quot; href=&quot;index.php?route=information/information&amp;information_id=9&quot;&gt;Sam Kromstain&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Edna Barton&quot; href=&quot;index.php?route=information/information&amp;information_id=10&quot;&gt;						&lt;img alt=&quot;Edna Barton&quot; src=&quot;image/catalog/article/Depositphotos_28394885_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Edna Barton&quot; href=&quot;index.php?route=information/information&amp;information_id=10&quot;&gt;Edna Barton&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Julie Herzigova&quot; href=&quot;index.php?route=information/information&amp;information_id=11&quot;&gt;						&lt;img alt=&quot;Julie Herzigova&quot; src=&quot;image/catalog/article/Depositphotos_1961767_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Julie Herzigova&quot; href=&quot;index.php?route=information/information&amp;information_id=11&quot;&gt;Julie Herzigova&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;		&lt;/div&gt;\r\n		&lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;', 'About Us', '', ''),
-(6, 2, 'Lieferinformationen', '&lt;div class=&quot;delivery_page&quot;&gt;&lt;p&gt; &lt;span style=&quot;font-weight: bold;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt; consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;In ut justo ac nibh rhoncus tincidunt.&lt;/span&gt; Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n\r\n&lt;h2&gt;Cost&lt;/h2&gt;\r\n\r\n&lt;table class=&quot;table table-responsive table-bordered&quot;&gt;\r\n\r\n	&lt;tbody&gt;\r\n\r\n&lt;tr&gt;\r\n\r\n		&lt;th&gt;Service&lt;/th&gt;\r\n\r\n		&lt;th&gt;Locations&lt;/th&gt;\r\n\r\n		&lt;th&gt;Delivery Schedule&lt;/th&gt;\r\n\r\n		&lt;th&gt;Cost per Shipment&lt;/th&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail Tracker (Order value $50 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$4.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Standard Courier Delivery&lt;/td&gt;\r\n\r\n		&lt;td&gt;UK mainland only&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Delivery 7.30am - 5.30am &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$5.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Standard Courier Delivery&lt;/td&gt;\r\n\r\n		&lt;td&gt;Northern Ireland, Eire, Scilly Isles&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Delivery 7.30am - 5.30am &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$9.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Priority courier pre 12pm Next Working Day&lt;/td&gt;\r\n\r\n		&lt;td&gt;UK mainland only&lt;/td&gt;\r\n\r\n		&lt;td&gt;Pre 12pm &lt;br&gt; Delivery 7.30am - 12pm &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$8.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n&lt;/tbody&gt;\r\n\r\n&lt;/table&gt;\r\n\r\n&lt;h2&gt;Free Delivery&lt;/h2&gt;\r\n\r\n&lt;p&gt;Donec gravida finibus libero, sit amet consectetur erat maximus vel. Quisque congue lobortis sem non molestie. Vestibulum dignissim risus sit amet purus efficitur, vitae eleifend ex semper. Sed sit amet sollicitudin purus. Pellentesque at gravida nibh, sed feugiat dui. Praesent ut molestie risus. Mauris tempus luctus quam, ac aliquet nibh ultricies eu. Pellentesque ut imperdiet velit. Vivamus et dolor dignissim, efficitur dui vel, volutpat metus. Nullam sed magna sed turpis consequat feugiat ut at orci. Sed ut facilisis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.&lt;/p&gt;\r\n\r\n&lt;/div&gt;', 'Delivery Information', '', ''),
-(6, 3, 'Информация о доставке', '&lt;div class=&quot;delivery_page&quot;&gt;&lt;p&gt; &lt;span style=&quot;font-weight: bold;&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt; consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;In ut justo ac nibh rhoncus tincidunt.&lt;/span&gt; Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n\r\n&lt;h2&gt;Cost&lt;/h2&gt;\r\n\r\n&lt;table class=&quot;table table-responsive table-bordered&quot;&gt;\r\n\r\n	&lt;tbody&gt;\r\n\r\n&lt;tr&gt;\r\n\r\n		&lt;th&gt;Service&lt;/th&gt;\r\n\r\n		&lt;th&gt;Locations&lt;/th&gt;\r\n\r\n		&lt;th&gt;Delivery Schedule&lt;/th&gt;\r\n\r\n		&lt;th&gt;Cost per Shipment&lt;/th&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail Tracker (Order value $50 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$4.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Standard Courier Delivery&lt;/td&gt;\r\n\r\n		&lt;td&gt;UK mainland only&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Delivery 7.30am - 5.30am &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$5.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Standard Courier Delivery&lt;/td&gt;\r\n\r\n		&lt;td&gt;Northern Ireland, Eire, Scilly Isles&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Delivery 7.30am - 5.30am &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$9.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Priority courier pre 12pm Next Working Day&lt;/td&gt;\r\n\r\n		&lt;td&gt;UK mainland only&lt;/td&gt;\r\n\r\n		&lt;td&gt;Pre 12pm &lt;br&gt; Delivery 7.30am - 12pm &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$8.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n&lt;/tbody&gt;\r\n\r\n&lt;/table&gt;\r\n\r\n&lt;h2&gt;Free Delivery&lt;/h2&gt;\r\n\r\n&lt;p&gt;Donec gravida finibus libero, sit amet consectetur erat maximus vel. Quisque congue lobortis sem non molestie. Vestibulum dignissim risus sit amet purus efficitur, vitae eleifend ex semper. Sed sit amet sollicitudin purus. Pellentesque at gravida nibh, sed feugiat dui. Praesent ut molestie risus. Mauris tempus luctus quam, ac aliquet nibh ultricies eu. Pellentesque ut imperdiet velit. Vivamus et dolor dignissim, efficitur dui vel, volutpat metus. Nullam sed magna sed turpis consequat feugiat ut at orci. Sed ut facilisis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.&lt;/p&gt;\r\n\r\n&lt;/div&gt;', 'Delivery Information', '', ''),
-(3, 1, 'Privacy Policy', '&lt;table class=&quot;table table-responsive privacy_page&quot;&gt;\r\n\r\n	&lt;tbody&gt;\r\n&lt;tr&gt;\r\n\r\n		&lt;td class=&quot;col-sm-6&quot;&gt;\r\n			&lt;h4&gt;1. General information&lt;/h4&gt;\r\n\r\n			\r\n		&lt;/td&gt;\r\n\r\n		&lt;td class=&quot;col-sm-6&quot;&gt;\r\n			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel.&lt;/p&gt;\r\n\r\n			&lt;p&gt; Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula. &lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;2. Right to access, correct and delete data and to object to data processing&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;3. Management of personal data&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;4. Information We Collect&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;5. How We Use Your Information&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non mauris ut augue dapibus posuere et sed quam. Curabitur rhoncus fringilla ligula id aliquet. Sed risus nulla, tempus vitae porta id, lobortis non nulla. Nullam aliquet est magna, hendrerit bibendum orci molestie eget. Quisque sodales, libero convallis eleifend aliquam, arcu libero venenatis tortor, ut gravida sem quam sed ante. Sed a elit ac magna pellentesque fermentum. Sed et diam at odio aliquet consectetur eu non metus. Donec sed nulla justo&lt;/p&gt;\r\n\r\n			&lt;p&gt; Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;6. Sharing of Your Information&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n&lt;/tbody&gt;\r\n&lt;/table&gt;', 'Privacy Policy', '', ''),
-(5, 2, 'Allgemeine Geschäftsbedingungen', '&lt;div class=&quot;row terms_conditions_page&quot;&gt;\r\n	&lt;div class=&quot;col-sm-6&quot;&gt;\r\n		&lt;h4&gt;entire agreement&lt;/h4&gt;\r\n		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;\r\n		&lt;h4&gt;controlling terms&lt;/h4&gt;\r\n		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n		&lt;h4&gt;acceptance of orders&lt;/h4&gt;\r\n		&lt;p&gt;Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa.&lt;/p&gt;\r\n		&lt;h4&gt;prices&lt;/h4&gt;\r\n		&lt;p&gt;Nullam rhoncus risus et nunc ultricies, ac rutrum eros varius. Mauris orci justo, elementum eu dignissim dictum, tincidunt quis nibh. Cras sit amet purus quam. Vivamus sodales ante vitae justo sagittis egestas. Donec vehicula ligula rhoncus, ultrices ipsum sed, molestie ante. Quisque tempor aliquam fringilla. Nulla quis eros quis felis eleifend imperdiet id sed erat. Donec imperdiet tellus tellus, eu fermentum risus convallis eget&lt;/p&gt;\r\n		&lt;h4&gt;delivery&lt;/h4&gt;\r\n		&lt;p&gt;Aliquam lobortis dolor mollis libero commodo, eget finibus augue pretium. Praesent fringilla, nulla nec sodales eleifend, odio ante porttitor neque, non tincidunt ligula dui id tortor. Maecenas maximus ornare urna euismod consectetur. Integer eu accumsan nulla. Sed venenatis non justo et faucibus. Curabitur interdum odio tellus, a cursus tortor vestibulum ut. Maecenas sapien dolor, pulvinar non orci non, mattis placerat elit. Maecenas luctus lacinia placerat. In dolor libero, volutpat vel ipsum quis, molestie suscipit enim. Duis maximus molestie gravida. Suspendisse sit amet auctor libero. Sed pellentesque porta neque condimentum feugiat. &lt;/p&gt;\r\n		&lt;h4&gt;transportation and risk of loss&lt;/h4&gt;\r\n		&lt;p&gt; In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula. &lt;/p&gt;\r\n		&lt;h4&gt;cancellation or modification&lt;/h4&gt;\r\n		&lt;p&gt;Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n		&lt;h4&gt;taxes&lt;/h4&gt;\r\n		&lt;p&gt; Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;\r\n	&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-6&quot;&gt;\r\n		&lt;h4&gt;warranty and disclaimer&lt;/h4&gt;\r\n		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n		&lt;h4&gt;limitation of liability&lt;/h4&gt;\r\n		&lt;p&gt;Aliquam lobortis dolor mollis libero commodo, eget finibus augue pretium. Praesent fringilla, nulla nec sodales eleifend, odio ante porttitor neque, non tincidunt ligula dui id tortor. Maecenas maximus ornare urna euismod consectetur. Integer eu accumsan nulla. Sed venenatis non justo et faucibus. Curabitur interdum odio tellus, a cursus tortor vestibulum ut. Maecenas sapien dolor, pulvinar non orci non, mattis placerat elit. Maecenas luctus lacinia placerat. In dolor libero, volutpat vel ipsum quis, molestie suscipit enim. Duis maximus molestie gravida. Suspendisse sit amet auctor libero. Sed pellentesque porta neque condimentum feugiat.&lt;/p&gt;\r\n		&lt;h4&gt;return of material&lt;/h4&gt;\r\n		&lt;p&gt;Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n		&lt;h4&gt;indemnity&lt;/h4&gt;\r\n		&lt;p&gt; Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;\r\n		&lt;h4&gt;payment&lt;/h4&gt;\r\n		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;\r\n		&lt;h4&gt;governing law and arbitration&lt;/h4&gt;\r\n		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;', 'Terms &amp; Conditions', '', '');
+(4, 4, 'Sobre nós', '&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;row\\\\&amp;quot;\\&quot; about-page\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;	&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;col-sm-4\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;		&lt;h3&gt;WHY CHOOSE US?&lt;/h3&gt;\r\n		&lt;span class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;dropcap\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;01&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;extra-wrap\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;			&lt;h4&gt;Lorem ipsum dolor amet consectetur.&lt;/h4&gt;\r\n			&lt;p&gt;Et dolore magna aliqua. Ut enim adim veniam, quis nostrudexercitation amc.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;clear\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;		&lt;span class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;dropcap\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;02&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;extra-wrap\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;			&lt;h4&gt;Vestibulum libero nisl porta sceleris.&lt;/h4&gt;\r\n			&lt;p&gt;Duis aute iruredolor in reprehenderit in. voluptate velit esse. Fusce euismod co.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;clear\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;		&lt;span class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;dropcap\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;03&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;extra-wrap\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;			&lt;h4&gt;Etiam cursus leo vel metus.&lt;/h4&gt;\r\n			&lt;p&gt;Amet, consectetuer adipiscing elit. Pel lentesque sed dolor. Aliquam congue.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;clear\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;	&lt;/div&gt;\r\n	&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;col-sm-8\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;		&lt;h3&gt;a few words about us&lt;/h3&gt;\r\n		&lt;img src=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;image/catalog/article/page2_pic1.jpg\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; alt=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;alignleft\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;		&lt;h4&gt;Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude xercitation ullamco laboris nisi utaquip ex ea.&lt;/h4&gt;\r\n		&lt;p&gt;Duis aute iruredolor in reprehenderit in. voluptate velit esse. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl.emo eniptaiades kunasa niausyse hauysgasa.&lt;/p&gt;\r\n		&lt;p&gt;Miuahs onsequ untur magni doloresqui. Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi utaquip ex ea. commodo consequa. Duis aute iruredolor in reprehenderit in. voluptate velit esse. Turie ntots nascetur riculus mullamale ada odi dio gravida atcur ecuus.&lt;/p&gt;\r\n		&lt;a target=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;_self\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot; class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;btn\\\\&amp;quot;\\&quot; btn-default=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; btn-small=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; btn-inline=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; \\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; title=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;read\\\\&amp;quot;\\&quot; more\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;index.php?route=information/contact\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;read more&lt;/a&gt;&lt;!-- .btn --&gt;			&lt;/div&gt;\r\n	&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;col-sm-12\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;sm_hr\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n&lt;/div&gt;\r\n	&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;col-sm-4\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;		&lt;h3&gt;TESTIMONIALS&lt;/h3&gt;\r\n		&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;testimonials\\\\&amp;quot;\\&quot; \\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;			&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;testi-item\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;				&lt;blockquote class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;testi-item_blockquote\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;a href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Aenean nonummy hendrerit mau phasellu porta. Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.... &lt;/a&gt;					&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;clear\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n				&lt;/blockquote&gt;				&lt;small class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;testi-meta\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;user\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Tim Barkley&lt;/div&gt;\r\n					&lt;a href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;http://demolink.org\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;http://demolink.org&lt;/a&gt;				&lt;/small&gt;			&lt;/div&gt;\r\n			&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;testi-item\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;				&lt;blockquote class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;testi-item_blockquote\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;a href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Aenean nonummy hendrerit mau phasellu porta. Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.... &lt;/a&gt;					&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;clear\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n				&lt;/blockquote&gt;				&lt;small class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;testi-meta\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;user\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Lisa Whistler&lt;/div&gt;\r\n					&lt;a href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;http://demolink.org\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;http://demolink.org&lt;/a&gt;				&lt;/small&gt;			&lt;/div&gt;\r\n		&lt;/div&gt;\r\n	&lt;/div&gt;\r\n	&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;col-sm-8\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;		&lt;h3&gt;OUR TEAM&lt;/h3&gt;\r\n		&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;recent-posts\\\\&amp;quot;\\&quot; row\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;			&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;col-sm-4\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;				&lt;figure class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;thumbnail\\\\&amp;quot;\\&quot; featured-thumbnail\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;a title=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Robert\\\\&amp;quot;\\&quot; johnson\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;index.php?route=information/information&amp;amp;information_id=7\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;						&lt;img alt=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Robert\\\\&amp;quot;\\&quot; johnson\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; src=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;image/catalog/article/Depositphotos_6325694_original-230x240.jpg\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Robert\\\\&amp;quot;\\&quot; johnson\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;index.php?route=information/information&amp;amp;information_id=7\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Robert Johnson&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;excerpt\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;clear\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;col-sm-4\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;				&lt;figure class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;thumbnail\\\\&amp;quot;\\&quot; featured-thumbnail\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;a title=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Jessica\\\\&amp;quot;\\&quot; priston\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;index.php?route=information/information&amp;amp;information_id=8\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;						&lt;img alt=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Jessica\\\\&amp;quot;\\&quot; priston\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; src=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;image/catalog/article/Depositphotos_10953362_EL4-230x240.jpg\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Jessica\\\\&amp;quot;\\&quot; priston\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;index.php?route=information/information&amp;amp;information_id=8\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Jessica Priston&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;excerpt\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;clear\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;col-sm-4\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;				&lt;figure class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;thumbnail\\\\&amp;quot;\\&quot; featured-thumbnail\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;a title=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Sam\\\\&amp;quot;\\&quot; kromstain\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;index.php?route=information/information&amp;amp;information_id=9\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;						&lt;img alt=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Sam\\\\&amp;quot;\\&quot; kromstain\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; src=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;image/catalog/article/Depositphotos_1382984_original-230x240.jpg\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Sam\\\\&amp;quot;\\&quot; kromstain\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;index.php?route=information/information&amp;amp;information_id=9\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Sam Kromstain&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;excerpt\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;clear\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;col-sm-4\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;				&lt;figure class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;thumbnail\\\\&amp;quot;\\&quot; featured-thumbnail\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;a title=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Edna\\\\&amp;quot;\\&quot; barton\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;index.php?route=information/information&amp;amp;information_id=10\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;						&lt;img alt=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Edna\\\\&amp;quot;\\&quot; barton\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; src=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;image/catalog/article/Depositphotos_28394885_original-230x240.jpg\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Edna\\\\&amp;quot;\\&quot; barton\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;index.php?route=information/information&amp;amp;information_id=10\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Edna Barton&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;excerpt\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;clear\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;col-sm-4\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;				&lt;figure class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;thumbnail\\\\&amp;quot;\\&quot; featured-thumbnail\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;a title=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Julie\\\\&amp;quot;\\&quot; herzigova\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;index.php?route=information/information&amp;amp;information_id=11\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;						&lt;img alt=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Julie\\\\&amp;quot;\\&quot; herzigova\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; src=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;image/catalog/article/Depositphotos_1961767_original-230x240.jpg\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;Julie\\\\&amp;quot;\\&quot; herzigova\\\\\\\\\\\\\\&quot;=\\&quot;\\\\&amp;quot;\\\\&amp;quot;\\&quot; href=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;index.php?route=information/information&amp;amp;information_id=11\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Julie Herzigova&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;excerpt\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;clear\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;		&lt;/div&gt;\r\n		&lt;div class=\\&quot;\\\\&amp;quot;\\\\\\\\&amp;quot;spacer\\\\\\\\&amp;quot;\\\\&amp;quot;\\&quot;&gt;&lt;/div&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;', 'Sobre nós', '', ''),
+(12, 4, 'Dúvidas', '&lt;p&gt;É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de \\&quot;Conteúdo aqui, conteúdo aqui\\&quot;, fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por \\''lorem ipsum\\'' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).&lt;br&gt;&lt;/p&gt;&lt;p&gt;Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do \\&quot;de Finibus Bonorum et Malorum\\&quot; (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum, \\&quot;Lorem Ipsum dolor sit amet...\\&quot; vem de uma linha na seção 1.10.32.&lt;/p&gt;&lt;p&gt;O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de \\&quot;de Finibus Bonorum et Malorum\\&quot; de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.&lt;/p&gt;&lt;p&gt;Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.&lt;/p&gt;', 'Dúvidas', '', ''),
+(6, 4, 'Informações de entrega', '&lt;div class=\\&quot;delivery_page\\&quot;&gt;&lt;p&gt; &lt;span style=\\&quot;font-weight: bold;\\&quot;&gt;Lorem ipsum dolor sit amet,&lt;/span&gt; consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;span style=\\&quot;font-weight: bold;\\&quot;&gt;In ut justo ac nibh rhoncus tincidunt.&lt;/span&gt; Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n\r\n&lt;h2&gt;Cost&lt;/h2&gt;\r\n\r\n&lt;table class=\\&quot;table table-responsive table-bordered\\&quot;&gt;\r\n\r\n	&lt;tbody&gt;\r\n\r\n&lt;tr&gt;\r\n\r\n		&lt;th&gt;Service&lt;/th&gt;\r\n\r\n		&lt;th&gt;Locations&lt;/th&gt;\r\n\r\n		&lt;th&gt;Delivery Schedule&lt;/th&gt;\r\n\r\n		&lt;th&gt;Cost per Shipment&lt;/th&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail Tracker (Order value $50 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$4.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Standard Courier Delivery&lt;/td&gt;\r\n\r\n		&lt;td&gt;UK mainland only&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Delivery 7.30am - 5.30am &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$5.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Standard Courier Delivery&lt;/td&gt;\r\n\r\n		&lt;td&gt;Northern Ireland, Eire, Scilly Isles&lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Delivery 7.30am - 5.30am &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$9.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Priority courier pre 12pm Next Working Day&lt;/td&gt;\r\n\r\n		&lt;td&gt;UK mainland only&lt;/td&gt;\r\n\r\n		&lt;td&gt;Pre 12pm &lt;br&gt; Delivery 7.30am - 12pm &lt;br&gt; Monday - Friday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$8.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;Royal mail 1st Class Service (Order value $20 or less)&lt;/td&gt;\r\n\r\n		&lt;td&gt;All of UK &amp;amp; some European Countries &lt;/td&gt;\r\n\r\n		&lt;td&gt;1-3 days &lt;br&gt; Monday - Saturday&lt;/td&gt;\r\n\r\n		&lt;td&gt;$3.95&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n&lt;/tbody&gt;\r\n\r\n&lt;/table&gt;\r\n\r\n&lt;h2&gt;Free Delivery&lt;/h2&gt;\r\n\r\n&lt;p&gt;Donec gravida finibus libero, sit amet consectetur erat maximus vel. Quisque congue lobortis sem non molestie. Vestibulum dignissim risus sit amet purus efficitur, vitae eleifend ex semper. Sed sit amet sollicitudin purus. Pellentesque at gravida nibh, sed feugiat dui. Praesent ut molestie risus. Mauris tempus luctus quam, ac aliquet nibh ultricies eu. Pellentesque ut imperdiet velit. Vivamus et dolor dignissim, efficitur dui vel, volutpat metus. Nullam sed magna sed turpis consequat feugiat ut at orci. Sed ut facilisis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.&lt;/p&gt;\r\n\r\n&lt;/div&gt;', 'Informações de entrega', '', ''),
+(3, 4, 'Políticas de privacidade', '&lt;table class=\\&quot;\\\\&amp;quot;table\\&quot; table-responsive=\\&quot;\\&quot; privacy_page\\\\\\&quot;=\\&quot;\\&quot;&gt;\r\n\r\n	&lt;tbody&gt;\r\n&lt;tr&gt;\r\n\r\n		&lt;td class=\\&quot;\\\\&amp;quot;col-sm-6\\\\&amp;quot;\\&quot;&gt;\r\n			&lt;h4&gt;1. General information&lt;/h4&gt;\r\n\r\n			\r\n		&lt;/td&gt;\r\n\r\n		&lt;td class=\\&quot;\\\\&amp;quot;col-sm-6\\\\&amp;quot;\\&quot;&gt;\r\n			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel.&lt;/p&gt;\r\n\r\n			&lt;p&gt; Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula. &lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;2. Right to access, correct and delete data and to object to data processing&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;3. Management of personal data&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;4. Information We Collect&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;5. How We Use Your Information&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non mauris ut augue dapibus posuere et sed quam. Curabitur rhoncus fringilla ligula id aliquet. Sed risus nulla, tempus vitae porta id, lobortis non nulla. Nullam aliquet est magna, hendrerit bibendum orci molestie eget. Quisque sodales, libero convallis eleifend aliquam, arcu libero venenatis tortor, ut gravida sem quam sed ante. Sed a elit ac magna pellentesque fermentum. Sed et diam at odio aliquet consectetur eu non metus. Donec sed nulla justo&lt;/p&gt;\r\n\r\n			&lt;p&gt; Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;6. Sharing of Your Information&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n&lt;/tbody&gt;\r\n&lt;/table&gt;', 'Políticas de privacidade', '', ''),
+(5, 4, 'Termos e condições', '&lt;div class=\\&quot;row terms_conditions_page\\&quot;&gt;\r\n	&lt;div class=\\&quot;col-sm-6\\&quot;&gt;\r\n		&lt;h4&gt;entire agreement&lt;/h4&gt;\r\n		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;\r\n		&lt;h4&gt;controlling terms&lt;/h4&gt;\r\n		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n		&lt;h4&gt;acceptance of orders&lt;/h4&gt;\r\n		&lt;p&gt;Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa.&lt;/p&gt;\r\n		&lt;h4&gt;prices&lt;/h4&gt;\r\n		&lt;p&gt;Nullam rhoncus risus et nunc ultricies, ac rutrum eros varius. Mauris orci justo, elementum eu dignissim dictum, tincidunt quis nibh. Cras sit amet purus quam. Vivamus sodales ante vitae justo sagittis egestas. Donec vehicula ligula rhoncus, ultrices ipsum sed, molestie ante. Quisque tempor aliquam fringilla. Nulla quis eros quis felis eleifend imperdiet id sed erat. Donec imperdiet tellus tellus, eu fermentum risus convallis eget&lt;/p&gt;\r\n		&lt;h4&gt;delivery&lt;/h4&gt;\r\n		&lt;p&gt;Aliquam lobortis dolor mollis libero commodo, eget finibus augue pretium. Praesent fringilla, nulla nec sodales eleifend, odio ante porttitor neque, non tincidunt ligula dui id tortor. Maecenas maximus ornare urna euismod consectetur. Integer eu accumsan nulla. Sed venenatis non justo et faucibus. Curabitur interdum odio tellus, a cursus tortor vestibulum ut. Maecenas sapien dolor, pulvinar non orci non, mattis placerat elit. Maecenas luctus lacinia placerat. In dolor libero, volutpat vel ipsum quis, molestie suscipit enim. Duis maximus molestie gravida. Suspendisse sit amet auctor libero. Sed pellentesque porta neque condimentum feugiat. &lt;/p&gt;\r\n		&lt;h4&gt;transportation and risk of loss&lt;/h4&gt;\r\n		&lt;p&gt; In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula. &lt;/p&gt;\r\n		&lt;h4&gt;cancellation or modification&lt;/h4&gt;\r\n		&lt;p&gt;Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n		&lt;h4&gt;taxes&lt;/h4&gt;\r\n		&lt;p&gt; Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;\r\n	&lt;/div&gt;\r\n	&lt;div class=\\&quot;col-sm-6\\&quot;&gt;\r\n		&lt;h4&gt;warranty and disclaimer&lt;/h4&gt;\r\n		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n		&lt;h4&gt;limitation of liability&lt;/h4&gt;\r\n		&lt;p&gt;Aliquam lobortis dolor mollis libero commodo, eget finibus augue pretium. Praesent fringilla, nulla nec sodales eleifend, odio ante porttitor neque, non tincidunt ligula dui id tortor. Maecenas maximus ornare urna euismod consectetur. Integer eu accumsan nulla. Sed venenatis non justo et faucibus. Curabitur interdum odio tellus, a cursus tortor vestibulum ut. Maecenas sapien dolor, pulvinar non orci non, mattis placerat elit. Maecenas luctus lacinia placerat. In dolor libero, volutpat vel ipsum quis, molestie suscipit enim. Duis maximus molestie gravida. Suspendisse sit amet auctor libero. Sed pellentesque porta neque condimentum feugiat.&lt;/p&gt;\r\n		&lt;h4&gt;return of material&lt;/h4&gt;\r\n		&lt;p&gt;Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n		&lt;h4&gt;indemnity&lt;/h4&gt;\r\n		&lt;p&gt; Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;\r\n		&lt;h4&gt;payment&lt;/h4&gt;\r\n		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;\r\n		&lt;h4&gt;governing law and arbitration&lt;/h4&gt;\r\n		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;', 'Termos e condições', '', ''),
+(7, 4, 'Robert Johnson', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;\r\n	&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=43&quot; title=&quot;Robert Johnson&quot;&gt;\r\n		&lt;img src=&quot;image/catalog/article/Depositphotos_6325694_original-230x240.jpg&quot; alt=&quot;Robert Johnson&quot;&gt;\r\n	&lt;/a&gt;\r\n&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', '', '', ''),
+(8, 4, 'Jessica Priston', '&lt;div class=&quot;human_info&quot;&gt;&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=31&quot; title=&quot;Jessica Priston&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_10953362_EL4-230x240.jpg&quot; alt=&quot;Jessica Priston&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;&lt;/div&gt;', '', '', ''),
+(9, 4, 'Sam Kromstain', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=46&quot; title=&quot;Sam Kromstain&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_1382984_original-230x240.jpg&quot; alt=&quot;Sam Kromstain&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', '', '', '');
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(5, 3, 'Правила и условия', '&lt;div class=&quot;row terms_conditions_page&quot;&gt;	&lt;div class=&quot;col-sm-6&quot;&gt;		&lt;h4&gt;entire agreement&lt;/h4&gt;		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;		&lt;h4&gt;controlling terms&lt;/h4&gt;		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;		&lt;h4&gt;acceptance of orders&lt;/h4&gt;		&lt;p&gt;Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa.&lt;/p&gt;		&lt;h4&gt;prices&lt;/h4&gt;		&lt;p&gt;Nullam rhoncus risus et nunc ultricies, ac rutrum eros varius. Mauris orci justo, elementum eu dignissim dictum, tincidunt quis nibh. Cras sit amet purus quam. Vivamus sodales ante vitae justo sagittis egestas. Donec vehicula ligula rhoncus, ultrices ipsum sed, molestie ante. Quisque tempor aliquam fringilla. Nulla quis eros quis felis eleifend imperdiet id sed erat. Donec imperdiet tellus tellus, eu fermentum risus convallis eget&lt;/p&gt;		&lt;h4&gt;delivery&lt;/h4&gt;		&lt;p&gt;Aliquam lobortis dolor mollis libero commodo, eget finibus augue pretium. Praesent fringilla, nulla nec sodales eleifend, odio ante porttitor neque, non tincidunt ligula dui id tortor. Maecenas maximus ornare urna euismod consectetur. Integer eu accumsan nulla. Sed venenatis non justo et faucibus. Curabitur interdum odio tellus, a cursus tortor vestibulum ut. Maecenas sapien dolor, pulvinar non orci non, mattis placerat elit. Maecenas luctus lacinia placerat. In dolor libero, volutpat vel ipsum quis, molestie suscipit enim. Duis maximus molestie gravida. Suspendisse sit amet auctor libero. Sed pellentesque porta neque condimentum feugiat. &lt;/p&gt;		&lt;h4&gt;transportation and risk of loss&lt;/h4&gt;		&lt;p&gt; In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula. &lt;/p&gt;		&lt;h4&gt;cancellation or modification&lt;/h4&gt;		&lt;p&gt;Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;		&lt;h4&gt;taxes&lt;/h4&gt;		&lt;p&gt; Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;	&lt;/div&gt;	&lt;div class=&quot;col-sm-6&quot;&gt;		&lt;h4&gt;warranty and disclaimer&lt;/h4&gt;		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;		&lt;h4&gt;limitation of liability&lt;/h4&gt;		&lt;p&gt;Aliquam lobortis dolor mollis libero commodo, eget finibus augue pretium. Praesent fringilla, nulla nec sodales eleifend, odio ante porttitor neque, non tincidunt ligula dui id tortor. Maecenas maximus ornare urna euismod consectetur. Integer eu accumsan nulla. Sed venenatis non justo et faucibus. Curabitur interdum odio tellus, a cursus tortor vestibulum ut. Maecenas sapien dolor, pulvinar non orci non, mattis placerat elit. Maecenas luctus lacinia placerat. In dolor libero, volutpat vel ipsum quis, molestie suscipit enim. Duis maximus molestie gravida. Suspendisse sit amet auctor libero. Sed pellentesque porta neque condimentum feugiat.&lt;/p&gt;		&lt;h4&gt;return of material&lt;/h4&gt;		&lt;p&gt;Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;		&lt;h4&gt;indemnity&lt;/h4&gt;		&lt;p&gt; Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;		&lt;h4&gt;payment&lt;/h4&gt;		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;		&lt;h4&gt;governing law and arbitration&lt;/h4&gt;		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;	&lt;/div&gt;&lt;/div&gt;', 'Terms &amp; Conditions', '', ''),
-(4, 3, 'O нас', '&lt;div class=&quot;row about-page&quot;&gt;	&lt;div class=&quot;col-sm-4&quot;&gt;		&lt;h3&gt;WHY CHOOSE US?&lt;/h3&gt;\r\n		&lt;span class=&quot;dropcap&quot;&gt;01&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=&quot;extra-wrap&quot;&gt;			&lt;h4&gt;Lorem ipsum dolor amet consectetur.&lt;/h4&gt;\r\n			&lt;p&gt;Et dolore magna aliqua. Ut enim adim veniam, quis nostrudexercitation amc.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;		&lt;span class=&quot;dropcap&quot;&gt;02&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=&quot;extra-wrap&quot;&gt;			&lt;h4&gt;Vestibulum libero nisl porta sceleris.&lt;/h4&gt;\r\n			&lt;p&gt;Duis aute iruredolor in reprehenderit in. voluptate velit esse. Fusce euismod co.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;		&lt;span class=&quot;dropcap&quot;&gt;03&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=&quot;extra-wrap&quot;&gt;			&lt;h4&gt;Etiam cursus leo vel metus.&lt;/h4&gt;\r\n			&lt;p&gt;Amet, consectetuer adipiscing elit. Pel lentesque sed dolor. Aliquam congue.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;	&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-8&quot;&gt;		&lt;h3&gt;a few words about us&lt;/h3&gt;\r\n		&lt;img src=&quot;image/catalog/article/page2_pic1.jpg&quot; alt=&quot;&quot; class=&quot;alignleft&quot;&gt;		&lt;h4&gt;Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude xercitation ullamco laboris nisi utaquip ex ea.&lt;/h4&gt;\r\n		&lt;p&gt;Duis aute iruredolor in reprehenderit in. voluptate velit esse. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl.emo eniptaiades kunasa niausyse hauysgasa.&lt;/p&gt;\r\n		&lt;p&gt;Miuahs onsequ untur magni doloresqui. Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi utaquip ex ea. commodo consequa. Duis aute iruredolor in reprehenderit in. voluptate velit esse. Turie ntots nascetur riculus mullamale ada odi dio gravida atcur ecuus.&lt;/p&gt;\r\n		&lt;a target=&quot;_self&quot; class=&quot;btn btn-default btn-small btn-inline &quot; title=&quot;read more&quot; href=&quot;index.php?route=information/contact&quot;&gt;read more&lt;/a&gt;&lt;!-- .btn --&gt;			&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-12&quot;&gt;&lt;div class=&quot;sm_hr&quot;&gt;&lt;/div&gt;\r\n&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-4&quot;&gt;		&lt;h3&gt;TESTIMONIALS&lt;/h3&gt;\r\n		&lt;div class=&quot;testimonials &quot;&gt;			&lt;div class=&quot;testi-item&quot;&gt;				&lt;blockquote class=&quot;testi-item_blockquote&quot;&gt;					&lt;a href=&quot;&quot;&gt;Aenean nonummy hendrerit mau phasellu porta. Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.... &lt;/a&gt;					&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n				&lt;/blockquote&gt;				&lt;small class=&quot;testi-meta&quot;&gt;					&lt;div class=&quot;user&quot;&gt;Tim Barkley&lt;/div&gt;\r\n					&lt;a href=&quot;http://demolink.org&quot;&gt;http://demolink.org&lt;/a&gt;				&lt;/small&gt;			&lt;/div&gt;\r\n			&lt;div class=&quot;testi-item&quot;&gt;				&lt;blockquote class=&quot;testi-item_blockquote&quot;&gt;					&lt;a href=&quot;&quot;&gt;Aenean nonummy hendrerit mau phasellu porta. Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.... &lt;/a&gt;					&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n				&lt;/blockquote&gt;				&lt;small class=&quot;testi-meta&quot;&gt;					&lt;div class=&quot;user&quot;&gt;Lisa Whistler&lt;/div&gt;\r\n					&lt;a href=&quot;http://demolink.org&quot;&gt;http://demolink.org&lt;/a&gt;				&lt;/small&gt;			&lt;/div&gt;\r\n		&lt;/div&gt;\r\n	&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-8&quot;&gt;		&lt;h3&gt;OUR TEAM&lt;/h3&gt;\r\n		&lt;div class=&quot;recent-posts row&quot;&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Robert Johnson&quot; href=&quot;index.php?route=information/information&amp;information_id=7&quot;&gt;						&lt;img alt=&quot;Robert Johnson&quot; src=&quot;image/catalog/article/Depositphotos_6325694_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Robert Johnson&quot; href=&quot;index.php?route=information/information&amp;information_id=7&quot;&gt;Robert Johnson&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Jessica Priston&quot; href=&quot;index.php?route=information/information&amp;information_id=8&quot;&gt;						&lt;img alt=&quot;Jessica Priston&quot; src=&quot;image/catalog/article/Depositphotos_10953362_EL4-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Jessica Priston&quot; href=&quot;index.php?route=information/information&amp;information_id=8&quot;&gt;Jessica Priston&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Sam Kromstain&quot; href=&quot;index.php?route=information/information&amp;information_id=9&quot;&gt;						&lt;img alt=&quot;Sam Kromstain&quot; src=&quot;image/catalog/article/Depositphotos_1382984_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Sam Kromstain&quot; href=&quot;index.php?route=information/information&amp;information_id=9&quot;&gt;Sam Kromstain&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Edna Barton&quot; href=&quot;index.php?route=information/information&amp;information_id=10&quot;&gt;						&lt;img alt=&quot;Edna Barton&quot; src=&quot;image/catalog/article/Depositphotos_28394885_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Edna Barton&quot; href=&quot;index.php?route=information/information&amp;information_id=10&quot;&gt;Edna Barton&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Julie Herzigova&quot; href=&quot;index.php?route=information/information&amp;information_id=11&quot;&gt;						&lt;img alt=&quot;Julie Herzigova&quot; src=&quot;image/catalog/article/Depositphotos_1961767_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Julie Herzigova&quot; href=&quot;index.php?route=information/information&amp;information_id=11&quot;&gt;Julie Herzigova&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;		&lt;/div&gt;\r\n		&lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;', 'About Us', '', ''),
-(5, 1, 'Terms &amp; Conditions', '&lt;div class=&quot;row terms_conditions_page&quot;&gt;\r\n	&lt;div class=&quot;col-sm-6&quot;&gt;\r\n		&lt;h4&gt;entire agreement&lt;/h4&gt;\r\n		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;\r\n		&lt;h4&gt;controlling terms&lt;/h4&gt;\r\n		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n		&lt;h4&gt;acceptance of orders&lt;/h4&gt;\r\n		&lt;p&gt;Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa.&lt;/p&gt;\r\n		&lt;h4&gt;prices&lt;/h4&gt;\r\n		&lt;p&gt;Nullam rhoncus risus et nunc ultricies, ac rutrum eros varius. Mauris orci justo, elementum eu dignissim dictum, tincidunt quis nibh. Cras sit amet purus quam. Vivamus sodales ante vitae justo sagittis egestas. Donec vehicula ligula rhoncus, ultrices ipsum sed, molestie ante. Quisque tempor aliquam fringilla. Nulla quis eros quis felis eleifend imperdiet id sed erat. Donec imperdiet tellus tellus, eu fermentum risus convallis eget&lt;/p&gt;\r\n		&lt;h4&gt;delivery&lt;/h4&gt;\r\n		&lt;p&gt;Aliquam lobortis dolor mollis libero commodo, eget finibus augue pretium. Praesent fringilla, nulla nec sodales eleifend, odio ante porttitor neque, non tincidunt ligula dui id tortor. Maecenas maximus ornare urna euismod consectetur. Integer eu accumsan nulla. Sed venenatis non justo et faucibus. Curabitur interdum odio tellus, a cursus tortor vestibulum ut. Maecenas sapien dolor, pulvinar non orci non, mattis placerat elit. Maecenas luctus lacinia placerat. In dolor libero, volutpat vel ipsum quis, molestie suscipit enim. Duis maximus molestie gravida. Suspendisse sit amet auctor libero. Sed pellentesque porta neque condimentum feugiat. &lt;/p&gt;\r\n		&lt;h4&gt;transportation and risk of loss&lt;/h4&gt;\r\n		&lt;p&gt; In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula. &lt;/p&gt;\r\n		&lt;h4&gt;cancellation or modification&lt;/h4&gt;\r\n		&lt;p&gt;Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n		&lt;h4&gt;taxes&lt;/h4&gt;\r\n		&lt;p&gt; Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;\r\n	&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-6&quot;&gt;\r\n		&lt;h4&gt;warranty and disclaimer&lt;/h4&gt;\r\n		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n		&lt;h4&gt;limitation of liability&lt;/h4&gt;\r\n		&lt;p&gt;Aliquam lobortis dolor mollis libero commodo, eget finibus augue pretium. Praesent fringilla, nulla nec sodales eleifend, odio ante porttitor neque, non tincidunt ligula dui id tortor. Maecenas maximus ornare urna euismod consectetur. Integer eu accumsan nulla. Sed venenatis non justo et faucibus. Curabitur interdum odio tellus, a cursus tortor vestibulum ut. Maecenas sapien dolor, pulvinar non orci non, mattis placerat elit. Maecenas luctus lacinia placerat. In dolor libero, volutpat vel ipsum quis, molestie suscipit enim. Duis maximus molestie gravida. Suspendisse sit amet auctor libero. Sed pellentesque porta neque condimentum feugiat.&lt;/p&gt;\r\n		&lt;h4&gt;return of material&lt;/h4&gt;\r\n		&lt;p&gt;Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis. &lt;/p&gt;\r\n		&lt;h4&gt;indemnity&lt;/h4&gt;\r\n		&lt;p&gt; Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;\r\n		&lt;h4&gt;payment&lt;/h4&gt;\r\n		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel. Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula.&lt;/p&gt;\r\n		&lt;h4&gt;governing law and arbitration&lt;/h4&gt;\r\n		&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur. In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;', 'Terms &amp; Conditions', '', ''),
-(3, 3, 'Политика конфиденциальности', '&lt;table class=&quot;table table-responsive privacy_page&quot;&gt;\r\n\r\n	&lt;tbody&gt;\r\n&lt;tr&gt;\r\n\r\n		&lt;td class=&quot;col-sm-6&quot;&gt;\r\n			&lt;h4&gt;1. General information&lt;/h4&gt;\r\n\r\n			\r\n		&lt;/td&gt;\r\n\r\n		&lt;td class=&quot;col-sm-6&quot;&gt;\r\n			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget porta massa, ac maximus mauris. Aenean eu nulla nulla. Curabitur tincidunt nisl neque, id vestibulum lectus aliquam ut. Suspendisse scelerisque purus nec lectus vehicula, ac suscipit tellus eleifend. Cras dapibus pulvinar tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae diam felis. Quisque vel maximus orci. Praesent nec mollis ex. Duis vehicula odio nisi, ut molestie purus lobortis vel.&lt;/p&gt;\r\n\r\n			&lt;p&gt; Duis molestie sem ac justo bibendum, in ultrices nibh blandit. Etiam ac lacinia turpis. Nam vehicula, purus eu maximus sollicitudin, ante arcu sagittis nulla, ut finibus elit augue sed ligula. &lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;2. Right to access, correct and delete data and to object to data processing&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;3. Management of personal data&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui. &lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;4. Information We Collect&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;5. How We Use Your Information&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non mauris ut augue dapibus posuere et sed quam. Curabitur rhoncus fringilla ligula id aliquet. Sed risus nulla, tempus vitae porta id, lobortis non nulla. Nullam aliquet est magna, hendrerit bibendum orci molestie eget. Quisque sodales, libero convallis eleifend aliquam, arcu libero venenatis tortor, ut gravida sem quam sed ante. Sed a elit ac magna pellentesque fermentum. Sed et diam at odio aliquet consectetur eu non metus. Donec sed nulla justo&lt;/p&gt;\r\n\r\n			&lt;p&gt; Ut pretium fringilla feugiat. Proin et lorem iaculis, vehicula ipsum auctor, posuere magna. Donec rutrum diam ex, ut vestibulum felis pretium id. Morbi blandit, lectus a mattis egestas, diam dolor cursus leo, vel commodo ex ipsum in urna. Vestibulum a nisi vel diam auctor condimentum a ut massa. Ut nunc massa, finibus eget mattis sed, pretium non ante. Vivamus orci quam, lobortis et iaculis id, volutpat non ipsum. Maecenas pharetra erat et nisi sagittis lacinia. Maecenas ullamcorper, enim ac convallis porta, purus nisi pharetra purus, eget sagittis elit erat ut dui.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n	&lt;tr&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;h4&gt;6. Sharing of Your Information&lt;/h4&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n		&lt;td&gt;\r\n			&lt;p&gt;In ut justo ac nibh rhoncus tincidunt. Sed ullamcorper faucibus elit, at placerat velit posuere vitae. Suspendisse feugiat, ante vel varius vestibulum, lacus mi efficitur arcu, at finibus leo eros a augue. Donec tortor est, auctor a luctus non, finibus fermentum sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sed ipsum ex. Donec sollicitudin vulputate mi id consectetur.&lt;/p&gt;\r\n\r\n			&lt;p&gt; In hac habitasse platea dictumst. Sed mattis ipsum diam, ac venenatis nibh interdum sed. Vivamus ac blandit sapien, tincidunt rutrum turpis. Praesent mollis, risus et porttitor dictum, eros risus dignissim mi, sed suscipit risus odio rhoncus mi. Vivamus lacinia efficitur sem, non condimentum quam vulputate ac. Fusce ut eleifend orci. Mauris a quam eget erat mattis varius eu et justo. Cras eget nulla at metus pellentesque convallis.&lt;/p&gt;\r\n\r\n		&lt;/td&gt;\r\n\r\n	&lt;/tr&gt;\r\n\r\n&lt;/tbody&gt;\r\n&lt;/table&gt;', 'Privacy Policy', '', ''),
-(4, 1, 'About Us', '&lt;div class=&quot;row about-page&quot;&gt;	&lt;div class=&quot;col-sm-4&quot;&gt;		&lt;h3&gt;WHY CHOOSE US?&lt;/h3&gt;\r\n		&lt;span class=&quot;dropcap&quot;&gt;01&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=&quot;extra-wrap&quot;&gt;			&lt;h4&gt;Lorem ipsum dolor amet consectetur.&lt;/h4&gt;\r\n			&lt;p&gt;Et dolore magna aliqua. Ut enim adim veniam, quis nostrudexercitation amc.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;		&lt;span class=&quot;dropcap&quot;&gt;02&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=&quot;extra-wrap&quot;&gt;			&lt;h4&gt;Vestibulum libero nisl porta sceleris.&lt;/h4&gt;\r\n			&lt;p&gt;Duis aute iruredolor in reprehenderit in. voluptate velit esse. Fusce euismod co.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;		&lt;span class=&quot;dropcap&quot;&gt;03&lt;/span&gt;&lt;!-- .dropcap (end) --&gt;		&lt;div class=&quot;extra-wrap&quot;&gt;			&lt;h4&gt;Etiam cursus leo vel metus.&lt;/h4&gt;\r\n			&lt;p&gt;Amet, consectetuer adipiscing elit. Pel lentesque sed dolor. Aliquam congue.&lt;/p&gt;\r\n		&lt;/div&gt;\r\n		&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n&lt;!-- .clear (end) --&gt;	&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-8&quot;&gt;		&lt;h3&gt;a few words about us&lt;/h3&gt;\r\n		&lt;img src=&quot;image/catalog/article/page2_pic1.jpg&quot; alt=&quot;&quot; class=&quot;alignleft&quot;&gt;		&lt;h4&gt;Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude xercitation ullamco laboris nisi utaquip ex ea.&lt;/h4&gt;\r\n		&lt;p&gt;Duis aute iruredolor in reprehenderit in. voluptate velit esse. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl.emo eniptaiades kunasa niausyse hauysgasa.&lt;/p&gt;\r\n		&lt;p&gt;Miuahs onsequ untur magni doloresqui. Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi utaquip ex ea. commodo consequa. Duis aute iruredolor in reprehenderit in. voluptate velit esse. Turie ntots nascetur riculus mullamale ada odi dio gravida atcur ecuus.&lt;/p&gt;\r\n		&lt;a target=&quot;_self&quot; class=&quot;btn btn-default btn-small btn-inline &quot; title=&quot;read more&quot; href=&quot;index.php?route=information/contact&quot;&gt;read more&lt;/a&gt;&lt;!-- .btn --&gt;			&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-12&quot;&gt;&lt;div class=&quot;sm_hr&quot;&gt;&lt;/div&gt;\r\n&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-4&quot;&gt;		&lt;h3&gt;TESTIMONIALS&lt;/h3&gt;\r\n		&lt;div class=&quot;testimonials &quot;&gt;			&lt;div class=&quot;testi-item&quot;&gt;				&lt;blockquote class=&quot;testi-item_blockquote&quot;&gt;					&lt;a href=&quot;&quot;&gt;Aenean nonummy hendrerit mau phasellu porta. Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.... &lt;/a&gt;					&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n				&lt;/blockquote&gt;				&lt;small class=&quot;testi-meta&quot;&gt;					&lt;div class=&quot;user&quot;&gt;Tim Barkley&lt;/div&gt;\r\n					&lt;a href=&quot;http://demolink.org&quot;&gt;http://demolink.org&lt;/a&gt;				&lt;/small&gt;			&lt;/div&gt;\r\n			&lt;div class=&quot;testi-item&quot;&gt;				&lt;blockquote class=&quot;testi-item_blockquote&quot;&gt;					&lt;a href=&quot;&quot;&gt;Aenean nonummy hendrerit mau phasellu porta. Fusce suscipit varius mi sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.... &lt;/a&gt;					&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n				&lt;/blockquote&gt;				&lt;small class=&quot;testi-meta&quot;&gt;					&lt;div class=&quot;user&quot;&gt;Lisa Whistler&lt;/div&gt;\r\n					&lt;a href=&quot;http://demolink.org&quot;&gt;http://demolink.org&lt;/a&gt;				&lt;/small&gt;			&lt;/div&gt;\r\n		&lt;/div&gt;\r\n	&lt;/div&gt;\r\n	&lt;div class=&quot;col-sm-8&quot;&gt;		&lt;h3&gt;OUR TEAM&lt;/h3&gt;\r\n		&lt;div class=&quot;recent-posts row&quot;&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Robert Johnson&quot; href=&quot;index.php?route=information/information&amp;information_id=7&quot;&gt;						&lt;img alt=&quot;Robert Johnson&quot; src=&quot;image/catalog/article/Depositphotos_6325694_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Robert Johnson&quot; href=&quot;index.php?route=information/information&amp;information_id=7&quot;&gt;Robert Johnson&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Jessica Priston&quot; href=&quot;index.php?route=information/information&amp;information_id=8&quot;&gt;						&lt;img alt=&quot;Jessica Priston&quot; src=&quot;image/catalog/article/Depositphotos_10953362_EL4-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Jessica Priston&quot; href=&quot;index.php?route=information/information&amp;information_id=8&quot;&gt;Jessica Priston&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Sam Kromstain&quot; href=&quot;index.php?route=information/information&amp;information_id=9&quot;&gt;						&lt;img alt=&quot;Sam Kromstain&quot; src=&quot;image/catalog/article/Depositphotos_1382984_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Sam Kromstain&quot; href=&quot;index.php?route=information/information&amp;information_id=9&quot;&gt;Sam Kromstain&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Edna Barton&quot; href=&quot;index.php?route=information/information&amp;information_id=10&quot;&gt;						&lt;img alt=&quot;Edna Barton&quot; src=&quot;image/catalog/article/Depositphotos_28394885_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Edna Barton&quot; href=&quot;index.php?route=information/information&amp;information_id=10&quot;&gt;Edna Barton&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;			&lt;div class=&quot;col-sm-4&quot;&gt;				&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a title=&quot;Julie Herzigova&quot; href=&quot;index.php?route=information/information&amp;information_id=11&quot;&gt;						&lt;img alt=&quot;Julie Herzigova&quot; src=&quot;image/catalog/article/Depositphotos_1961767_original-230x240.jpg&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;				&lt;h5&gt;					&lt;a title=&quot;Julie Herzigova&quot; href=&quot;index.php?route=information/information&amp;information_id=11&quot;&gt;Julie Herzigova&lt;/a&gt;				&lt;/h5&gt;\r\n				&lt;div class=&quot;excerpt&quot;&gt;Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in... &lt;/div&gt;\r\n				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;\r\n			&lt;/div&gt;\r\n&lt;!-- .entry (end) --&gt;		&lt;/div&gt;\r\n		&lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;', 'About Us', '', ''),
-(7, 3, 'Robert Johnson', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;\r\n	&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=43&quot; title=&quot;Robert Johnson&quot;&gt;\r\n		&lt;img src=&quot;image/catalog/article/Depositphotos_6325694_original-230x240.jpg&quot; alt=&quot;Robert Johnson&quot;&gt;\r\n	&lt;/a&gt;\r\n&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Robert Johnson', '', ''),
-(7, 2, 'Robert Johnson', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;\r\n	&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=43&quot; title=&quot;Robert Johnson&quot;&gt;\r\n		&lt;img src=&quot;image/catalog/article/Depositphotos_6325694_original-230x240.jpg&quot; alt=&quot;Robert Johnson&quot;&gt;\r\n	&lt;/a&gt;\r\n&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Robert Johnson', '', '');
-INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(7, 1, 'Robert Johnson', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;\r\n	&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=43&quot; title=&quot;Robert Johnson&quot;&gt;\r\n		&lt;img src=&quot;image/catalog/article/Depositphotos_6325694_original-230x240.jpg&quot; alt=&quot;Robert Johnson&quot;&gt;\r\n	&lt;/a&gt;\r\n&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Robert Johnson', '', ''),
-(8, 3, 'Jessica Priston', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=31&quot; title=&quot;Jessica Priston&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_10953362_EL4-230x240.jpg&quot; alt=&quot;Jessica Priston&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Jessica Priston', '', ''),
-(8, 2, 'Jessica Priston', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=31&quot; title=&quot;Jessica Priston&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_10953362_EL4-230x240.jpg&quot; alt=&quot;Jessica Priston&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Jessica Priston', '', ''),
-(8, 1, 'Jessica Priston', '&lt;div class=&quot;human_info&quot;&gt;&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=31&quot; title=&quot;Jessica Priston&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_10953362_EL4-230x240.jpg&quot; alt=&quot;Jessica Priston&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;&lt;/div&gt;', 'Jessica Priston', '', ''),
-(9, 3, 'Sam Kromstain', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=46&quot; title=&quot;Sam Kromstain&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_1382984_original-230x240.jpg&quot; alt=&quot;Sam Kromstain&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Sam Kromstain', '', ''),
-(9, 2, 'Sam Kromstain', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=46&quot; title=&quot;Sam Kromstain&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_1382984_original-230x240.jpg&quot; alt=&quot;Sam Kromstain&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Sam Kromstain', '', ''),
-(9, 1, 'Sam Kromstain', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=25&amp;amp;product_id=46&quot; title=&quot;Sam Kromstain&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_1382984_original-230x240.jpg&quot; alt=&quot;Sam Kromstain&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Sam Kromstain', '', ''),
-(10, 1, 'Edna Barton', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=33&amp;amp;product_id=44&quot; title=&quot;Edna Barton&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_28394885_original-230x240.jpg&quot; alt=&quot;Edna Barton&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Edna Barton', '', ''),
-(10, 2, 'Edna Barton', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=33&amp;amp;product_id=44&quot; title=&quot;Edna Barton&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_28394885_original-230x240.jpg&quot; alt=&quot;Edna Barton&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Edna Barton', '', ''),
-(10, 3, 'Edna Barton', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=33&amp;amp;product_id=44&quot; title=&quot;Edna Barton&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_28394885_original-230x240.jpg&quot; alt=&quot;Edna Barton&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Edna Barton', '', ''),
-(11, 3, 'Julie Herzigova', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=33&amp;amp;product_id=42&quot; title=&quot;Julie Herzigova&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_1961767_original-230x240.jpg&quot; alt=&quot;Julie Herzigova&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Julie Herzigova', '', ''),
-(11, 2, 'Julie Herzigova', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=33&amp;amp;product_id=42&quot; title=&quot;Julie Herzigova&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_1961767_original-230x240.jpg&quot; alt=&quot;Julie Herzigova&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Julie Herzigova', '', ''),
-(11, 1, 'Julie Herzigova', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=33&amp;amp;product_id=42&quot; title=&quot;Julie Herzigova&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_1961767_original-230x240.jpg&quot; alt=&quot;Julie Herzigova&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', 'Julie Herzigova', '', '');
+(10, 4, 'Edna Barton', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=33&amp;amp;product_id=44&quot; title=&quot;Edna Barton&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_28394885_original-230x240.jpg&quot; alt=&quot;Edna Barton&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', '', '', ''),
+(11, 4, 'Julie Herzigova', '&lt;div class=&quot;human_info&quot;&gt;\r\n&lt;figure class=&quot;thumbnail featured-thumbnail&quot;&gt;					&lt;a href=&quot;index.php?route=product/product&amp;amp;path=33&amp;amp;product_id=42&quot; title=&quot;Julie Herzigova&quot;&gt;						&lt;img src=&quot;image/catalog/article/Depositphotos_1961767_original-230x240.jpg&quot; alt=&quot;Julie Herzigova&quot;&gt;					&lt;/a&gt;				&lt;/figure&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;p&gt; &lt;b&gt;Lorem ipsum dolor&lt;/b&gt; sit amet, consectetur adipiscing elit. Proin in mi efficitur, interdum augue eget, tincidunt velit. Nulla vel libero et ipsum aliquam varius eget id magna. Quisque mollis efficitur sollicitudin. Aenean in ex luctus, porttitor orci eu, lacinia libero. Nam fringilla mauris sed sagittis cursus. Nulla justo orci, pellentesque eget massa quis, feugiat dapibus nibh. Nullam nec commodo velit. Duis varius eros vitae neque eleifend, aliquam ullamcorper elit dapibus. Sed vulputate ipsum a augue interdum lacinia in id metus. Donec purus orci, elementum mattis ex id, porta iaculis odio. Mauris pulvinar mattis elit at tincidunt. Donec eu imperdiet ipsum, quis ullamcorper lorem. &lt;/p&gt;\r\n&lt;p&gt;Vivamus a ipsum mattis, egestas ante sed, ultricies nibh.Nunc eget sodales risus. Nunc ullamcorper, erat eu luctus fringilla, magna lectus hendrerit ante, eget eleifend libero felis ut tellus. Nunc porttitor leo ac metus pellentesque, vitae sodales nisi tristique. Nulla auctor, eros id vestibulum posuere, eros ligula vehicula felis, ut lobortis nulla libero eu risus. Praesent ultrices egestas leo, at viverra purus porttitor ac. Duis id lacinia ex. Sed rhoncus sollicitudin tortor non consectetur. Cras quis sem eu est ornare dictum sed id quam. Nulla at mi eleifend, rutrum dui id, efficitur eros. &lt;/p&gt;\r\n&lt;/div&gt;', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -1579,7 +1456,8 @@ INSERT INTO `oc_information_to_layout` (`information_id`, `store_id`, `layout_id
 (8, 0, 0),
 (9, 0, 0),
 (10, 0, 0),
-(11, 0, 0);
+(11, 0, 0),
+(12, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1605,7 +1483,8 @@ INSERT INTO `oc_information_to_store` (`information_id`, `store_id`) VALUES
 (8, 0),
 (9, 0),
 (10, 0),
-(11, 0);
+(11, 0),
+(12, 0);
 
 -- --------------------------------------------------------
 
@@ -1622,16 +1501,14 @@ CREATE TABLE `oc_language` (
   `directory` varchar(32) NOT NULL,
   `sort_order` int(3) NOT NULL DEFAULT '0',
   `status` tinyint(1) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_language`
 --
 
 INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `directory`, `sort_order`, `status`) VALUES
-(1, 'English', 'en', 'en_US.UTF-8,en_US,en-gb,english', 'gb.png', 'english', 1, 1),
-(2, 'Deutsch', 'de', 'de,de-DE,de_DE,de_DE.UTF-8,de-de,de-AT,de-CH,german', 'de.png', 'de-DE', 2, 1),
-(3, 'Русский', 'ru', 'ru,ru_RU,ru_RU.UTF-8', 'ru.png', 'russian', 3, 1);
+(4, 'Português (BR)', 'pt-br', 'pt_BR.UTF-8,pt_BR,pt-br,pt_br,portuguese,portugues', 'br.png', 'portuguese-br', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -1770,15 +1647,9 @@ CREATE TABLE `oc_length_class_description` (
 --
 
 INSERT INTO `oc_length_class_description` (`length_class_id`, `language_id`, `title`, `unit`) VALUES
-(1, 1, 'Centimeter', 'cm'),
-(2, 1, 'Millimeter', 'mm'),
-(3, 1, 'Inch', 'in'),
-(1, 2, 'Centimeter', 'cm'),
-(2, 2, 'Millimeter', 'mm'),
-(3, 2, 'Inch', 'in'),
-(1, 3, 'Centimeter', 'cm'),
-(2, 3, 'Millimeter', 'mm'),
-(3, 3, 'Inch', 'in');
+(1, 4, 'Centimeter', 'cm'),
+(2, 4, 'Millimeter', 'mm'),
+(3, 4, 'Inch', 'in');
 
 -- --------------------------------------------------------
 
@@ -1909,7 +1780,7 @@ CREATE TABLE `oc_module` (
   `name` varchar(64) NOT NULL,
   `code` varchar(32) NOT NULL,
   `setting` text NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_module`
@@ -1917,12 +1788,13 @@ CREATE TABLE `oc_module` (
 
 INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 (33, 'banners', 'banner', 'a:5:{s:4:"name";s:7:"banners";s:9:"banner_id";s:2:"14";s:5:"width";s:3:"268";s:6:"height";s:3:"197";s:6:"status";s:1:"1";}'),
-(28, 'Featured ', 'featured', 'a:6:{s:4:"name";s:9:"Featured ";s:7:"product";a:8:{i:0;s:2:"43";i:1;s:2:"40";i:2;s:2:"30";i:3;s:2:"42";i:4;s:2:"33";i:5;s:2:"46";i:6;s:2:"32";i:7;s:2:"28";}s:5:"limit";s:1:"6";s:5:"width";s:3:"268";s:6:"height";s:3:"268";s:6:"status";s:1:"1";}'),
+(28, 'Featured ', 'featured', 'a:6:{s:4:"name";s:9:"Featured ";s:7:"product";a:5:{i:0;s:2:"42";i:1;s:2:"33";i:2;s:2:"46";i:3;s:2:"32";i:4;s:2:"28";}s:5:"limit";s:1:"3";s:5:"width";s:3:"268";s:6:"height";s:3:"268";s:6:"status";s:1:"0";}'),
 (35, 'Bottom-block', 'html', 'a:3:{s:4:"name";s:12:"Bottom-block";s:18:"module_description";a:3:{i:1;a:2:{s:5:"title";s:12:"bottom-block";s:11:"description";s:599:"&lt;div class=&quot;container&quot;&gt;\r\n&lt;div class=&quot;row&quot;&gt;\r\n&lt;div class=&quot;col-sm-12&quot;&gt;\r\n&lt;div class=&quot;bottom-block-tx&quot;&gt;\r\n&lt;a href=&quot;index.php?route=account/voucher&quot;&gt;\r\n&lt;span class=&quot;tx-title&quot;&gt;Clearance&lt;/span&gt;&lt;span class=&quot;tx-block&quot;&gt;&lt;span&gt;&lt;span class=&quot;tx1&quot;&gt;get up to 50% off&lt;/span&gt; &lt;span&gt;lorem ipsum dolor sit amet conse ctetur adipisici&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;\r\n&lt;/a&gt;\r\n&lt;/div&gt;\r\n\r\n\r\n\r\n\r\n\r\n&lt;/div&gt;\r\n\r\n\r\n\r\n\r\n\r\n&lt;/div&gt;\r\n\r\n\r\n\r\n\r\n\r\n&lt;/div&gt;";}i:2;a:2:{s:5:"title";s:12:"bottom-block";s:11:"description";s:599:"&lt;div class=&quot;container&quot;&gt;\r\n&lt;div class=&quot;row&quot;&gt;\r\n&lt;div class=&quot;col-sm-12&quot;&gt;\r\n&lt;div class=&quot;bottom-block-tx&quot;&gt;\r\n&lt;a href=&quot;index.php?route=account/voucher&quot;&gt;\r\n&lt;span class=&quot;tx-title&quot;&gt;Clearance&lt;/span&gt;&lt;span class=&quot;tx-block&quot;&gt;&lt;span&gt;&lt;span class=&quot;tx1&quot;&gt;get up to 50% off&lt;/span&gt; &lt;span&gt;lorem ipsum dolor sit amet conse ctetur adipisici&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;\r\n&lt;/a&gt;\r\n&lt;/div&gt;\r\n\r\n\r\n\r\n\r\n\r\n&lt;/div&gt;\r\n\r\n\r\n\r\n\r\n\r\n&lt;/div&gt;\r\n\r\n\r\n\r\n\r\n\r\n&lt;/div&gt;";}i:3;a:2:{s:5:"title";s:12:"bottom-block";s:11:"description";s:599:"&lt;div class=&quot;container&quot;&gt;\r\n&lt;div class=&quot;row&quot;&gt;\r\n&lt;div class=&quot;col-sm-12&quot;&gt;\r\n&lt;div class=&quot;bottom-block-tx&quot;&gt;\r\n&lt;a href=&quot;index.php?route=account/voucher&quot;&gt;\r\n&lt;span class=&quot;tx-title&quot;&gt;Clearance&lt;/span&gt;&lt;span class=&quot;tx-block&quot;&gt;&lt;span&gt;&lt;span class=&quot;tx1&quot;&gt;get up to 50% off&lt;/span&gt; &lt;span&gt;lorem ipsum dolor sit amet conse ctetur adipisici&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;\r\n&lt;/a&gt;\r\n&lt;/div&gt;\r\n\r\n\r\n\r\n\r\n\r\n&lt;/div&gt;\r\n\r\n\r\n\r\n\r\n\r\n&lt;/div&gt;\r\n\r\n\r\n\r\n\r\n\r\n&lt;/div&gt;";}}s:6:"status";s:1:"1";}'),
 (46, 'Tm Slideshow', 'tm_slideshow', 'a:5:{s:4:"name";s:12:"Tm Slideshow";s:9:"banner_id";s:2:"15";s:5:"width";s:3:"870";s:6:"height";s:3:"549";s:6:"status";s:1:"1";}'),
 (43, 'Bestsellers', 'bestseller', 'a:5:{s:4:"name";s:11:"Bestsellers";s:5:"limit";s:1:"1";s:5:"width";s:3:"268";s:6:"height";s:3:"268";s:6:"status";s:1:"1";}'),
 (44, 'Latest Products', 'latest', 'a:5:{s:4:"name";s:15:"Latest Products";s:5:"limit";s:1:"1";s:5:"width";s:3:"268";s:6:"height";s:3:"268";s:6:"status";s:1:"1";}'),
-(45, 'Specials', 'special', 'a:5:{s:4:"name";s:8:"Specials";s:5:"limit";s:1:"2";s:5:"width";s:3:"268";s:6:"height";s:3:"268";s:6:"status";s:1:"1";}');
+(45, 'Specials', 'special', 'a:5:{s:4:"name";s:8:"Specials";s:5:"limit";s:1:"2";s:5:"width";s:3:"268";s:6:"height";s:3:"268";s:6:"status";s:1:"1";}'),
+(50, 'Destaque', 'featured', 'a:6:{s:4:"name";s:8:"Destaque";s:7:"product";a:1:{i:0;s:2:"46";}s:5:"limit";s:1:"5";s:5:"width";s:3:"200";s:6:"height";s:3:"200";s:6:"status";s:1:"0";}');
 
 -- --------------------------------------------------------
 
@@ -1971,42 +1843,18 @@ CREATE TABLE `oc_option_description` (
 --
 
 INSERT INTO `oc_option_description` (`option_id`, `language_id`, `name`) VALUES
-(1, 1, 'Radio'),
-(2, 1, 'Checkbox'),
-(4, 1, 'Text'),
-(6, 1, 'Textarea'),
-(8, 1, 'Date'),
-(7, 1, 'File'),
-(5, 1, 'Select'),
-(9, 1, 'Time'),
-(10, 1, 'Date &amp; Time'),
-(12, 1, 'Delivery Date'),
-(11, 1, 'Size'),
-(1, 2, 'Radio'),
-(2, 2, 'Checkbox'),
-(4, 2, 'Text'),
-(6, 2, 'Textarea'),
-(8, 2, 'Date'),
-(7, 2, 'File'),
-(5, 2, 'Select'),
-(9, 2, 'Time'),
-(10, 2, 'Date &amp; Time'),
-(12, 2, 'Delivery Date'),
-(11, 2, 'Size'),
-(1, 3, 'Radio'),
-(2, 3, 'Checkbox'),
-(4, 3, 'Text'),
-(6, 3, 'Textarea'),
-(8, 3, 'Date'),
-(7, 3, 'File'),
-(5, 3, 'Select'),
-(9, 3, 'Time'),
-(10, 3, 'Date &amp; Time'),
-(12, 3, 'Delivery Date'),
-(11, 3, 'Size'),
-(13, 1, 'Color'),
-(13, 2, 'Color'),
-(13, 3, 'Color');
+(1, 4, 'Radio'),
+(2, 4, 'Checkbox'),
+(4, 4, 'Text'),
+(6, 4, 'Textarea'),
+(8, 4, 'Date'),
+(7, 4, 'File'),
+(5, 4, 'Select'),
+(9, 4, 'Time'),
+(10, 4, 'Date &amp; Time'),
+(12, 4, 'Delivery Date'),
+(11, 4, 'Size'),
+(13, 4, 'Color');
 
 -- --------------------------------------------------------
 
@@ -2062,57 +1910,23 @@ CREATE TABLE `oc_option_value_description` (
 --
 
 INSERT INTO `oc_option_value_description` (`option_value_id`, `language_id`, `option_id`, `name`) VALUES
-(43, 1, 1, 'Large'),
-(32, 1, 1, 'Small'),
-(45, 1, 2, 'Checkbox 4'),
-(44, 1, 2, 'Checkbox 3'),
-(31, 1, 1, 'Medium'),
-(42, 1, 5, 'Yellow'),
-(41, 1, 5, 'Green'),
-(39, 1, 5, 'Red'),
-(40, 1, 5, 'Blue'),
-(23, 1, 2, 'Checkbox 1'),
-(24, 1, 2, 'Checkbox 2'),
-(48, 1, 11, 'Large'),
-(47, 1, 11, 'Medium'),
-(46, 1, 11, 'Small'),
-(43, 2, 1, 'Large'),
-(32, 2, 1, 'Small'),
-(45, 2, 2, 'Checkbox 4'),
-(44, 2, 2, 'Checkbox 3'),
-(31, 2, 1, 'Medium'),
-(42, 2, 5, 'Yellow'),
-(41, 2, 5, 'Green'),
-(39, 2, 5, 'Red'),
-(40, 2, 5, 'Blue'),
-(23, 2, 2, 'Checkbox 1'),
-(24, 2, 2, 'Checkbox 2'),
-(48, 2, 11, 'Large'),
-(47, 2, 11, 'Medium'),
-(46, 2, 11, 'Small'),
-(43, 3, 1, 'Large'),
-(32, 3, 1, 'Small'),
-(45, 3, 2, 'Checkbox 4'),
-(44, 3, 2, 'Checkbox 3'),
-(31, 3, 1, 'Medium'),
-(42, 3, 5, 'Yellow'),
-(41, 3, 5, 'Green'),
-(39, 3, 5, 'Red'),
-(40, 3, 5, 'Blue'),
-(23, 3, 2, 'Checkbox 1'),
-(24, 3, 2, 'Checkbox 2'),
-(48, 3, 11, 'Large'),
-(47, 3, 11, 'Medium'),
-(46, 3, 11, 'Small'),
-(49, 1, 13, 'black'),
-(49, 2, 13, 'black'),
-(49, 3, 13, 'black'),
-(50, 1, 13, 'white'),
-(50, 2, 13, 'white'),
-(50, 3, 13, 'white'),
-(51, 1, 13, 'red'),
-(51, 2, 13, 'red'),
-(51, 3, 13, 'red');
+(43, 4, 1, 'Large'),
+(32, 4, 1, 'Small'),
+(45, 4, 2, 'Checkbox 4'),
+(44, 4, 2, 'Checkbox 3'),
+(31, 4, 1, 'Medium'),
+(42, 4, 5, 'Yellow'),
+(41, 4, 5, 'Green'),
+(39, 4, 5, 'Red'),
+(40, 4, 5, 'Blue'),
+(23, 4, 2, 'Checkbox 1'),
+(24, 4, 2, 'Checkbox 2'),
+(48, 4, 11, 'Large'),
+(47, 4, 11, 'Medium'),
+(46, 4, 11, 'Small'),
+(49, 4, 13, 'black'),
+(50, 4, 13, 'white'),
+(51, 4, 13, 'red');
 
 -- --------------------------------------------------------
 
@@ -2182,18 +1996,17 @@ CREATE TABLE `oc_order` (
   `accept_language` varchar(255) NOT NULL,
   `date_added` datetime NOT NULL,
   `date_modified` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order`
 --
 
 INSERT INTO `oc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, `store_name`, `store_url`, `customer_id`, `customer_group_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `custom_field`, `payment_firstname`, `payment_lastname`, `payment_company`, `payment_address_1`, `payment_address_2`, `payment_city`, `payment_postcode`, `payment_country`, `payment_country_id`, `payment_zone`, `payment_zone_id`, `payment_address_format`, `payment_custom_field`, `payment_method`, `payment_code`, `shipping_firstname`, `shipping_lastname`, `shipping_company`, `shipping_address_1`, `shipping_address_2`, `shipping_city`, `shipping_postcode`, `shipping_country`, `shipping_country_id`, `shipping_zone`, `shipping_zone_id`, `shipping_address_format`, `shipping_custom_field`, `shipping_method`, `shipping_code`, `comment`, `total`, `order_status_id`, `affiliate_id`, `commission`, `marketing_id`, `tracking`, `language_id`, `currency_id`, `currency_code`, `currency_value`, `ip`, `forwarded_ip`, `user_agent`, `accept_language`, `date_added`, `date_modified`) VALUES
-(1, 0, 'INV-2013-00', 0, 'Lingerie online store', 'http://192.168.9.2/+test2/', 1, 1, 'Demo', 'Demo', 'demo@demo.com', '5555555555', '', 'b:0;', 'Demo', 'Demo', 'Demo', 'Demo', '', 'Demo', '5555555555', 'United Kingdom', 222, 'Cheshire', 3529, '', 'b:0;', 'Cash On Delivery', 'cod', 'Demo', 'Demo', 'Demo', 'Demo', '', 'Demo', '5555555555', 'United Kingdom', 222, 'Cheshire', 3529, '', 'b:0;', 'Flat Shipping Rate', 'flat.flat', '', 448.0000, 1, 0, 0.0000, 0, '', 1, 1, 'GBP', 0.63880002, '192.168.9.1', '192.168.9.2', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0', 'en-US,en;q=0.5', '2014-12-04 15:34:45', '2014-12-04 15:34:47'),
-(2, 0, 'INV-2013-00', 0, 'Watches online store', 'http://192.168.9.2/+2014/theme511/', 1, 1, 'Demo', 'Demo', 'demo@demo.com', '5555555555', '', 'b:0;', 'Demo', 'Demo', 'Demo', 'Demo', '', 'Demo', '5555555555', 'United Kingdom', 222, 'Cheshire', 3529, '', 'b:0;', 'Cash On Delivery', 'cod', 'Demo', 'Demo', 'Demo', 'Demo', '', 'Demo', '5555555555', 'United Kingdom', 222, 'Cheshire', 3529, '', 'b:0;', 'Flat Shipping Rate', 'flat.flat', '', 374.0000, 1, 0, 0.0000, 0, '', 1, 1, 'GBP', 0.63830000, '192.168.9.1', '192.168.9.2', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', 'en-US,en;q=0.5', '2014-12-11 15:12:48', '2014-12-11 15:12:51'),
+(10, 0, 'DOLAR-0', 0, 'Dólar da Sorte', 'http://dolardasorte.homolog.lojavirtual.digital/', 3, 1, 'Fernando', 'de Figueiredo Mendes', 'fernando.mendes@webca.com.br', '11976495157', '', 'b:0;', 'Fernando', 'de Figueiredo Mendes', 'WebCA Internet', 'Lomas Valentinas', '', 'Sao Caetano do Sul', '09560260', 'Brazil', 30, 'São Paulo', 464, '', 'b:0;', 'PayPal Express Checkout', 'pp_express', 'Fernando', 'de Figueiredo Mendes', 'WebCA Internet', 'Lomas Valentinas', '', 'Sao Caetano do Sul', '09560260', 'Brazil', 30, 'São Paulo', 464, '', 'b:0;', 'Frete Grátis', 'free.free', '', 19.9000, 0, 0, 0.0000, 0, '', 4, 4, 'BRL', 1.00000000, '127.0.0.1', '', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36', 'en-US,en;q=0.8,pt;q=0.6', '2015-06-07 19:22:50', '2015-06-07 19:22:50'),
+(9, 0, 'DOLAR-0', 0, 'Dólar da Sorte', 'http://dolardasorte.homolog.lojavirtual.digital/', 3, 1, 'Fernando', 'de Figueiredo Mendes', 'fernando.mendes@webca.com.br', '11976495157', '', 'b:0;', 'Fernando', 'de Figueiredo Mendes', 'WebCA Internet', 'Lomas Valentinas', '', 'Sao Caetano do Sul', '09560260', 'Brazil', 30, 'São Paulo', 464, '', 'b:0;', 'PagSeguro', 'pagseguro', 'Fernando', 'de Figueiredo Mendes', 'WebCA Internet', 'Lomas Valentinas', '', 'Sao Caetano do Sul', '09560260', 'Brazil', 30, 'São Paulo', 464, '', 'b:0;', 'Frete Grátis', 'free.free', '', 19.9000, 1, 0, 0.0000, 0, '', 4, 4, 'BRL', 1.00000000, '127.0.0.1', '', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36', 'en-US,en;q=0.8,pt;q=0.6', '2015-06-07 19:21:42', '2015-06-07 19:21:45'),
 (3, 0, 'INV-2013-00', 0, 'Watches online store', 'http://localhost/theme511/', 1, 1, 'Demo', 'Demo', 'demo@demo.com', '5555555555', '', 'b:0;', 'Demo', 'Demo', 'Demo', 'Demo', '', 'Demo', '5555555555', 'United Kingdom', 222, 'Cheshire', 3529, '', 'b:0;', 'Cash On Delivery', 'cod', 'Demo', 'Demo', 'Demo', 'Demo', '', 'Demo', '5555555555', 'United Kingdom', 222, 'Cheshire', 3529, '', 'b:0;', 'Flat Shipping Rate', 'flat.flat', '', 2470.0000, 0, 0, 0.0000, 0, '', 1, 2, 'USD', 1.00000000, '::1', '', 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3', '2014-12-23 00:33:59', '2014-12-23 00:33:59'),
 (4, 0, 'INV-2013-00', 0, 'Watches online store', 'http://localhost/theme511/', 1, 1, 'Demo', 'Demo', 'demo@demo.com', '5555555555', '', 'b:0;', 'Demo', 'Demo', 'Demo', 'Demo', '', 'Demo', '5555555555', 'United Kingdom', 222, 'Cheshire', 3529, '', 'b:0;', 'Cash On Delivery', 'cod', 'Demo', 'Demo', 'Demo', 'Demo', '', 'Demo', '5555555555', 'United Kingdom', 222, 'Cheshire', 3529, '', 'b:0;', 'Flat Shipping Rate', 'flat.flat', '', 142.0000, 0, 0, 0.0000, 0, '', 1, 2, 'USD', 1.00000000, '::1', '', 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3', '2014-12-23 01:16:04', '2014-12-23 01:16:04'),
-(5, 0, 'INV-2013-00', 0, 'PrintStore online store', 'http://192.168.9.23/511/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '111', 'b:0;', 'admin', 'admin', '111', '111', '111', '111', '111', 'United Kingdom', 222, 'Aberdeenshire', 3514, '', 'b:0;', 'Cash On Delivery', 'cod', 'admin', 'admin', '111', '111', '111', '111', '111', 'United Kingdom', 222, 'Aberdeenshire', 3514, '', 'b:0;', 'Flat Shipping Rate', 'flat.flat', '', 312.2000, 1, 0, 0.0000, 0, '', 1, 2, 'USD', 1.00000000, '192.168.9.23', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0', 'en-US,en;q=0.5', '2015-01-27 14:42:55', '2015-01-27 14:42:57'),
 (6, 0, 'INV-2013-00', 0, 'PrintStore online store', 'http://192.168.9.23/511/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '111', 'b:0;', 'admin', 'admin', '111', '111', '111', '111', '111', 'United Kingdom', 222, 'Aberdeenshire', 3514, '', 'b:0;', 'Cash On Delivery', 'cod', 'admin', 'admin', '111', '111', '111', '111', '111', 'United Kingdom', 222, 'Aberdeenshire', 3514, '', 'b:0;', 'Flat Shipping Rate', 'flat.flat', '', 635.2800, 0, 0, 0.0000, 0, '', 1, 2, 'USD', 1.00000000, '192.168.9.23', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0', 'en-US,en;q=0.5', '2015-01-27 15:34:49', '2015-01-27 15:34:49'),
 (7, 0, 'INV-2013-00', 0, 'PrintStore online store', 'http://192.168.9.23/511/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '111', 'b:0;', 'admin', 'admin', '111', '111', '111', '111', '111', 'United Kingdom', 222, 'Aberdeenshire', 3514, '', 'b:0;', 'Cash On Delivery', 'cod', 'admin', 'admin', '111', '111', '111', '111', '111', 'United Kingdom', 222, 'Aberdeenshire', 3514, '', 'b:0;', 'Flat Shipping Rate', 'flat.flat', '', 635.2800, 0, 0, 0.0000, 0, '', 1, 2, 'USD', 1.00000000, '192.168.9.23', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0', 'en-US,en;q=0.5', '2015-01-27 15:37:55', '2015-01-27 15:37:55'),
 (8, 0, 'INV-2013-00', 0, 'PrintStore online store', 'http://192.168.9.23/511/', 2, 1, 'admin', 'admin', 'admin@demolink.org', '111', '111', 'b:0;', 'admin', 'admin', '111', '111', '111', '111', '111', 'United Kingdom', 222, 'Aberdeenshire', 3514, '', 'b:0;', 'Cash On Delivery', 'cod', 'admin', 'admin', '111', '111', '111', '111', '111', 'United Kingdom', 222, 'Aberdeenshire', 3514, '', 'b:0;', 'Flat Shipping Rate', 'flat.flat', '', 635.2800, 0, 0, 0.0000, 0, '', 1, 2, 'USD', 1.00000000, '192.168.9.23', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0', 'en-US,en;q=0.5', '2015-01-27 15:38:41', '2015-01-27 15:38:41');
@@ -2290,16 +2103,14 @@ CREATE TABLE `oc_order_history` (
   `notify` tinyint(1) NOT NULL DEFAULT '0',
   `comment` text NOT NULL,
   `date_added` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order_history`
 --
 
 INSERT INTO `oc_order_history` (`order_history_id`, `order_id`, `order_status_id`, `notify`, `comment`, `date_added`) VALUES
-(1, 1, 1, 0, '', '2014-12-04 15:34:47'),
-(2, 2, 1, 0, '', '2014-12-11 15:12:51'),
-(3, 5, 1, 0, '', '2015-01-27 14:42:57');
+(7, 9, 1, 0, '', '2015-06-07 19:21:45');
 
 -- --------------------------------------------------------
 
@@ -2323,21 +2134,10 @@ CREATE TABLE `oc_order_option` (
 --
 
 INSERT INTO `oc_order_option` (`order_option_id`, `order_id`, `order_product_id`, `product_option_id`, `product_option_value_id`, `name`, `value`, `type`) VALUES
-(1, 1, 3, 237, 44, 'Color', 'black', 'radio'),
-(2, 1, 3, 238, 49, 'Size', 'Small', 'select'),
-(3, 2, 5, 237, 44, 'Color', 'black', 'radio'),
-(4, 2, 5, 238, 49, 'Size', 'Small', 'select'),
 (5, 3, 6, 254, 95, 'Color', 'black', 'radio'),
 (6, 3, 6, 253, 94, 'Size', 'Small', 'select'),
 (7, 4, 11, 237, 44, 'Color', 'black', 'radio'),
 (8, 4, 11, 238, 49, 'Size', 'Small', 'select'),
-(9, 5, 12, 254, 97, 'Color', 'white', 'radio'),
-(10, 5, 12, 253, 94, 'Size', 'Small', 'select'),
-(11, 5, 13, 263, 123, 'Color', 'red', 'radio'),
-(12, 5, 13, 266, 0, 'Time', '18:06', 'time'),
-(13, 5, 13, 264, 0, 'Date &amp; Time', '2014-12-18 12:25', 'datetime'),
-(14, 5, 13, 262, 120, 'Size', 'Medium', 'select'),
-(15, 5, 13, 265, 0, 'Delivery Date', '2014-12-18', 'date'),
 (16, 6, 14, 254, 96, 'Color', 'red', 'radio'),
 (17, 6, 14, 253, 94, 'Size', 'Small', 'select'),
 (18, 6, 15, 239, 51, 'Size', 'Medium', 'select'),
@@ -2374,26 +2174,21 @@ CREATE TABLE `oc_order_product` (
   `total` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `tax` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `reward` int(8) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order_product`
 --
 
 INSERT INTO `oc_order_product` (`order_product_id`, `order_id`, `product_id`, `name`, `model`, `quantity`, `price`, `total`, `tax`, `reward`) VALUES
-(1, 1, 28, 'Aliquam eget', 'Product 1', 1, 80.0000, 80.0000, 18.0000, 400),
-(2, 1, 47, 'Consectetur adipiscing', 'Product 21', 1, 60.0000, 60.0000, 14.0000, 300),
-(3, 1, 30, 'Dolor sit amet', 'Product 3', 2, 110.0000, 220.0000, 24.0000, 400),
-(4, 2, 28, 'Aliquam eget', 'Product 1', 1, 80.0000, 80.0000, 18.0000, 400),
-(5, 2, 30, 'Dolor sit amet', 'Product 3', 2, 110.0000, 220.0000, 24.0000, 400),
+(30, 10, 50, 'Dólar da Sorte', 'Dólar da Sorte', 1, 19.9000, 19.9000, 0.0000, 0),
+(29, 9, 50, 'Dólar da Sorte', 'Dólar da Sorte', 1, 19.9000, 19.9000, 0.0000, 0),
 (6, 3, 43, 'Quisque eget', 'Product 16', 1, 430.0000, 430.0000, 88.0000, 600),
 (7, 3, 49, 'Mauris gravida', 'SAM1', 3, 150.0000, 450.0000, 32.0000, 3000),
 (8, 3, 48, 'Praesent imperdiet', 'product 20', 1, 100.0000, 100.0000, 22.0000, 0),
 (9, 3, 47, 'Consectetur adipiscing', 'Product 21', 1, 60.0000, 60.0000, 14.0000, 300),
 (10, 3, 46, 'Suspendisse imperdiet', 'Product 19', 1, 1000.0000, 1000.0000, 202.0000, 0),
 (11, 4, 30, 'Dolor sit amet', 'Product 3', 1, 110.0000, 110.0000, 24.0000, 200),
-(12, 5, 43, 'Sed ut perspi', 'Product 16', 1, 89.5000, 89.5000, 19.9000, 600),
-(13, 5, 42, 'Sed ut perspi', 'Product 15', 2, 79.5000, 159.0000, 17.9000, 200),
 (14, 6, 43, 'Sed ut perspi', 'Product 16', 1, 84.5000, 84.5000, 18.9000, 600),
 (15, 6, 44, 'Sed ut perspi', 'Product 17', 1, 95.5000, 95.5000, 21.1000, 700),
 (16, 6, 31, 'Sed vitae enim', 'Product 4', 1, 120.0000, 120.0000, 26.0000, 0),
@@ -2464,55 +2259,33 @@ CREATE TABLE `oc_order_status` (
 `order_status_id` int(11) NOT NULL,
   `language_id` int(11) NOT NULL,
   `name` varchar(32) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order_status`
 --
 
 INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
-(2, 1, 'Processing'),
-(3, 1, 'Shipped'),
-(7, 1, 'Canceled'),
-(5, 1, 'Complete'),
-(8, 1, 'Denied'),
-(9, 1, 'Canceled Reversal'),
-(10, 1, 'Failed'),
-(11, 1, 'Refunded'),
-(12, 1, 'Reversed'),
-(13, 1, 'Chargeback'),
-(1, 1, 'Pending'),
-(16, 1, 'Voided'),
-(15, 1, 'Processed'),
-(14, 1, 'Expired'),
-(2, 2, 'Processing'),
-(3, 2, 'Shipped'),
-(7, 2, 'Canceled'),
-(5, 2, 'Complete'),
-(8, 2, 'Denied'),
-(9, 2, 'Canceled Reversal'),
-(10, 2, 'Failed'),
-(11, 2, 'Refunded'),
-(12, 2, 'Reversed'),
-(13, 2, 'Chargeback'),
-(1, 2, 'Pending'),
-(16, 2, 'Voided'),
-(15, 2, 'Processed'),
-(14, 2, 'Expired'),
-(2, 3, 'Processing'),
-(3, 3, 'Shipped'),
-(7, 3, 'Canceled'),
-(5, 3, 'Complete'),
-(8, 3, 'Denied'),
-(9, 3, 'Canceled Reversal'),
-(10, 3, 'Failed'),
-(11, 3, 'Refunded'),
-(12, 3, 'Reversed'),
-(13, 3, 'Chargeback'),
-(1, 3, 'Pending'),
-(16, 3, 'Voided'),
-(15, 3, 'Processed'),
-(14, 3, 'Expired');
+(22, 4, 'Cancelada'),
+(21, 4, 'Devolvida'),
+(20, 4, 'Disputa'),
+(19, 4, 'Paga'),
+(18, 4, 'Em análise'),
+(17, 4, 'Aguardando pagamento'),
+(2, 4, 'Processing'),
+(3, 4, 'Shipped'),
+(7, 4, 'Canceled'),
+(5, 4, 'Complete'),
+(8, 4, 'Denied'),
+(9, 4, 'Canceled Reversal'),
+(10, 4, 'Failed'),
+(11, 4, 'Refunded'),
+(12, 4, 'Reversed'),
+(13, 4, 'Chargeback'),
+(1, 4, 'Pending'),
+(16, 4, 'Voided'),
+(15, 4, 'Processed'),
+(14, 4, 'Expired');
 
 -- --------------------------------------------------------
 
@@ -2527,23 +2300,19 @@ CREATE TABLE `oc_order_total` (
   `title` varchar(255) NOT NULL,
   `value` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `sort_order` int(3) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=47 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_order_total`
 --
 
 INSERT INTO `oc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `value`, `sort_order`) VALUES
-(1, 1, 'sub_total', 'Sub-Total', 360.0000, 1),
-(2, 1, 'shipping', 'Flat Shipping Rate', 5.0000, 3),
-(3, 1, 'tax', 'Eco Tax (-2.00)', 10.0000, 5),
-(4, 1, 'tax', 'VAT (20%)', 73.0000, 5),
-(5, 1, 'total', 'Total', 448.0000, 9),
-(6, 2, 'sub_total', 'Sub-Total', 300.0000, 1),
-(7, 2, 'shipping', 'Flat Shipping Rate', 5.0000, 3),
-(8, 2, 'tax', 'Eco Tax (-2.00)', 8.0000, 5),
-(9, 2, 'tax', 'VAT (20%)', 61.0000, 5),
-(10, 2, 'total', 'Total', 374.0000, 9),
+(46, 10, 'total', 'Total', 19.9000, 9),
+(45, 10, 'shipping', 'Frete Grátis', 0.0000, 3),
+(44, 10, 'sub_total', 'Sub-Total', 19.9000, 1),
+(43, 9, 'total', 'Total', 19.9000, 9),
+(42, 9, 'shipping', 'Frete Grátis', 0.0000, 3),
+(41, 9, 'sub_total', 'Sub-Total', 19.9000, 1),
 (11, 3, 'sub_total', 'Sub-Total', 2040.0000, 1),
 (12, 3, 'shipping', 'Flat Shipping Rate', 5.0000, 3),
 (13, 3, 'tax', 'Eco Tax (-2.00)', 16.0000, 5),
@@ -2554,11 +2323,6 @@ INSERT INTO `oc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `va
 (18, 4, 'tax', 'Eco Tax (-2.00)', 4.0000, 5),
 (19, 4, 'tax', 'VAT (20%)', 23.0000, 5),
 (20, 4, 'total', 'Total', 142.0000, 9),
-(21, 5, 'sub_total', 'Sub-Total', 248.5000, 1),
-(22, 5, 'shipping', 'Flat Shipping Rate', 5.0000, 3),
-(23, 5, 'tax', 'Eco Tax (-2.00)', 8.0000, 5),
-(24, 5, 'tax', 'VAT (20%)', 50.7000, 5),
-(25, 5, 'total', 'Total', 312.2000, 9),
 (26, 6, 'sub_total', 'Sub-Total', 514.4000, 1),
 (27, 6, 'shipping', 'Flat Shipping Rate', 5.0000, 3),
 (28, 6, 'tax', 'Eco Tax (-2.00)', 12.0000, 5),
@@ -2599,6 +2363,47 @@ CREATE TABLE `oc_order_voucher` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `oc_paypal_order`
+--
+
+CREATE TABLE `oc_paypal_order` (
+`paypal_order_id` int(11) NOT NULL,
+  `order_id` int(11) NOT NULL,
+  `date_added` datetime NOT NULL,
+  `date_modified` datetime NOT NULL,
+  `capture_status` enum('Complete','NotComplete') DEFAULT NULL,
+  `currency_code` char(3) NOT NULL,
+  `authorization_id` varchar(30) NOT NULL,
+  `total` decimal(10,2) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_paypal_order_transaction`
+--
+
+CREATE TABLE `oc_paypal_order_transaction` (
+`paypal_order_transaction_id` int(11) NOT NULL,
+  `paypal_order_id` int(11) NOT NULL,
+  `transaction_id` char(20) NOT NULL,
+  `parent_transaction_id` char(20) NOT NULL,
+  `date_added` datetime NOT NULL,
+  `note` varchar(255) NOT NULL,
+  `msgsubid` char(38) NOT NULL,
+  `receipt_id` char(20) NOT NULL,
+  `payment_type` enum('none','echeck','instant','refund','void') DEFAULT NULL,
+  `payment_status` char(20) NOT NULL,
+  `pending_reason` char(50) NOT NULL,
+  `transaction_entity` char(50) NOT NULL,
+  `amount` decimal(10,2) NOT NULL,
+  `debug_data` text NOT NULL,
+  `call_data` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `oc_product`
 --
 
@@ -2634,32 +2439,14 @@ CREATE TABLE `oc_product` (
   `viewed` int(5) NOT NULL DEFAULT '0',
   `date_added` datetime NOT NULL,
   `date_modified` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_product`
 --
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
-(28, 'Product 1', '', '', '', '', '', '', '', 939, 7, 'catalog/Travel-Commuter-Mug1.png', 5, 1, 49.5000, 200, 9, '2009-02-03', 146.40000000, 2, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, 0, '2009-02-03 16:06:50', '2015-01-28 15:34:01'),
-(29, 'Product 2', '', '', '', '', '', '', '', 999, 6, 'catalog/T-Shirt-Printing1.png', 6, 1, 49.5000, 0, 9, '2009-02-03', 133.00000000, 2, 0.00000000, 0.00000000, 0.00000000, 3, 1, 1, 0, 1, 0, '2009-02-03 16:42:17', '2015-01-28 15:35:04'),
-(30, 'Product 3', '', '', '', '', '', '', '', 60000, 6, 'catalog/Printed-corrugated-box1.png', 9, 1, 159.5000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, 0, '2009-02-03 16:59:00', '2015-01-26 15:58:08'),
-(31, 'Product 4', '', '', '', '', '', '', '', 1000, 6, 'catalog/Sport-Tote-Bag1.png', 0, 1, 80.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 3, 1, 1, 0, 1, 0, '2009-02-03 17:00:10', '2015-01-26 17:11:01'),
-(32, 'Product 5', '', '', '', '', '', '', '', 999, 6, 'catalog/Jeremy-T-Shirt1.png', 8, 1, 100.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, 0, '2009-02-03 17:07:26', '2015-01-26 17:08:03'),
-(33, 'Product 6', '', '', '', '', '', '', '', 1000, 6, 'catalog/Chevrons-envelopes1.png', 10, 1, 999.5000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 0, '2009-02-03 17:08:31', '2015-01-26 15:59:04'),
-(34, 'Product 7', '', '', '', '', '', '', '', 1000, 6, 'catalog/Coolhead-T-Shirt1.png', 8, 1, 100.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 0, '2009-02-03 18:07:54', '2015-01-28 15:39:08'),
-(35, 'Product 8', '', '', '', '', '', '', '', 1000, 5, 'catalog/Budget-Tote1.png', 5, 0, 100.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, 0, '2009-02-03 18:08:31', '2015-01-26 17:06:41'),
-(36, 'Product 9', '', '', '', '', '', '', '', 994, 6, 'catalog/Trucker-Hat1.png', 8, 0, 100.0000, 100, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 0, '2009-02-03 18:09:19', '2015-01-26 17:11:35'),
-(40, 'product 11', '', '', '', '', '', '', '', 970, 5, 'catalog/Tie-Dye-Laptop1.png', 8, 1, 999.5000, 0, 9, '2009-02-03', 10.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, 0, '2009-02-03 21:07:12', '2015-01-28 15:36:30'),
-(41, 'Product 14', '', '', '', '', '', '', '', 977, 5, 'catalog/Luxury-Slim-Cheap1.png', 8, 1, 100.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, 0, '2009-02-03 21:07:26', '2015-01-26 17:08:28'),
-(42, 'Product 15', '', '', '', '', '', '', '', 990, 5, 'catalog/Drawstring-Backpack1.png', 8, 1, 49.5000, 400, 9, '2009-02-04', 12.50000000, 1, 1.00000000, 2.00000000, 3.00000000, 1, 1, 2, 0, 1, 0, '2009-02-03 21:07:37', '2015-01-26 15:58:39'),
-(43, 'Product 16', '', '', '', '', '', '', '', 929, 5, 'catalog/Cover-for-iPhone1.png', 8, 0, 49.5000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 1, '2009-02-03 21:07:49', '2015-01-27 12:01:43'),
-(44, 'Product 17', '', '', '', '', '', '', '', 1000, 5, 'catalog/Magnetic-mini-Retina1.png', 8, 1, 95.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:00', '2015-01-26 17:13:52'),
-(45, 'Product 18', '', '', '', '', '', '', '', 998, 5, 'catalog/Non-woven-Bag1.png', 8, 1, 200.0000, 0, 0, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:17', '2015-01-26 17:09:22'),
-(46, 'Product 19', '', '', '', '', '', '', '', 1000, 5, 'catalog/Tone-Cap1.png', 10, 1, 159.5000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:29', '2015-01-26 15:59:33'),
-(47, 'Product 21', '', '', '', '', '', '', '', 1000, 5, 'catalog/Otterbox-Defender1.png', 7, 1, 100.0000, 400, 9, '2009-02-03', 1.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 0, 1, 0, 1, 0, '2009-02-03 21:08:40', '2015-01-26 17:09:51'),
-(48, 'product 20', 'test 1', '', '', '', '', '', 'test 2', 995, 5, 'catalog/Chic-lady-for-iPads1.png', 8, 1, 100.0000, 0, 9, '2009-02-08', 1.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 0, '2009-02-08 17:21:51', '2015-01-28 15:37:58'),
-(49, 'Product 2', '', '', '', '', '', '', '', 80000, 8, 'catalog/Reflect-Cap1.png', 0, 1, 199.9900, 0, 9, '2011-04-25', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 1, 1, 0, '2011-04-26 08:57:34', '2015-01-26 17:10:24');
+(50, 'Dólar da Sorte', '', '', '', '', '', '', '', 1000, 6, 'catalog/dolardasorte/dolardasorte_logo_center.png', 0, 1, 19.9000, 0, 0, '2015-06-07', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 0, 1, 1, 1, 27, '2015-06-07 18:43:44', '2015-06-07 19:10:43');
 
 -- --------------------------------------------------------
 
@@ -2673,231 +2460,6 @@ CREATE TABLE `oc_product_attribute` (
   `language_id` int(11) NOT NULL,
   `text` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_attribute`
---
-
-INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`, `text`) VALUES
-(43, 2, 2, '1'),
-(43, 2, 3, '1'),
-(42, 8, 2, '128'),
-(47, 7, 2, '32'),
-(43, 4, 1, '8'),
-(47, 7, 3, '32'),
-(43, 2, 1, '1'),
-(47, 8, 1, '64'),
-(43, 4, 2, '8'),
-(47, 7, 1, '32'),
-(33, 9, 2, '600'),
-(35, 5, 3, 'Lorem ipsum'),
-(35, 7, 1, ' Etiam eu volutpat'),
-(33, 9, 1, '600'),
-(33, 8, 3, '800'),
-(28, 9, 2, '700'),
-(28, 9, 1, '700'),
-(28, 8, 3, '900'),
-(47, 8, 2, '64'),
-(44, 7, 3, '32'),
-(44, 7, 2, '32'),
-(41, 8, 2, '128'),
-(42, 8, 3, '128'),
-(49, 7, 3, '64'),
-(32, 8, 1, '128'),
-(29, 7, 3, '64'),
-(29, 7, 2, '64'),
-(45, 8, 1, '128'),
-(48, 8, 2, '128'),
-(34, 8, 2, '128'),
-(43, 4, 3, '8'),
-(31, 7, 3, '64'),
-(46, 7, 3, '64'),
-(46, 7, 2, '64'),
-(40, 8, 2, '128'),
-(36, 8, 1, '128'),
-(32, 7, 3, '64'),
-(35, 7, 2, ' Etiam eu volutpat'),
-(33, 9, 3, '600'),
-(28, 9, 3, '700'),
-(47, 5, 3, '4'),
-(42, 8, 1, '128'),
-(49, 7, 2, '64'),
-(36, 8, 2, '128'),
-(42, 9, 1, '32'),
-(33, 8, 2, '800'),
-(28, 8, 2, '900'),
-(47, 8, 3, '64'),
-(30, 8, 1, '128'),
-(44, 8, 1, '128'),
-(41, 8, 1, '128'),
-(29, 8, 1, '128'),
-(45, 8, 2, '128'),
-(48, 8, 1, '128'),
-(34, 8, 1, '128'),
-(31, 8, 1, '128'),
-(46, 8, 1, '128'),
-(40, 8, 1, '128'),
-(36, 7, 3, '64'),
-(47, 5, 2, '4'),
-(30, 8, 2, '128'),
-(42, 7, 3, '64'),
-(35, 5, 2, 'Lorem ipsum'),
-(47, 9, 1, '16'),
-(44, 7, 1, '32'),
-(41, 8, 3, '128'),
-(49, 8, 1, '128'),
-(32, 8, 2, '128'),
-(29, 7, 1, '64'),
-(45, 7, 3, '64'),
-(48, 8, 3, '128'),
-(34, 8, 3, '128'),
-(31, 7, 2, '64'),
-(46, 7, 1, '64'),
-(40, 8, 3, '128'),
-(49, 7, 1, '64'),
-(35, 7, 3, ' Etiam eu volutpat'),
-(35, 9, 1, 'Dolore sit amet'),
-(33, 8, 1, '800'),
-(33, 7, 3, '700'),
-(28, 8, 1, '900'),
-(28, 7, 3, '800'),
-(47, 5, 1, '4'),
-(30, 7, 3, '64'),
-(30, 7, 2, '64'),
-(44, 8, 2, '128'),
-(41, 7, 3, '64'),
-(41, 7, 2, '64'),
-(42, 7, 2, '64'),
-(49, 8, 2, '128'),
-(49, 8, 3, '128'),
-(32, 7, 2, '64'),
-(29, 8, 2, '128'),
-(45, 7, 2, '64'),
-(45, 7, 1, '64'),
-(48, 7, 3, '64'),
-(48, 7, 2, '64'),
-(34, 7, 3, '64'),
-(34, 7, 2, '64'),
-(31, 8, 2, '128'),
-(46, 8, 2, '128'),
-(40, 7, 3, '64'),
-(40, 7, 2, '64'),
-(36, 7, 2, '64'),
-(35, 5, 1, 'Lorem ipsum'),
-(47, 9, 2, '16'),
-(30, 8, 3, '128'),
-(30, 11, 1, '32'),
-(44, 5, 3, '64'),
-(44, 5, 2, '64'),
-(41, 9, 1, '32'),
-(41, 9, 2, '32'),
-(42, 9, 2, '32'),
-(49, 5, 3, '16'),
-(32, 8, 3, '128'),
-(32, 9, 1, '32'),
-(29, 5, 3, '16'),
-(29, 5, 2, '16'),
-(45, 8, 3, '128'),
-(45, 9, 1, '32'),
-(48, 9, 1, '32'),
-(48, 9, 2, '32'),
-(34, 9, 1, '32'),
-(34, 9, 2, '32'),
-(31, 7, 1, '64'),
-(31, 5, 3, '16'),
-(31, 5, 2, '16'),
-(31, 5, 1, '16'),
-(46, 5, 3, '16'),
-(46, 5, 2, '16'),
-(40, 9, 1, '32'),
-(40, 9, 2, '32'),
-(36, 7, 1, '64'),
-(36, 5, 3, '16'),
-(36, 5, 2, '16'),
-(36, 5, 1, '16'),
-(30, 7, 1, '64'),
-(30, 5, 3, '16'),
-(42, 7, 1, '64'),
-(33, 7, 2, '700'),
-(33, 7, 1, '700'),
-(33, 5, 3, '500'),
-(28, 7, 2, '800'),
-(28, 7, 1, '800'),
-(28, 5, 3, '600'),
-(44, 8, 3, '128'),
-(44, 9, 1, '16'),
-(41, 7, 1, '64'),
-(41, 5, 3, '16'),
-(41, 5, 2, '16'),
-(41, 5, 1, '16'),
-(49, 9, 1, '32'),
-(32, 7, 1, '64'),
-(32, 5, 3, '16'),
-(32, 5, 2, '16'),
-(32, 5, 1, '16'),
-(29, 8, 3, '128'),
-(29, 9, 1, '32'),
-(45, 5, 3, '16'),
-(45, 5, 2, '16'),
-(45, 5, 1, '16'),
-(40, 7, 1, '64'),
-(40, 5, 3, '16'),
-(30, 11, 2, '32'),
-(42, 9, 3, '32'),
-(46, 8, 3, '128'),
-(46, 9, 1, '32'),
-(49, 5, 2, '16'),
-(49, 5, 1, '16'),
-(40, 9, 3, '32'),
-(30, 5, 2, '16'),
-(30, 5, 1, '16'),
-(42, 5, 3, '16'),
-(42, 5, 2, '16'),
-(42, 5, 1, '16'),
-(33, 5, 2, '500'),
-(33, 5, 1, '500'),
-(46, 5, 1, '16'),
-(29, 5, 1, '16'),
-(40, 5, 2, '16'),
-(40, 5, 1, '16'),
-(30, 11, 3, '32'),
-(46, 9, 2, '32'),
-(46, 9, 3, '32'),
-(28, 5, 2, '600'),
-(29, 9, 2, '32'),
-(28, 5, 1, '500'),
-(35, 9, 2, 'Dolore sit amet'),
-(35, 9, 3, 'Dolore sit amet'),
-(48, 7, 1, '64'),
-(48, 5, 3, '16'),
-(48, 5, 2, '16'),
-(48, 5, 1, '16'),
-(34, 7, 1, '64'),
-(34, 5, 3, '16'),
-(34, 5, 2, '16'),
-(34, 5, 1, '16'),
-(32, 9, 2, '32'),
-(32, 9, 3, '32'),
-(41, 9, 3, '32'),
-(44, 5, 1, '64'),
-(45, 9, 2, '32'),
-(45, 9, 3, '32'),
-(47, 9, 3, '16'),
-(49, 9, 2, '32'),
-(49, 9, 3, '32'),
-(31, 8, 3, '128'),
-(31, 9, 1, '32'),
-(31, 9, 2, '32'),
-(31, 9, 3, '32'),
-(36, 8, 3, '128'),
-(36, 11, 1, '32'),
-(36, 11, 2, '32'),
-(36, 11, 3, '32'),
-(44, 9, 2, '16'),
-(44, 9, 3, '16'),
-(29, 9, 3, '32'),
-(48, 9, 3, '32'),
-(34, 9, 3, '32');
 
 -- --------------------------------------------------------
 
@@ -2921,64 +2483,7 @@ CREATE TABLE `oc_product_description` (
 --
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(48, 1, 'Praesent imperdiet', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Praesent imperdiet', '', ''),
-(40, 2, 'Nulla faci', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Nulla faci', '', ''),
-(35, 3, 'Aenean viverra', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean viverra', '', ''),
-(46, 2, 'Aenean nec eros', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean nec eros', '', ''),
-(32, 1, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(32, 2, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(33, 2, 'Nulla faci', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Nulla faci', '', ''),
-(34, 1, 'Praesent sodales', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Praesent sodales', '', ''),
-(33, 1, 'Nulla faci', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Nulla faci', '', ''),
-(46, 3, 'Aenean nec eros', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean nec eros', '', ''),
-(48, 2, 'Praesent imperdiet', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Praesent imperdiet', '', ''),
-(41, 2, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(45, 3, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(29, 3, 'Nulla faci', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Nulla faci', '', ''),
-(36, 2, 'Vestibulum id tin', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Vestibulum id tin', '', ''),
-(34, 2, 'Praesent sodales', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Praesent sodales', '', ''),
-(43, 2, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(35, 1, 'Aenean viverra', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean viverra', '', ''),
-(35, 2, 'Aenean viverra', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean viverra', '', ''),
-(49, 2, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(44, 3, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(40, 1, 'Nulla faci', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Nulla faci', '', ''),
-(28, 2, 'Aenean nec eros', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean nec eros', '', ''),
-(29, 2, 'Nulla faci', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Nulla faci', '', ''),
-(36, 3, 'Vestibulum id tin', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Vestibulum id tin', '', ''),
-(47, 3, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(43, 3, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(31, 2, 'Sed vitae enim', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed vitae enim', '', ''),
-(31, 3, 'Sed vitae enim', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed vitae enim', '', ''),
-(49, 1, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(42, 2, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(42, 3, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(47, 2, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(44, 2, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(30, 2, 'Aenean nec eros', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean nec eros', '', ''),
-(33, 3, 'Nulla faci', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Nulla faci', '', ''),
-(28, 3, 'Aenean nec eros', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean nec eros', '', ''),
-(47, 1, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(30, 3, 'Aenean nec eros', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean nec eros', '', ''),
-(44, 1, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(41, 3, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(32, 3, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(29, 1, 'Nulla faci', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Nulla faci', '', '');
-INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(45, 2, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(48, 3, 'Praesent imperdiet', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Praesent imperdiet', '', ''),
-(34, 3, 'Praesent sodales', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Praesent sodales', '', ''),
-(43, 1, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(31, 1, 'Sed vitae enim', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed vitae enim', '', ''),
-(46, 1, 'Aenean nec eros', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean nec eros', '', ''),
-(40, 3, 'Nulla faci', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Nulla faci', '', ''),
-(30, 1, 'Aenean nec eros', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean nec eros', '', ''),
-(49, 3, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(45, 1, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(36, 1, 'Vestibulum id tin', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Vestibulum id tin', '', ''),
-(42, 1, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', ''),
-(28, 1, 'Aenean nec eros', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Aenean nec eros', '', ''),
-(41, 1, 'Sed ut perspi', '&lt;iframe src=&quot;//www.youtube.com/embed/SYcAfW3oKoU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; allowfullscreen=&quot;&quot; frameborder=&quot;0&quot; height=&quot;315&quot; width=&quot;560&quot;&gt;&lt;/iframe&gt;\r\n&lt;p&gt;We are proud to provide you with the widest selection, easiest ordering and best prices on the web! We have many devoted customers all over the country and our products are real bestsellers. Our store is the entrance into the world of bright colors, original shapes and the endless games of lights and shades. &lt;/p&gt;&lt;p&gt;The products of our store have a great number of different advantages. You will be surprised by the reliability of our commodities and the highest level of our serving. Also our goods are very flexible and durable. We can satisfy any whim of our customers. &lt;/p&gt;&lt;p&gt;Besides don’t forget that our &lt;b&gt;24/7&lt;/b&gt; support system will help you solve your problems anytime. Our delivery and shipping system is always ready to comply with your order. We care about our clients and never let them down.&lt;/p&gt;', '', 'Sed ut perspi', '', '');
+(50, 4, 'Dólar da Sorte', '&lt;p&gt;texto&amp;nbsp;Dólar da Sorte&lt;/p&gt;', '', 'Dólar da Sorte', '', '');
 
 -- --------------------------------------------------------
 
@@ -2996,15 +2501,6 @@ CREATE TABLE `oc_product_discount` (
   `date_start` date NOT NULL DEFAULT '0000-00-00',
   `date_end` date NOT NULL DEFAULT '0000-00-00'
 ) ENGINE=MyISAM AUTO_INCREMENT=495 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_discount`
---
-
-INSERT INTO `oc_product_discount` (`product_discount_id`, `product_id`, `customer_group_id`, `quantity`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(494, 42, 1, 30, 1, 66.0000, '0000-00-00', '0000-00-00'),
-(493, 42, 1, 20, 1, 77.0000, '0000-00-00', '0000-00-00'),
-(492, 42, 1, 10, 1, 88.0000, '0000-00-00', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -3030,55 +2526,6 @@ CREATE TABLE `oc_product_image` (
   `sort_order` int(3) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM AUTO_INCREMENT=3276 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_product_image`
---
-
-INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort_order`) VALUES
-(3213, 30, 'catalog/Printed-corrugated-box2.png', 1),
-(3256, 36, 'catalog/Trucker-Hat3.png', 2),
-(3275, 34, 'catalog/Coolhead-T-Shirt3.png', 2),
-(3262, 43, 'catalog/Cover-for-iPhone5.png', 4),
-(3257, 44, 'catalog/Magnetic-mini-Retina2.png', 1),
-(3248, 45, 'catalog/Non-woven-Bag3.png', 2),
-(3254, 31, 'catalog/Sport-Tote-Bag3.png', 2),
-(3220, 46, 'catalog/Tone-Cap3.png', 2),
-(3272, 48, 'catalog/Chic-lady-for-iPads2.png', 1),
-(3271, 40, 'catalog/Tie-Dye-Laptop3.png', 2),
-(3250, 47, 'catalog/Otterbox-Defender3.png', 2),
-(3266, 28, 'catalog/Travel-Commuter-Mug3.png', 2),
-(3244, 41, 'catalog/Luxury-Slim-Cheap3.png', 2),
-(3270, 40, 'catalog/Tie-Dye-Laptop2.png', 1),
-(3255, 36, 'catalog/Trucker-Hat2.png', 1),
-(3274, 34, 'catalog/Coolhead-T-Shirt2.png', 1),
-(3242, 32, 'catalog/Jeremy-T-Shirt3.png', 2),
-(3261, 43, 'catalog/Cover-for-iPhone4.png', 3),
-(3247, 45, 'catalog/Non-woven-Bag2.png', 1),
-(3253, 31, 'catalog/Sport-Tote-Bag2.png', 1),
-(3219, 46, 'catalog/Tone-Cap2.png', 1),
-(3263, 43, 'catalog/Cover-for-iPhone6.png', 5),
-(3252, 49, 'catalog/Reflect-Cap3.png', 2),
-(3251, 49, 'catalog/Reflect-Cap2.png', 1),
-(3273, 48, 'catalog/Chic-lady-for-iPads3.png', 2),
-(3267, 29, '', 1),
-(3268, 29, 'catalog/T-Shirt-Printing2.png', 2),
-(3216, 42, 'catalog/Drawstring-Backpack3.png', 2),
-(3249, 47, 'catalog/Otterbox-Defender2.png', 1),
-(3265, 28, 'catalog/Travel-Commuter-Mug2.png', 1),
-(3243, 41, 'catalog/Luxury-Slim-Cheap2.png', 1),
-(3269, 29, 'catalog/T-Shirt-Printing3.png', 3),
-(3236, 35, 'catalog/Budget-Tote3.png', 0),
-(3235, 35, 'catalog/Budget-Tote2.png', 0),
-(3218, 33, 'catalog/Chevrons-envelopes3.png', 2),
-(3217, 33, 'catalog/Chevrons-envelopes2.png', 1),
-(3215, 42, 'catalog/Drawstring-Backpack2.png', 1),
-(3241, 32, 'catalog/Jeremy-T-Shirt2.png', 1),
-(3260, 43, 'catalog/Cover-for-iPhone3.png', 2),
-(3259, 43, 'catalog/Cover-for-iPhone2.png', 1),
-(3214, 30, 'catalog/Printed-corrugated-box3.png', 2),
-(3258, 44, 'catalog/Magnetic-mini-Retina3.png', 2),
-(3264, 43, 'catalog/Cover-for-iPhone7.png', 6);
-
 -- --------------------------------------------------------
 
 --
@@ -3092,48 +2539,6 @@ CREATE TABLE `oc_product_option` (
   `value` text NOT NULL,
   `required` tinyint(1) NOT NULL
 ) ENGINE=MyISAM AUTO_INCREMENT=267 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_option`
---
-
-INSERT INTO `oc_product_option` (`product_option_id`, `product_id`, `option_id`, `value`, `required`) VALUES
-(235, 47, 11, '', 1),
-(262, 42, 11, '', 1),
-(238, 30, 11, '', 1),
-(264, 42, 10, '2014-12-18 12:25', 1),
-(232, 33, 11, '', 1),
-(224, 35, 11, '', 1),
-(227, 35, 2, '', 1),
-(230, 35, 13, '', 1),
-(236, 47, 13, '', 1),
-(237, 30, 13, '', 1),
-(239, 44, 11, '', 1),
-(240, 41, 11, '', 1),
-(242, 49, 13, '', 1),
-(241, 49, 11, '', 1),
-(243, 32, 11, '', 1),
-(244, 32, 13, '', 1),
-(245, 29, 11, '', 1),
-(246, 29, 13, '', 1),
-(247, 45, 11, '', 0),
-(248, 45, 13, '', 1),
-(250, 48, 13, '', 1),
-(249, 48, 11, '', 1),
-(252, 34, 13, '', 1),
-(251, 34, 11, '', 1),
-(253, 43, 11, '', 1),
-(254, 43, 13, '', 1),
-(255, 31, 11, '', 1),
-(256, 31, 13, '', 1),
-(257, 46, 11, '', 1),
-(259, 40, 13, '', 1),
-(258, 40, 11, '', 1),
-(260, 36, 11, '', 1),
-(261, 36, 13, '', 1),
-(266, 42, 9, '', 1),
-(263, 42, 13, '', 1),
-(265, 42, 12, '2014-12-18', 1);
 
 -- --------------------------------------------------------
 
@@ -3156,111 +2561,6 @@ CREATE TABLE `oc_product_option_value` (
   `weight` decimal(15,8) NOT NULL,
   `weight_prefix` varchar(1) NOT NULL
 ) ENGINE=MyISAM AUTO_INCREMENT=125 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_option_value`
---
-
-INSERT INTO `oc_product_option_value` (`product_option_value_id`, `product_option_id`, `product_id`, `option_id`, `option_value_id`, `quantity`, `subtract`, `price`, `price_prefix`, `points`, `points_prefix`, `weight`, `weight_prefix`) VALUES
-(120, 262, 42, 11, 47, 1500, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(121, 262, 42, 11, 46, 1500, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(12, 224, 35, 11, 46, 12, 1, 5.0000, '+', 0, '+', 0.00000000, '+'),
-(49, 238, 30, 11, 46, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(119, 262, 42, 11, 48, 1500, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(122, 263, 42, 13, 49, 1500, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(13, 224, 35, 11, 47, 10, 1, 10.0000, '+', 0, '+', 0.00000000, '+'),
-(14, 224, 35, 11, 48, 15, 1, 15.0000, '+', 0, '+', 0.00000000, '+'),
-(18, 227, 35, 2, 24, 12, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(19, 227, 35, 2, 44, 12, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(25, 230, 35, 13, 50, 122, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(17, 227, 35, 2, 23, 12, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(68, 245, 29, 11, 47, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(31, 232, 33, 11, 46, 155, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(30, 232, 33, 11, 47, 155, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(29, 232, 33, 11, 48, 155, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(38, 235, 47, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(39, 235, 47, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(40, 235, 47, 11, 46, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(41, 236, 47, 13, 49, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(42, 236, 47, 13, 51, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(43, 236, 47, 13, 50, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(48, 238, 30, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(47, 238, 30, 11, 48, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(46, 237, 30, 13, 50, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(45, 237, 30, 13, 51, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(44, 237, 30, 13, 49, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(50, 239, 44, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(51, 239, 44, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(52, 239, 44, 11, 46, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(55, 240, 41, 11, 46, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(54, 240, 41, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(53, 240, 41, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(124, 263, 42, 13, 50, 1500, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(123, 263, 42, 13, 51, 1500, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(61, 242, 49, 13, 50, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(60, 242, 49, 13, 51, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(59, 242, 49, 13, 49, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(58, 241, 49, 11, 48, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(57, 241, 49, 11, 48, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(56, 241, 49, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(62, 243, 32, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(63, 243, 32, 11, 48, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(64, 243, 32, 11, 48, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(65, 244, 32, 13, 49, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(66, 244, 32, 13, 51, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(67, 244, 32, 13, 50, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(69, 245, 29, 11, 46, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(70, 245, 29, 11, 48, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(74, 247, 45, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(75, 247, 45, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(76, 247, 45, 11, 46, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(77, 248, 45, 13, 49, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(78, 248, 45, 13, 51, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(79, 248, 45, 13, 50, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(85, 250, 48, 13, 50, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(84, 250, 48, 13, 51, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(83, 250, 48, 13, 49, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(82, 249, 48, 11, 46, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(81, 249, 48, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(80, 249, 48, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(91, 252, 34, 13, 50, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(90, 252, 34, 13, 51, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(89, 252, 34, 13, 49, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(88, 251, 34, 11, 46, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(87, 251, 34, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(86, 251, 34, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(92, 253, 43, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(93, 253, 43, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(94, 253, 43, 11, 46, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(95, 254, 43, 13, 49, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(96, 254, 43, 13, 51, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(97, 254, 43, 13, 50, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(98, 255, 31, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(99, 255, 31, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(100, 255, 31, 11, 46, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(101, 256, 31, 13, 49, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(102, 256, 31, 13, 51, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(103, 256, 31, 13, 50, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(104, 257, 46, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(105, 257, 46, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(106, 257, 46, 11, 46, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(112, 259, 40, 13, 50, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(111, 259, 40, 13, 51, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(110, 259, 40, 13, 49, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(109, 258, 40, 11, 46, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(108, 258, 40, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(107, 258, 40, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(113, 260, 36, 11, 48, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(114, 260, 36, 11, 47, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(115, 260, 36, 11, 46, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(116, 261, 36, 13, 49, 1000, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(117, 261, 36, 13, 51, 1000, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(118, 261, 36, 13, 50, 1000, 1, 20.0000, '+', 20, '+', 20.00000000, '+'),
-(24, 230, 35, 13, 51, 122, 1, 15.0000, '+', 15, '+', 15.00000000, '+'),
-(71, 246, 29, 13, 49, 1000, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
-(23, 230, 35, 13, 49, 122, 1, 10.0000, '+', 10, '+', 10.00000000, '+'),
-(72, 246, 29, 13, 51, 1000, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
-(73, 246, 29, 13, 50, 1000, 1, 0.0000, '+', 0, '+', 0.00000000, '+');
 
 -- --------------------------------------------------------
 
@@ -3285,216 +2585,6 @@ CREATE TABLE `oc_product_related` (
   `related_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_product_related`
---
-
-INSERT INTO `oc_product_related` (`product_id`, `related_id`) VALUES
-(28, 28),
-(28, 29),
-(28, 30),
-(28, 31),
-(28, 32),
-(28, 33),
-(28, 34),
-(28, 35),
-(28, 36),
-(28, 40),
-(28, 41),
-(28, 42),
-(28, 43),
-(28, 44),
-(28, 45),
-(28, 46),
-(28, 47),
-(28, 48),
-(28, 49),
-(29, 28),
-(29, 30),
-(29, 33),
-(29, 35),
-(29, 41),
-(29, 42),
-(29, 47),
-(30, 28),
-(30, 29),
-(30, 30),
-(30, 31),
-(30, 32),
-(30, 33),
-(30, 34),
-(30, 35),
-(30, 36),
-(30, 40),
-(30, 41),
-(30, 43),
-(30, 44),
-(30, 45),
-(30, 46),
-(30, 47),
-(30, 48),
-(30, 49),
-(31, 28),
-(31, 30),
-(31, 33),
-(31, 35),
-(31, 47),
-(32, 28),
-(32, 30),
-(32, 33),
-(32, 35),
-(32, 41),
-(32, 42),
-(32, 47),
-(33, 28),
-(33, 29),
-(33, 30),
-(33, 31),
-(33, 32),
-(33, 33),
-(33, 34),
-(33, 35),
-(33, 36),
-(33, 40),
-(33, 41),
-(33, 42),
-(33, 43),
-(33, 44),
-(33, 45),
-(33, 46),
-(33, 47),
-(33, 48),
-(33, 49),
-(34, 28),
-(34, 30),
-(34, 33),
-(34, 35),
-(34, 41),
-(34, 42),
-(34, 47),
-(35, 28),
-(35, 29),
-(35, 30),
-(35, 31),
-(35, 32),
-(35, 33),
-(35, 34),
-(35, 35),
-(35, 36),
-(35, 40),
-(35, 41),
-(35, 42),
-(35, 43),
-(35, 44),
-(35, 45),
-(35, 46),
-(35, 47),
-(35, 48),
-(35, 49),
-(36, 28),
-(36, 30),
-(36, 33),
-(36, 35),
-(36, 41),
-(36, 42),
-(36, 47),
-(40, 28),
-(40, 30),
-(40, 33),
-(40, 35),
-(40, 41),
-(40, 42),
-(40, 47),
-(41, 28),
-(41, 29),
-(41, 30),
-(41, 32),
-(41, 33),
-(41, 34),
-(41, 35),
-(41, 36),
-(41, 40),
-(41, 41),
-(41, 42),
-(41, 45),
-(41, 46),
-(41, 47),
-(41, 48),
-(41, 49),
-(42, 28),
-(42, 29),
-(42, 32),
-(42, 33),
-(42, 34),
-(42, 35),
-(42, 36),
-(42, 40),
-(42, 41),
-(42, 44),
-(42, 45),
-(42, 46),
-(42, 47),
-(42, 48),
-(42, 49),
-(43, 28),
-(43, 30),
-(43, 33),
-(43, 35),
-(43, 47),
-(44, 28),
-(44, 30),
-(44, 33),
-(44, 35),
-(44, 42),
-(44, 47),
-(45, 28),
-(45, 30),
-(45, 33),
-(45, 35),
-(45, 41),
-(45, 42),
-(45, 47),
-(46, 28),
-(46, 30),
-(46, 33),
-(46, 35),
-(46, 41),
-(46, 42),
-(46, 47),
-(47, 28),
-(47, 29),
-(47, 30),
-(47, 31),
-(47, 32),
-(47, 33),
-(47, 34),
-(47, 35),
-(47, 36),
-(47, 40),
-(47, 41),
-(47, 42),
-(47, 43),
-(47, 44),
-(47, 45),
-(47, 46),
-(47, 47),
-(47, 48),
-(47, 49),
-(48, 28),
-(48, 30),
-(48, 33),
-(48, 35),
-(48, 41),
-(48, 42),
-(48, 47),
-(49, 28),
-(49, 30),
-(49, 33),
-(49, 35),
-(49, 41),
-(49, 42),
-(49, 47);
-
 -- --------------------------------------------------------
 
 --
@@ -3506,32 +2596,14 @@ CREATE TABLE `oc_product_reward` (
   `product_id` int(11) NOT NULL DEFAULT '0',
   `customer_group_id` int(11) NOT NULL DEFAULT '0',
   `points` int(8) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=788 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=790 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_product_reward`
 --
 
 INSERT INTO `oc_product_reward` (`product_reward_id`, `product_id`, `customer_group_id`, `points`) VALUES
-(762, 42, 1, 100),
-(777, 47, 1, 300),
-(783, 28, 1, 400),
-(782, 43, 1, 600),
-(784, 29, 1, 0),
-(786, 48, 1, 0),
-(785, 40, 1, 0),
-(761, 30, 1, 200),
-(781, 44, 1, 700),
-(776, 45, 1, 800),
-(779, 31, 1, 0),
-(770, 35, 1, 0),
-(763, 33, 1, 0),
-(764, 46, 1, 0),
-(774, 41, 1, 0),
-(780, 36, 1, 0),
-(787, 34, 1, 0),
-(773, 32, 1, 0),
-(778, 49, 1, 1000);
+(789, 50, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -3549,20 +2621,6 @@ CREATE TABLE `oc_product_special` (
   `date_end` date NOT NULL DEFAULT '0000-00-00'
 ) ENGINE=MyISAM AUTO_INCREMENT=568 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_product_special`
---
-
-INSERT INTO `oc_product_special` (`product_special_id`, `product_id`, `customer_group_id`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(566, 28, 1, 0, 34.9000, '0000-00-00', '0000-00-00'),
-(563, 47, 1, 0, 60.0000, '0000-00-00', '0000-00-00'),
-(565, 44, 1, 0, 80.5000, '0000-00-00', '0000-00-00'),
-(560, 41, 1, 0, 90.0000, '0000-00-00', '0000-00-00'),
-(564, 49, 1, 0, 150.0000, '0000-00-00', '0000-00-00'),
-(559, 32, 1, 0, 90.0000, '0000-00-00', '0000-00-00'),
-(567, 29, 1, 0, 34.9000, '0000-00-00', '0000-00-00'),
-(562, 45, 1, 0, 150.0000, '0000-00-00', '0000-00-00');
-
 -- --------------------------------------------------------
 
 --
@@ -3573,114 +2631,6 @@ CREATE TABLE `oc_product_to_category` (
   `product_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `oc_product_to_category`
---
-
-INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
-(28, 20),
-(28, 29),
-(28, 30),
-(28, 32),
-(28, 33),
-(28, 34),
-(28, 37),
-(28, 38),
-(28, 39),
-(28, 40),
-(28, 41),
-(28, 42),
-(28, 43),
-(28, 44),
-(29, 20),
-(29, 37),
-(29, 38),
-(29, 39),
-(29, 40),
-(29, 41),
-(29, 42),
-(29, 43),
-(29, 44),
-(30, 20),
-(30, 29),
-(30, 30),
-(30, 32),
-(30, 33),
-(30, 34),
-(30, 36),
-(31, 25),
-(31, 31),
-(31, 33),
-(32, 34),
-(33, 20),
-(33, 28),
-(34, 31),
-(34, 34),
-(34, 37),
-(34, 38),
-(34, 39),
-(34, 40),
-(34, 41),
-(34, 42),
-(34, 43),
-(34, 44),
-(35, 20),
-(36, 34),
-(40, 20),
-(40, 31),
-(40, 37),
-(40, 38),
-(40, 39),
-(40, 40),
-(40, 41),
-(40, 42),
-(40, 43),
-(40, 44),
-(42, 20),
-(42, 28),
-(42, 29),
-(42, 30),
-(42, 32),
-(42, 33),
-(42, 34),
-(43, 18),
-(43, 20),
-(43, 25),
-(44, 18),
-(44, 20),
-(44, 28),
-(44, 29),
-(44, 30),
-(44, 33),
-(44, 34),
-(44, 35),
-(44, 36),
-(45, 18),
-(46, 18),
-(46, 20),
-(46, 25),
-(46, 31),
-(47, 18),
-(47, 20),
-(47, 29),
-(47, 30),
-(47, 32),
-(47, 33),
-(47, 34),
-(47, 36),
-(48, 20),
-(48, 29),
-(48, 31),
-(48, 34),
-(48, 37),
-(48, 38),
-(48, 39),
-(48, 40),
-(48, 41),
-(48, 42),
-(48, 43),
-(48, 44);
 
 -- --------------------------------------------------------
 
@@ -3710,25 +2660,7 @@ CREATE TABLE `oc_product_to_layout` (
 --
 
 INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUES
-(42, 0, 0),
-(30, 0, 0),
-(47, 0, 0),
-(28, 0, 0),
-(41, 0, 0),
-(40, 0, 0),
-(48, 0, 0),
-(36, 0, 0),
-(34, 0, 0),
-(32, 0, 0),
-(43, 0, 0),
-(44, 0, 0),
-(45, 0, 0),
-(31, 0, 0),
-(29, 0, 0),
-(35, 0, 0),
-(49, 0, 0),
-(33, 0, 0),
-(46, 0, 0);
+(50, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3746,25 +2678,7 @@ CREATE TABLE `oc_product_to_store` (
 --
 
 INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
-(28, 0),
-(29, 0),
-(30, 0),
-(31, 0),
-(32, 0),
-(33, 0),
-(34, 0),
-(35, 0),
-(36, 0),
-(40, 0),
-(41, 0),
-(42, 0),
-(43, 0),
-(44, 0),
-(45, 0),
-(46, 0),
-(47, 0),
-(48, 0),
-(49, 0);
+(50, 0);
 
 -- --------------------------------------------------------
 
@@ -3844,15 +2758,9 @@ CREATE TABLE `oc_return_action` (
 --
 
 INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUES
-(1, 1, 'Refunded'),
-(2, 1, 'Credit Issued'),
-(3, 1, 'Replacement Sent'),
-(1, 2, 'Refunded'),
-(2, 2, 'Credit Issued'),
-(3, 2, 'Replacement Sent'),
-(1, 3, 'Refunded'),
-(2, 3, 'Credit Issued'),
-(3, 3, 'Replacement Sent');
+(1, 4, 'Refunded'),
+(2, 4, 'Credit Issued'),
+(3, 4, 'Replacement Sent');
 
 -- --------------------------------------------------------
 
@@ -3886,21 +2794,11 @@ CREATE TABLE `oc_return_reason` (
 --
 
 INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUES
-(1, 1, 'Dead On Arrival'),
-(2, 1, 'Received Wrong Item'),
-(3, 1, 'Order Error'),
-(4, 1, 'Faulty, please supply details'),
-(5, 1, 'Other, please supply details'),
-(1, 2, 'Dead On Arrival'),
-(2, 2, 'Received Wrong Item'),
-(3, 2, 'Order Error'),
-(4, 2, 'Faulty, please supply details'),
-(5, 2, 'Other, please supply details'),
-(1, 3, 'Dead On Arrival'),
-(2, 3, 'Received Wrong Item'),
-(3, 3, 'Order Error'),
-(4, 3, 'Faulty, please supply details'),
-(5, 3, 'Other, please supply details');
+(1, 4, 'Dead On Arrival'),
+(2, 4, 'Received Wrong Item'),
+(3, 4, 'Order Error'),
+(4, 4, 'Faulty, please supply details'),
+(5, 4, 'Other, please supply details');
 
 -- --------------------------------------------------------
 
@@ -3919,15 +2817,9 @@ CREATE TABLE `oc_return_status` (
 --
 
 INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUES
-(1, 1, 'Pending'),
-(3, 1, 'Complete'),
-(2, 1, 'Awaiting Products'),
-(1, 2, 'Pending'),
-(3, 2, 'Complete'),
-(2, 2, 'Awaiting Products'),
-(1, 3, 'Pending'),
-(3, 3, 'Complete'),
-(2, 3, 'Awaiting Products');
+(1, 4, 'Pending'),
+(3, 4, 'Complete'),
+(2, 4, 'Awaiting Products');
 
 -- --------------------------------------------------------
 
@@ -3960,7 +2852,7 @@ CREATE TABLE `oc_setting` (
   `key` varchar(64) NOT NULL,
   `value` text NOT NULL,
   `serialized` tinyint(1) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=4711 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5305 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_setting`
@@ -3974,21 +2866,17 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (5, 0, 'total', 'total_sort_order', '9', 0),
 (6, 0, 'total', 'total_status', '1', 0),
 (7, 0, 'tax', 'tax_sort_order', '5', 0),
-(8, 0, 'free_checkout', 'free_checkout_sort_order', '1', 0),
-(9, 0, 'cod', 'cod_sort_order', '5', 0),
-(10, 0, 'cod', 'cod_total', '0.01', 0),
-(11, 0, 'cod', 'cod_order_status_id', '1', 0),
-(12, 0, 'cod', 'cod_geo_zone_id', '0', 0),
-(13, 0, 'cod', 'cod_status', '1', 0),
+(5282, 0, 'pp_express', 'pp_express_signature', '111', 0),
+(5284, 0, 'pp_express', 'pp_express_debug', '0', 0),
+(5283, 0, 'pp_express', 'pp_express_test', '0', 0),
 (14, 0, 'shipping', 'shipping_status', '1', 0),
 (15, 0, 'shipping', 'shipping_estimator', '1', 0),
 (27, 0, 'coupon', 'coupon_sort_order', '4', 0),
 (28, 0, 'coupon', 'coupon_status', '1', 0),
-(34, 0, 'flat', 'flat_sort_order', '1', 0),
-(35, 0, 'flat', 'flat_status', '1', 0),
-(36, 0, 'flat', 'flat_geo_zone_id', '0', 0),
-(37, 0, 'flat', 'flat_tax_class_id', '9', 0),
-(41, 0, 'flat', 'flat_cost', '5.00', 0),
+(5264, 0, 'free', 'free_sort_order', '', 0),
+(5263, 0, 'free', 'free_status', '1', 0),
+(5262, 0, 'free', 'free_geo_zone_id', '0', 0),
+(5261, 0, 'free', 'free_total', '', 0),
 (42, 0, 'credit', 'credit_sort_order', '7', 0),
 (43, 0, 'credit', 'credit_status', '1', 0),
 (53, 0, 'reward', 'reward_sort_order', '2', 0),
@@ -3998,120 +2886,154 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (954, 0, 'affiliate', 'affiliate_status', '1', 0),
 (94, 0, 'voucher', 'voucher_sort_order', '8', 0),
 (95, 0, 'voucher', 'voucher_status', '1', 0),
-(103, 0, 'free_checkout', 'free_checkout_status', '1', 0),
-(104, 0, 'free_checkout', 'free_checkout_order_status_id', '1', 0),
-(4706, 0, 'config', 'config_google_analytics', '', 0),
-(4705, 0, 'config', 'config_error_filename', 'error.log', 0),
-(4704, 0, 'config', 'config_error_log', '1', 0),
-(4703, 0, 'config', 'config_error_display', '1', 0),
-(4699, 0, 'config', 'config_maintenance', '0', 0),
-(4700, 0, 'config', 'config_password', '1', 0),
-(4709, 0, 'config', 'config_encryption', '61b8eb010503a088b12fb981fb8d9af2', 0),
-(4702, 0, 'config', 'config_compression', '0', 0),
-(4697, 0, 'config', 'config_file_ext_allowed', 'txt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc\r\nrtf\r\nxls\r\nppt\r\nodt\r\nods', 0),
-(4698, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/vnd.microsoft.icon\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-rar-compressed\r\napplication/x-msdownload\r\napplication/vnd.ms-cab-compressed\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf\r\nimage/vnd.adobe.photoshop\r\napplication/postscript\r\napplication/msword\r\napplication/rtf\r\napplication/vnd.ms-excel\r\napplication/vnd.ms-powerpoint\r\napplication/vnd.oasis.opendocument.text\r\napplication/vnd.oasis.opendocument.spreadsheet', 0),
-(4695, 0, 'config', 'config_seo_url', '0', 0),
-(4696, 0, 'config', 'config_file_max_size', '300000', 0),
-(4692, 0, 'config', 'config_secure', '0', 0),
-(4693, 0, 'config', 'config_shared', '0', 0),
-(4694, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai''hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
-(4691, 0, 'config', 'config_fraud_status_id', '7', 0),
-(4690, 0, 'config', 'config_fraud_score', '', 0),
-(4689, 0, 'config', 'config_fraud_key', '', 0),
-(4688, 0, 'config', 'config_fraud_detection', '0', 0),
-(4687, 0, 'config', 'config_mail_alert', '', 0),
-(4684, 0, 'config', 'config_ftp_root', '', 0),
-(4685, 0, 'config', 'config_ftp_status', '0', 0),
-(4686, 0, 'config', 'config_mail', 'a:7:{s:8:"protocol";s:4:"mail";s:9:"parameter";s:0:"";s:13:"smtp_hostname";s:0:"";s:13:"smtp_username";s:0:"";s:13:"smtp_password";s:0:"";s:9:"smtp_port";s:0:"";s:12:"smtp_timeout";s:0:"";}', 1),
-(4683, 0, 'config', 'config_ftp_password', '', 0),
-(4682, 0, 'config', 'config_ftp_username', '', 0),
-(4681, 0, 'config', 'config_ftp_port', '21', 0),
-(4680, 0, 'config', 'config_ftp_hostname', '192.168.9.2', 0),
-(4679, 0, 'config', 'config_image_location_height', '50', 0),
-(4678, 0, 'config', 'config_image_location_width', '268', 0),
-(4677, 0, 'config', 'config_image_cart_height', '47', 0),
-(4676, 0, 'config', 'config_image_cart_width', '47', 0),
-(4675, 0, 'config', 'config_image_wishlist_height', '47', 0),
-(4674, 0, 'config', 'config_image_wishlist_width', '47', 0),
-(4673, 0, 'config', 'config_image_compare_height', '90', 0),
-(4672, 0, 'config', 'config_image_compare_width', '90', 0),
-(4671, 0, 'config', 'config_image_related_height', '221', 0),
-(4670, 0, 'config', 'config_image_related_width', '221', 0),
+(5281, 0, 'pp_express', 'pp_express_password', '111', 0),
+(5280, 0, 'pp_express', 'pp_express_username', '111', 0),
+(5249, 0, 'config', 'config_seo_url', '1', 0),
+(5250, 0, 'config', 'config_file_max_size', '300000', 0),
+(5251, 0, 'config', 'config_file_ext_allowed', 'txt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc\r\nrtf\r\nxls\r\nppt\r\nodt\r\nods', 0),
+(5253, 0, 'config', 'config_maintenance', '0', 0),
+(5254, 0, 'config', 'config_password', '1', 0),
+(5255, 0, 'config', 'config_encryption', '61b8eb010503a088b12fb981fb8d9af2', 0),
+(5256, 0, 'config', 'config_compression', '0', 0),
+(5257, 0, 'config', 'config_error_display', '1', 0),
+(5258, 0, 'config', 'config_error_log', '1', 0),
+(5259, 0, 'config', 'config_error_filename', 'error.log', 0),
+(5260, 0, 'config', 'config_google_analytics', '', 0),
+(5265, 0, 'pagseguro', 'pagseguro_token', '000', 0),
+(5245, 0, 'config', 'config_fraud_status_id', '7', 0),
+(5246, 0, 'config', 'config_secure', '0', 0),
+(5247, 0, 'config', 'config_shared', '0', 0),
+(5248, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\''hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
+(5252, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/vnd.microsoft.icon\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-rar-compressed\r\napplication/x-msdownload\r\napplication/vnd.ms-cab-compressed\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf\r\nimage/vnd.adobe.photoshop\r\napplication/postscript\r\napplication/msword\r\napplication/rtf\r\napplication/vnd.ms-excel\r\napplication/vnd.ms-powerpoint\r\napplication/vnd.oasis.opendocument.text\r\napplication/vnd.oasis.opendocument.spreadsheet', 0),
+(5238, 0, 'config', 'config_ftp_root', '', 0),
+(5239, 0, 'config', 'config_ftp_status', '0', 0),
+(5240, 0, 'config', 'config_mail', 'a:7:{s:8:"protocol";s:4:"mail";s:9:"parameter";s:0:"";s:13:"smtp_hostname";s:0:"";s:13:"smtp_username";s:0:"";s:13:"smtp_password";s:0:"";s:9:"smtp_port";s:0:"";s:12:"smtp_timeout";s:0:"";}', 1),
+(5244, 0, 'config', 'config_fraud_score', '', 0),
+(5243, 0, 'config', 'config_fraud_key', '', 0),
+(5241, 0, 'config', 'config_mail_alert', '', 0),
+(5242, 0, 'config', 'config_fraud_detection', '0', 0),
+(5237, 0, 'config', 'config_ftp_password', '', 0),
+(5236, 0, 'config', 'config_ftp_username', '', 0),
+(5235, 0, 'config', 'config_ftp_port', '21', 0),
 (839, 0, 'tm_category', 'tm_category_status', '1', 0),
-(4669, 0, 'config', 'config_image_additional_height', '88', 0),
-(4668, 0, 'config', 'config_image_additional_width', '88', 0),
-(4667, 0, 'config', 'config_image_product_height', '268', 0),
-(4666, 0, 'config', 'config_image_product_width', '268', 0),
-(4665, 0, 'config', 'config_image_popup_height', '800', 0),
-(4663, 0, 'config', 'config_image_thumb_height', '800', 0),
-(4664, 0, 'config', 'config_image_popup_width', '800', 0),
-(4662, 0, 'config', 'config_image_thumb_width', '800', 0),
-(4661, 0, 'config', 'config_image_category_height', '190', 0),
-(4660, 0, 'config', 'config_image_category_width', '190', 0),
-(4659, 0, 'config', 'config_icon', 'catalog/favicon.png', 0),
-(4658, 0, 'config', 'config_logo', 'catalog/logo.png', 0),
-(4656, 0, 'config', 'config_return_id', '0', 0),
-(4657, 0, 'config', 'config_return_status_id', '2', 0),
-(4655, 0, 'config', 'config_affiliate_mail', '0', 0),
-(4654, 0, 'config', 'config_affiliate_id', '4', 0),
-(4653, 0, 'config', 'config_affiliate_commission', '5', 0),
-(4652, 0, 'config', 'config_affiliate_auto', '0', 0),
-(4651, 0, 'config', 'config_affiliate_approval', '0', 0),
-(4650, 0, 'config', 'config_stock_checkout', '0', 0),
-(4649, 0, 'config', 'config_stock_warning', '0', 0),
-(4648, 0, 'config', 'config_stock_display', '0', 0),
-(4647, 0, 'config', 'config_order_mail', '0', 0),
-(4646, 0, 'config', 'config_complete_status', 'a:1:{i:0;s:1:"5";}', 1),
-(4644, 0, 'config', 'config_order_status_id', '1', 0),
-(4645, 0, 'config', 'config_processing_status', 'a:1:{i:0;s:1:"2";}', 1),
-(4643, 0, 'config', 'config_checkout_id', '5', 0),
-(4642, 0, 'config', 'config_checkout_guest', '1', 0),
-(4641, 0, 'config', 'config_cart_weight', '1', 0),
-(4710, 0, 'config', 'config_api_id', '6', 0),
-(4639, 0, 'config', 'config_invoice_prefix', 'INV-2013-00', 0),
-(4638, 0, 'config', 'config_account_mail', '0', 0),
-(4637, 0, 'config', 'config_account_id', '3', 0),
-(4636, 0, 'config', 'config_login_attempts', '5', 0),
-(4635, 0, 'config', 'config_customer_price', '0', 0),
-(4634, 0, 'config', 'config_customer_group_display', 'a:1:{i:0;s:1:"1";}', 1),
-(4633, 0, 'config', 'config_customer_group_id', '1', 0),
-(4632, 0, 'config', 'config_customer_online', '0', 0),
-(4631, 0, 'config', 'config_tax_customer', 'shipping', 0),
-(4630, 0, 'config', 'config_tax_default', 'shipping', 0),
-(4629, 0, 'config', 'config_tax', '0', 0),
-(4628, 0, 'config', 'config_voucher_max', '1000', 0),
-(4627, 0, 'config', 'config_voucher_min', '1', 0),
-(4626, 0, 'config', 'config_review_mail', '0', 0),
-(4625, 0, 'config', 'config_review_guest', '1', 0),
-(4624, 0, 'config', 'config_review_status', '1', 0),
-(4623, 0, 'config', 'config_limit_admin', '20', 0),
-(4622, 0, 'config', 'config_product_description_length', '267', 0),
-(4621, 0, 'config', 'config_product_limit', '6', 0),
-(4620, 0, 'config', 'config_product_count', '1', 0),
-(4619, 0, 'config', 'config_weight_class_id', '1', 0),
-(4618, 0, 'config', 'config_length_class_id', '1', 0),
-(4617, 0, 'config', 'config_currency_auto', '1', 0),
-(4616, 0, 'config', 'config_currency', 'USD', 0),
-(4615, 0, 'config', 'config_admin_language', 'en', 0),
-(4614, 0, 'config', 'config_language', 'en', 0),
-(4613, 0, 'config', 'config_zone_id', '3563', 0),
-(4612, 0, 'config', 'config_country_id', '222', 0),
-(4611, 0, 'config', 'config_layout_id', '4', 0),
-(4610, 0, 'config', 'config_template', 'theme511', 0),
-(4609, 0, 'config', 'config_meta_keyword', '', 0),
-(4608, 0, 'config', 'config_meta_description', 'PrintStore online store', 0),
-(4602, 0, 'config', 'config_telephone', '800-2345-6789', 0),
-(4607, 0, 'config', 'config_meta_title', 'PrintStore online store', 0),
-(4606, 0, 'config', 'config_comment', 'Aenean mattis efficitur metus eget ornare.', 0),
-(4604, 0, 'config', 'config_image', '', 0),
-(4605, 0, 'config', 'config_open', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 0),
-(4603, 0, 'config', 'config_fax', '800-2345-6790', 0),
-(4707, 0, 'config', 'config_email', 'fernando.mendes@webca.com.br', 0),
-(4597, 0, 'config', 'config_name', 'PrintStore online store', 0),
-(4598, 0, 'config', 'config_owner', 'PrintStore online store', 0),
-(4599, 0, 'config', 'config_address', '4578 Marmora Road,Glasgow D04 89GR', 0),
-(4600, 0, 'config', 'config_geocode', '42.3317600  -71.1211600', 0),
-(4708, 0, 'config', 'config_url', 'http://dolardasorte.homolog.lojavirtual.digital/', 0);
+(5234, 0, 'config', 'config_ftp_hostname', '192.168.9.2', 0),
+(5233, 0, 'config', 'config_image_location_height', '50', 0),
+(5232, 0, 'config', 'config_image_location_width', '268', 0),
+(5231, 0, 'config', 'config_image_cart_height', '47', 0),
+(5230, 0, 'config', 'config_image_cart_width', '47', 0),
+(5229, 0, 'config', 'config_image_wishlist_height', '47', 0),
+(5228, 0, 'config', 'config_image_wishlist_width', '47', 0),
+(5227, 0, 'config', 'config_image_compare_height', '90', 0),
+(5226, 0, 'config', 'config_image_compare_width', '90', 0),
+(5225, 0, 'config', 'config_image_related_height', '221', 0),
+(5224, 0, 'config', 'config_image_related_width', '221', 0),
+(5223, 0, 'config', 'config_image_additional_height', '88', 0),
+(5222, 0, 'config', 'config_image_additional_width', '88', 0),
+(5221, 0, 'config', 'config_image_product_height', '268', 0),
+(5220, 0, 'config', 'config_image_product_width', '268', 0),
+(5219, 0, 'config', 'config_image_popup_height', '800', 0),
+(5218, 0, 'config', 'config_image_popup_width', '800', 0),
+(5217, 0, 'config', 'config_image_thumb_height', '800', 0),
+(5216, 0, 'config', 'config_image_thumb_width', '800', 0),
+(5214, 0, 'config', 'config_image_category_width', '190', 0),
+(5215, 0, 'config', 'config_image_category_height', '190', 0),
+(5212, 0, 'config', 'config_logo', 'catalog/dolardasorte/dolardasorte_logo_center.png', 0),
+(5213, 0, 'config', 'config_icon', '', 0),
+(5211, 0, 'config', 'config_return_status_id', '2', 0),
+(5210, 0, 'config', 'config_return_id', '0', 0),
+(5209, 0, 'config', 'config_affiliate_mail', '0', 0),
+(5208, 0, 'config', 'config_affiliate_id', '4', 0),
+(5207, 0, 'config', 'config_affiliate_commission', '5', 0),
+(5203, 0, 'config', 'config_stock_warning', '0', 0),
+(5204, 0, 'config', 'config_stock_checkout', '0', 0),
+(5205, 0, 'config', 'config_affiliate_approval', '0', 0),
+(5206, 0, 'config', 'config_affiliate_auto', '0', 0),
+(5202, 0, 'config', 'config_stock_display', '0', 0),
+(5201, 0, 'config', 'config_order_mail', '0', 0),
+(5200, 0, 'config', 'config_complete_status', 'a:1:{i:0;s:1:"5";}', 1),
+(5199, 0, 'config', 'config_processing_status', 'a:1:{i:0;s:1:"2";}', 1),
+(5198, 0, 'config', 'config_order_status_id', '1', 0),
+(5197, 0, 'config', 'config_checkout_id', '5', 0),
+(5196, 0, 'config', 'config_checkout_guest', '0', 0),
+(5195, 0, 'config', 'config_cart_weight', '1', 0),
+(5194, 0, 'config', 'config_api_id', '6', 0),
+(5193, 0, 'config', 'config_invoice_prefix', 'DOLAR-0', 0),
+(5192, 0, 'config', 'config_account_mail', '0', 0),
+(5191, 0, 'config', 'config_account_id', '3', 0),
+(5190, 0, 'config', 'config_login_attempts', '5', 0),
+(5189, 0, 'config', 'config_customer_price', '0', 0),
+(5188, 0, 'config', 'config_customer_group_display', 'a:1:{i:0;s:1:"1";}', 1),
+(5186, 0, 'config', 'config_customer_online', '0', 0),
+(5187, 0, 'config', 'config_customer_group_id', '1', 0),
+(5185, 0, 'config', 'config_tax_customer', 'shipping', 0),
+(5183, 0, 'config', 'config_tax', '0', 0),
+(5184, 0, 'config', 'config_tax_default', 'shipping', 0),
+(5182, 0, 'config', 'config_voucher_max', '1000', 0),
+(5181, 0, 'config', 'config_voucher_min', '1', 0),
+(5180, 0, 'config', 'config_review_mail', '0', 0),
+(5179, 0, 'config', 'config_review_guest', '0', 0),
+(5178, 0, 'config', 'config_review_status', '0', 0),
+(5177, 0, 'config', 'config_limit_admin', '20', 0),
+(5176, 0, 'config', 'config_product_description_length', '267', 0),
+(5175, 0, 'config', 'config_product_limit', '6', 0),
+(5173, 0, 'config', 'config_weight_class_id', '1', 0),
+(5174, 0, 'config', 'config_product_count', '1', 0),
+(5172, 0, 'config', 'config_length_class_id', '1', 0),
+(5159, 0, 'config', 'config_open', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 0),
+(5160, 0, 'config', 'config_comment', 'Aenean mattis efficitur metus eget ornare.', 0),
+(5171, 0, 'config', 'config_currency_auto', '1', 0),
+(5170, 0, 'config', 'config_currency', 'BRL', 0),
+(5169, 0, 'config', 'config_admin_language', 'pt-br', 0),
+(5168, 0, 'config', 'config_language', 'pt-br', 0),
+(5167, 0, 'config', 'config_zone_id', '464', 0),
+(5166, 0, 'config', 'config_country_id', '30', 0),
+(5165, 0, 'config', 'config_layout_id', '4', 0),
+(5164, 0, 'config', 'config_template', 'theme511', 0),
+(5163, 0, 'config', 'config_meta_keyword', '', 0),
+(5162, 0, 'config', 'config_meta_description', 'Dólar da Sorte', 0),
+(5161, 0, 'config', 'config_meta_title', 'Dólar da Sorte', 0),
+(5158, 0, 'config', 'config_image', '', 0),
+(5157, 0, 'config', 'config_fax', '800-2345-6790', 0),
+(5154, 0, 'config', 'config_geocode', '42.3317600  -71.1211600', 0),
+(5155, 0, 'config', 'config_email', 'fernando.mendes@webca.com.br', 0),
+(5156, 0, 'config', 'config_telephone', '800-2345-6789', 0),
+(5153, 0, 'config', 'config_address', '4578 Marmora Road,Glasgow D04 89GR', 0),
+(5152, 0, 'config', 'config_owner', 'Dólar da Sorte', 0),
+(5151, 0, 'config', 'config_name', 'Dólar da Sorte', 0),
+(5266, 0, 'pagseguro', 'pagseguro_email', 'pagseguro@webca.com.br', 0),
+(5267, 0, 'pagseguro', 'pagseguro_total', '', 0),
+(5268, 0, 'pagseguro', 'pagseguro_posfixo', '', 0),
+(5269, 0, 'pagseguro', 'pagseguro_update_status_alert', '1', 0),
+(5270, 0, 'pagseguro', 'pagseguro_tipo_frete', '0', 0),
+(5271, 0, 'pagseguro', 'pagseguro_order_aguardando_pagamento', '17', 0),
+(5272, 0, 'pagseguro', 'pagseguro_order_analise', '18', 0),
+(5273, 0, 'pagseguro', 'pagseguro_order_paga', '19', 0),
+(5274, 0, 'pagseguro', 'pagseguro_order_disputa', '20', 0),
+(5275, 0, 'pagseguro', 'pagseguro_order_devolvida', '21', 0),
+(5276, 0, 'pagseguro', 'pagseguro_order_cancelada', '22', 0),
+(5277, 0, 'pagseguro', 'pagseguro_geo_zone_id', '0', 0),
+(5278, 0, 'pagseguro', 'pagseguro_status', '1', 0),
+(5279, 0, 'pagseguro', 'pagseguro_sort_order', '', 0),
+(5285, 0, 'pp_express', 'pp_express_currency', 'BRL', 0),
+(5286, 0, 'pp_express', 'pp_express_recurring_cancel_status', '0', 0),
+(5287, 0, 'pp_express', 'pp_express_method', 'Sale', 0),
+(5288, 0, 'pp_express', 'pp_express_total', '', 0),
+(5289, 0, 'pp_express', 'pp_express_sort_order', '', 0),
+(5290, 0, 'pp_express', 'pp_express_geo_zone_id', '0', 0),
+(5291, 0, 'pp_express', 'pp_express_status', '1', 0),
+(5292, 0, 'pp_express', 'pp_express_canceled_reversal_status_id', '17', 0),
+(5293, 0, 'pp_express', 'pp_express_completed_status_id', '17', 0),
+(5294, 0, 'pp_express', 'pp_express_denied_status_id', '17', 0),
+(5295, 0, 'pp_express', 'pp_express_expired_status_id', '17', 0),
+(5296, 0, 'pp_express', 'pp_express_failed_status_id', '17', 0),
+(5297, 0, 'pp_express', 'pp_express_pending_status_id', '17', 0),
+(5298, 0, 'pp_express', 'pp_express_processed_status_id', '17', 0),
+(5299, 0, 'pp_express', 'pp_express_refunded_status_id', '17', 0),
+(5300, 0, 'pp_express', 'pp_express_reversed_status_id', '17', 0),
+(5301, 0, 'pp_express', 'pp_express_voided_status_id', '17', 0),
+(5302, 0, 'pp_express', 'pp_express_allow_note', '0', 0),
+(5303, 0, 'pp_express', 'pp_express_page_colour', '', 0),
+(5304, 0, 'pp_express', 'pp_express_logo', '', 0);
 
 -- --------------------------------------------------------
 
@@ -4130,18 +3052,10 @@ CREATE TABLE `oc_stock_status` (
 --
 
 INSERT INTO `oc_stock_status` (`stock_status_id`, `language_id`, `name`) VALUES
-(7, 1, 'In Stock'),
-(8, 1, 'Pre-Order'),
-(5, 1, 'Out Of Stock'),
-(6, 1, '2-3 Days'),
-(7, 2, 'In Stock'),
-(8, 2, 'Pre-Order'),
-(5, 2, 'Out Of Stock'),
-(6, 2, '2-3 Days'),
-(7, 3, 'In Stock'),
-(8, 3, 'Pre-Order'),
-(5, 3, 'Out Of Stock'),
-(6, 3, '2-3 Days');
+(7, 4, 'In Stock'),
+(8, 4, 'Pre-Order'),
+(5, 4, 'Out Of Stock'),
+(6, 4, '2-3 Days');
 
 -- --------------------------------------------------------
 
@@ -4269,20 +3183,18 @@ CREATE TABLE `oc_url_alias` (
 `url_alias_id` int(11) NOT NULL,
   `query` varchar(255) NOT NULL,
   `keyword` varchar(255) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=1134 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1142 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_url_alias`
 --
 
 INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
-(1131, 'product_id=48', 'test1'),
 (1063, 'category_id=20', 'test2'),
 (834, 'category_id=26', 'test3'),
 (835, 'category_id=27', 'test4'),
 (875, 'manufacturer_id=8', 'test5'),
-(1051, 'information_id=4', 'about_us'),
-(1103, 'product_id=42', 'test6'),
+(1138, 'information_id=4', 'sobre-nos'),
 (1065, 'category_id=34', 'test7'),
 (1125, 'category_id=36', 'test8'),
 (1064, 'category_id=18', 'test9'),
@@ -4308,31 +3220,15 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (800, 'category_id=54', 'test31'),
 (801, 'category_id=55', 'test32'),
 (802, 'category_id=56', 'test33'),
-(1102, 'product_id=30', 'test40'),
-(1118, 'product_id=47', 'test41'),
-(1128, 'product_id=28', 'test42'),
-(1127, 'product_id=43', 'test43'),
-(1122, 'product_id=44', 'test44'),
-(1117, 'product_id=45', 'test45'),
-(1120, 'product_id=31', 'test46'),
-(1129, 'product_id=29', 'test47'),
-(1111, 'product_id=35', 'test48'),
-(1119, 'product_id=49', 'test49'),
-(1104, 'product_id=33', 'test50'),
-(1105, 'product_id=46', 'test51'),
-(1115, 'product_id=41', 'test52'),
-(1130, 'product_id=40', 'test53'),
-(1121, 'product_id=36', 'test54'),
-(1132, 'product_id=34', 'test55'),
-(1114, 'product_id=32', 'test56'),
+(1141, 'product_id=50', 'comprar'),
 (876, 'manufacturer_id=9', 'test57'),
 (878, 'manufacturer_id=5', 'test58'),
 (877, 'manufacturer_id=7', 'test59'),
 (879, 'manufacturer_id=6', 'test60'),
 (880, 'manufacturer_id=10', 'test61'),
-(841, 'information_id=6', 'delivery'),
-(874, 'information_id=3', 'privacy'),
-(1133, 'information_id=5', 'terms'),
+(1135, 'information_id=6', 'delivery'),
+(1137, 'information_id=3', 'privacy'),
+(1136, 'information_id=5', 'terms'),
 (845, 'common/home', ''),
 (846, 'information/contact', 'contact-us'),
 (847, 'information/sitemap', 'sitemap'),
@@ -4361,7 +3257,8 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (870, 'affiliate/forgotten', 'affiliate-forgot-password'),
 (871, 'affiliate/register', 'create-affiliate-account'),
 (872, 'affiliate/login', 'affiliate-login'),
-(873, 'affiliate/account', 'affiliates');
+(873, 'affiliate/account', 'affiliates'),
+(1139, 'information_id=12', 'duvidas');
 
 -- --------------------------------------------------------
 
@@ -4409,7 +3306,7 @@ CREATE TABLE `oc_user_group` (
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, 'Administrator', 'a:2:{s:6:"access";a:193:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:17:"catalog/recurring";i:10;s:14:"catalog/review";i:11;s:18:"common/column_left";i:12;s:18:"common/filemanager";i:13;s:11:"common/menu";i:14;s:14:"common/profile";i:15;s:12:"common/stats";i:16;s:18:"dashboard/activity";i:17;s:15:"dashboard/chart";i:18;s:18:"dashboard/customer";i:19;s:13:"dashboard/map";i:20;s:16:"dashboard/online";i:21;s:15:"dashboard/order";i:22;s:16:"dashboard/recent";i:23;s:14:"dashboard/sale";i:24;s:13:"design/banner";i:25;s:13:"design/layout";i:26;s:14:"extension/feed";i:27;s:19:"extension/installer";i:28;s:22:"extension/modification";i:29;s:16:"extension/module";i:30;s:17:"extension/openbay";i:31;s:17:"extension/payment";i:32;s:18:"extension/shipping";i:33;s:15:"extension/total";i:34;s:16:"feed/google_base";i:35;s:19:"feed/google_sitemap";i:36;s:15:"feed/openbaypro";i:37;s:20:"localisation/country";i:38;s:21:"localisation/currency";i:39;s:21:"localisation/geo_zone";i:40;s:21:"localisation/language";i:41;s:25:"localisation/length_class";i:42;s:21:"localisation/location";i:43;s:25:"localisation/order_status";i:44;s:26:"localisation/return_action";i:45;s:26:"localisation/return_reason";i:46;s:26:"localisation/return_status";i:47;s:25:"localisation/stock_status";i:48;s:22:"localisation/tax_class";i:49;s:21:"localisation/tax_rate";i:50;s:25:"localisation/weight_class";i:51;s:17:"localisation/zone";i:52;s:19:"marketing/affiliate";i:53;s:17:"marketing/contact";i:54;s:16:"marketing/coupon";i:55;s:19:"marketing/marketing";i:56;s:14:"module/account";i:57;s:16:"module/affiliate";i:58;s:20:"module/amazon_button";i:59;s:13:"module/banner";i:60;s:17:"module/bestseller";i:61;s:15:"module/carousel";i:62;s:15:"module/category";i:63;s:11:"module/ebay";i:64;s:15:"module/featured";i:65;s:13:"module/filter";i:66;s:22:"module/google_hangouts";i:67;s:11:"module/html";i:68;s:18:"module/information";i:69;s:13:"module/latest";i:70;s:16:"module/pp_button";i:71;s:15:"module/pp_login";i:72;s:16:"module/slideshow";i:73;s:14:"module/special";i:74;s:12:"module/store";i:75;s:14:"openbay/amazon";i:76;s:22:"openbay/amazon_listing";i:77;s:22:"openbay/amazon_product";i:78;s:16:"openbay/amazonus";i:79;s:24:"openbay/amazonus_listing";i:80;s:24:"openbay/amazonus_product";i:81;s:12:"openbay/ebay";i:82;s:20:"openbay/ebay_profile";i:83;s:21:"openbay/ebay_template";i:84;s:12:"openbay/etsy";i:85;s:20:"openbay/etsy_product";i:86;s:21:"openbay/etsy_shipping";i:87;s:17:"openbay/etsy_shop";i:88;s:23:"payment/amazon_checkout";i:89;s:24:"payment/authorizenet_aim";i:90;s:24:"payment/authorizenet_sim";i:91;s:21:"payment/bank_transfer";i:92;s:22:"payment/bluepay_hosted";i:93;s:24:"payment/bluepay_redirect";i:94;s:14:"payment/cheque";i:95;s:11:"payment/cod";i:96;s:17:"payment/firstdata";i:97;s:24:"payment/firstdata_remote";i:98;s:21:"payment/free_checkout";i:99;s:22:"payment/klarna_account";i:100;s:22:"payment/klarna_invoice";i:101;s:14:"payment/liqpay";i:102;s:14:"payment/nochex";i:103;s:15:"payment/paymate";i:104;s:16:"payment/paypoint";i:105;s:13:"payment/payza";i:106;s:26:"payment/perpetual_payments";i:107;s:18:"payment/pp_express";i:108;s:18:"payment/pp_payflow";i:109;s:25:"payment/pp_payflow_iframe";i:110;s:14:"payment/pp_pro";i:111;s:21:"payment/pp_pro_iframe";i:112;s:19:"payment/pp_standard";i:113;s:14:"payment/realex";i:114;s:21:"payment/realex_remote";i:115;s:22:"payment/sagepay_direct";i:116;s:22:"payment/sagepay_server";i:117;s:18:"payment/sagepay_us";i:118;s:24:"payment/securetrading_pp";i:119;s:24:"payment/securetrading_ws";i:120;s:14:"payment/skrill";i:121;s:19:"payment/twocheckout";i:122;s:28:"payment/web_payment_software";i:123;s:16:"payment/worldpay";i:124;s:16:"report/affiliate";i:125;s:25:"report/affiliate_activity";i:126;s:22:"report/affiliate_login";i:127;s:24:"report/customer_activity";i:128;s:22:"report/customer_credit";i:129;s:21:"report/customer_login";i:130;s:22:"report/customer_online";i:131;s:21:"report/customer_order";i:132;s:22:"report/customer_reward";i:133;s:16:"report/marketing";i:134;s:24:"report/product_purchased";i:135;s:21:"report/product_viewed";i:136;s:18:"report/sale_coupon";i:137;s:17:"report/sale_order";i:138;s:18:"report/sale_return";i:139;s:20:"report/sale_shipping";i:140;s:15:"report/sale_tax";i:141;s:17:"sale/custom_field";i:142;s:13:"sale/customer";i:143;s:20:"sale/customer_ban_ip";i:144;s:19:"sale/customer_group";i:145;s:10:"sale/order";i:146;s:14:"sale/recurring";i:147;s:11:"sale/return";i:148;s:12:"sale/voucher";i:149;s:18:"sale/voucher_theme";i:150;s:15:"setting/setting";i:151;s:13:"setting/store";i:152;s:16:"shipping/auspost";i:153;s:17:"shipping/citylink";i:154;s:14:"shipping/fedex";i:155;s:13:"shipping/flat";i:156;s:13:"shipping/free";i:157;s:13:"shipping/item";i:158;s:23:"shipping/parcelforce_48";i:159;s:15:"shipping/pickup";i:160;s:19:"shipping/royal_mail";i:161;s:12:"shipping/ups";i:162;s:13:"shipping/usps";i:163;s:15:"shipping/weight";i:164;s:11:"tool/backup";i:165;s:14:"tool/error_log";i:166;s:11:"tool/upload";i:167;s:12:"total/coupon";i:168;s:12:"total/credit";i:169;s:14:"total/handling";i:170;s:16:"total/klarna_fee";i:171;s:19:"total/low_order_fee";i:172;s:12:"total/reward";i:173;s:14:"total/shipping";i:174;s:15:"total/sub_total";i:175;s:9:"total/tax";i:176;s:11:"total/total";i:177;s:13:"total/voucher";i:178;s:8:"user/api";i:179;s:9:"user/user";i:180;s:20:"user/user_permission";i:181;s:15:"module/parallax";i:182;s:11:"module/html";i:183;s:18:"module/tm_category";i:184;s:15:"module/tm_fbbox";i:185;s:15:"module/tm_fbbox";i:186;s:17:"module/bestseller";i:187;s:13:"module/latest";i:188;s:14:"module/special";i:189;s:16:"module/affiliate";i:190;s:18:"module/information";i:191;s:19:"module/tm_slideshow";i:192;s:15:"module/category";}s:6:"modify";a:193:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:17:"catalog/recurring";i:10;s:14:"catalog/review";i:11;s:18:"common/column_left";i:12;s:18:"common/filemanager";i:13;s:11:"common/menu";i:14;s:14:"common/profile";i:15;s:12:"common/stats";i:16;s:18:"dashboard/activity";i:17;s:15:"dashboard/chart";i:18;s:18:"dashboard/customer";i:19;s:13:"dashboard/map";i:20;s:16:"dashboard/online";i:21;s:15:"dashboard/order";i:22;s:16:"dashboard/recent";i:23;s:14:"dashboard/sale";i:24;s:13:"design/banner";i:25;s:13:"design/layout";i:26;s:14:"extension/feed";i:27;s:19:"extension/installer";i:28;s:22:"extension/modification";i:29;s:16:"extension/module";i:30;s:17:"extension/openbay";i:31;s:17:"extension/payment";i:32;s:18:"extension/shipping";i:33;s:15:"extension/total";i:34;s:16:"feed/google_base";i:35;s:19:"feed/google_sitemap";i:36;s:15:"feed/openbaypro";i:37;s:20:"localisation/country";i:38;s:21:"localisation/currency";i:39;s:21:"localisation/geo_zone";i:40;s:21:"localisation/language";i:41;s:25:"localisation/length_class";i:42;s:21:"localisation/location";i:43;s:25:"localisation/order_status";i:44;s:26:"localisation/return_action";i:45;s:26:"localisation/return_reason";i:46;s:26:"localisation/return_status";i:47;s:25:"localisation/stock_status";i:48;s:22:"localisation/tax_class";i:49;s:21:"localisation/tax_rate";i:50;s:25:"localisation/weight_class";i:51;s:17:"localisation/zone";i:52;s:19:"marketing/affiliate";i:53;s:17:"marketing/contact";i:54;s:16:"marketing/coupon";i:55;s:19:"marketing/marketing";i:56;s:14:"module/account";i:57;s:16:"module/affiliate";i:58;s:20:"module/amazon_button";i:59;s:13:"module/banner";i:60;s:17:"module/bestseller";i:61;s:15:"module/carousel";i:62;s:15:"module/category";i:63;s:11:"module/ebay";i:64;s:15:"module/featured";i:65;s:13:"module/filter";i:66;s:22:"module/google_hangouts";i:67;s:11:"module/html";i:68;s:18:"module/information";i:69;s:13:"module/latest";i:70;s:16:"module/pp_button";i:71;s:15:"module/pp_login";i:72;s:16:"module/slideshow";i:73;s:14:"module/special";i:74;s:12:"module/store";i:75;s:14:"openbay/amazon";i:76;s:22:"openbay/amazon_listing";i:77;s:22:"openbay/amazon_product";i:78;s:16:"openbay/amazonus";i:79;s:24:"openbay/amazonus_listing";i:80;s:24:"openbay/amazonus_product";i:81;s:12:"openbay/ebay";i:82;s:20:"openbay/ebay_profile";i:83;s:21:"openbay/ebay_template";i:84;s:12:"openbay/etsy";i:85;s:20:"openbay/etsy_product";i:86;s:21:"openbay/etsy_shipping";i:87;s:17:"openbay/etsy_shop";i:88;s:23:"payment/amazon_checkout";i:89;s:24:"payment/authorizenet_aim";i:90;s:24:"payment/authorizenet_sim";i:91;s:21:"payment/bank_transfer";i:92;s:22:"payment/bluepay_hosted";i:93;s:24:"payment/bluepay_redirect";i:94;s:14:"payment/cheque";i:95;s:11:"payment/cod";i:96;s:17:"payment/firstdata";i:97;s:24:"payment/firstdata_remote";i:98;s:21:"payment/free_checkout";i:99;s:22:"payment/klarna_account";i:100;s:22:"payment/klarna_invoice";i:101;s:14:"payment/liqpay";i:102;s:14:"payment/nochex";i:103;s:15:"payment/paymate";i:104;s:16:"payment/paypoint";i:105;s:13:"payment/payza";i:106;s:26:"payment/perpetual_payments";i:107;s:18:"payment/pp_express";i:108;s:18:"payment/pp_payflow";i:109;s:25:"payment/pp_payflow_iframe";i:110;s:14:"payment/pp_pro";i:111;s:21:"payment/pp_pro_iframe";i:112;s:19:"payment/pp_standard";i:113;s:14:"payment/realex";i:114;s:21:"payment/realex_remote";i:115;s:22:"payment/sagepay_direct";i:116;s:22:"payment/sagepay_server";i:117;s:18:"payment/sagepay_us";i:118;s:24:"payment/securetrading_pp";i:119;s:24:"payment/securetrading_ws";i:120;s:14:"payment/skrill";i:121;s:19:"payment/twocheckout";i:122;s:28:"payment/web_payment_software";i:123;s:16:"payment/worldpay";i:124;s:16:"report/affiliate";i:125;s:25:"report/affiliate_activity";i:126;s:22:"report/affiliate_login";i:127;s:24:"report/customer_activity";i:128;s:22:"report/customer_credit";i:129;s:21:"report/customer_login";i:130;s:22:"report/customer_online";i:131;s:21:"report/customer_order";i:132;s:22:"report/customer_reward";i:133;s:16:"report/marketing";i:134;s:24:"report/product_purchased";i:135;s:21:"report/product_viewed";i:136;s:18:"report/sale_coupon";i:137;s:17:"report/sale_order";i:138;s:18:"report/sale_return";i:139;s:20:"report/sale_shipping";i:140;s:15:"report/sale_tax";i:141;s:17:"sale/custom_field";i:142;s:13:"sale/customer";i:143;s:20:"sale/customer_ban_ip";i:144;s:19:"sale/customer_group";i:145;s:10:"sale/order";i:146;s:14:"sale/recurring";i:147;s:11:"sale/return";i:148;s:12:"sale/voucher";i:149;s:18:"sale/voucher_theme";i:150;s:15:"setting/setting";i:151;s:13:"setting/store";i:152;s:16:"shipping/auspost";i:153;s:17:"shipping/citylink";i:154;s:14:"shipping/fedex";i:155;s:13:"shipping/flat";i:156;s:13:"shipping/free";i:157;s:13:"shipping/item";i:158;s:23:"shipping/parcelforce_48";i:159;s:15:"shipping/pickup";i:160;s:19:"shipping/royal_mail";i:161;s:12:"shipping/ups";i:162;s:13:"shipping/usps";i:163;s:15:"shipping/weight";i:164;s:11:"tool/backup";i:165;s:14:"tool/error_log";i:166;s:11:"tool/upload";i:167;s:12:"total/coupon";i:168;s:12:"total/credit";i:169;s:14:"total/handling";i:170;s:16:"total/klarna_fee";i:171;s:19:"total/low_order_fee";i:172;s:12:"total/reward";i:173;s:14:"total/shipping";i:174;s:15:"total/sub_total";i:175;s:9:"total/tax";i:176;s:11:"total/total";i:177;s:13:"total/voucher";i:178;s:8:"user/api";i:179;s:9:"user/user";i:180;s:20:"user/user_permission";i:181;s:15:"module/parallax";i:182;s:11:"module/html";i:183;s:18:"module/tm_category";i:184;s:15:"module/tm_fbbox";i:185;s:15:"module/tm_fbbox";i:186;s:17:"module/bestseller";i:187;s:13:"module/latest";i:188;s:14:"module/special";i:189;s:16:"module/affiliate";i:190;s:18:"module/information";i:191;s:19:"module/tm_slideshow";i:192;s:15:"module/category";}}'),
+(1, 'Administrator', 'a:2:{s:6:"access";a:196:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:17:"catalog/recurring";i:10;s:14:"catalog/review";i:11;s:18:"common/column_left";i:12;s:18:"common/filemanager";i:13;s:11:"common/menu";i:14;s:14:"common/profile";i:15;s:12:"common/stats";i:16;s:18:"dashboard/activity";i:17;s:15:"dashboard/chart";i:18;s:18:"dashboard/customer";i:19;s:13:"dashboard/map";i:20;s:16:"dashboard/online";i:21;s:15:"dashboard/order";i:22;s:16:"dashboard/recent";i:23;s:14:"dashboard/sale";i:24;s:13:"design/banner";i:25;s:13:"design/layout";i:26;s:14:"extension/feed";i:27;s:19:"extension/installer";i:28;s:22:"extension/modification";i:29;s:16:"extension/module";i:30;s:17:"extension/openbay";i:31;s:17:"extension/payment";i:32;s:18:"extension/shipping";i:33;s:15:"extension/total";i:34;s:16:"feed/google_base";i:35;s:19:"feed/google_sitemap";i:36;s:15:"feed/openbaypro";i:37;s:20:"localisation/country";i:38;s:21:"localisation/currency";i:39;s:21:"localisation/geo_zone";i:40;s:21:"localisation/language";i:41;s:25:"localisation/length_class";i:42;s:21:"localisation/location";i:43;s:25:"localisation/order_status";i:44;s:26:"localisation/return_action";i:45;s:26:"localisation/return_reason";i:46;s:26:"localisation/return_status";i:47;s:25:"localisation/stock_status";i:48;s:22:"localisation/tax_class";i:49;s:21:"localisation/tax_rate";i:50;s:25:"localisation/weight_class";i:51;s:17:"localisation/zone";i:52;s:19:"marketing/affiliate";i:53;s:17:"marketing/contact";i:54;s:16:"marketing/coupon";i:55;s:19:"marketing/marketing";i:56;s:14:"module/account";i:57;s:16:"module/affiliate";i:58;s:20:"module/amazon_button";i:59;s:13:"module/banner";i:60;s:17:"module/bestseller";i:61;s:15:"module/carousel";i:62;s:15:"module/category";i:63;s:11:"module/ebay";i:64;s:15:"module/featured";i:65;s:13:"module/filter";i:66;s:22:"module/google_hangouts";i:67;s:11:"module/html";i:68;s:18:"module/information";i:69;s:13:"module/latest";i:70;s:16:"module/pp_button";i:71;s:15:"module/pp_login";i:72;s:16:"module/slideshow";i:73;s:14:"module/special";i:74;s:12:"module/store";i:75;s:14:"openbay/amazon";i:76;s:22:"openbay/amazon_listing";i:77;s:22:"openbay/amazon_product";i:78;s:16:"openbay/amazonus";i:79;s:24:"openbay/amazonus_listing";i:80;s:24:"openbay/amazonus_product";i:81;s:12:"openbay/ebay";i:82;s:20:"openbay/ebay_profile";i:83;s:21:"openbay/ebay_template";i:84;s:12:"openbay/etsy";i:85;s:20:"openbay/etsy_product";i:86;s:21:"openbay/etsy_shipping";i:87;s:17:"openbay/etsy_shop";i:88;s:23:"payment/amazon_checkout";i:89;s:24:"payment/authorizenet_aim";i:90;s:24:"payment/authorizenet_sim";i:91;s:21:"payment/bank_transfer";i:92;s:22:"payment/bluepay_hosted";i:93;s:24:"payment/bluepay_redirect";i:94;s:14:"payment/cheque";i:95;s:11:"payment/cod";i:96;s:17:"payment/firstdata";i:97;s:24:"payment/firstdata_remote";i:98;s:21:"payment/free_checkout";i:99;s:22:"payment/klarna_account";i:100;s:22:"payment/klarna_invoice";i:101;s:14:"payment/liqpay";i:102;s:14:"payment/nochex";i:103;s:15:"payment/paymate";i:104;s:16:"payment/paypoint";i:105;s:13:"payment/payza";i:106;s:26:"payment/perpetual_payments";i:107;s:18:"payment/pp_express";i:108;s:18:"payment/pp_payflow";i:109;s:25:"payment/pp_payflow_iframe";i:110;s:14:"payment/pp_pro";i:111;s:21:"payment/pp_pro_iframe";i:112;s:19:"payment/pp_standard";i:113;s:14:"payment/realex";i:114;s:21:"payment/realex_remote";i:115;s:22:"payment/sagepay_direct";i:116;s:22:"payment/sagepay_server";i:117;s:18:"payment/sagepay_us";i:118;s:24:"payment/securetrading_pp";i:119;s:24:"payment/securetrading_ws";i:120;s:14:"payment/skrill";i:121;s:19:"payment/twocheckout";i:122;s:28:"payment/web_payment_software";i:123;s:16:"payment/worldpay";i:124;s:16:"report/affiliate";i:125;s:25:"report/affiliate_activity";i:126;s:22:"report/affiliate_login";i:127;s:24:"report/customer_activity";i:128;s:22:"report/customer_credit";i:129;s:21:"report/customer_login";i:130;s:22:"report/customer_online";i:131;s:21:"report/customer_order";i:132;s:22:"report/customer_reward";i:133;s:16:"report/marketing";i:134;s:24:"report/product_purchased";i:135;s:21:"report/product_viewed";i:136;s:18:"report/sale_coupon";i:137;s:17:"report/sale_order";i:138;s:18:"report/sale_return";i:139;s:20:"report/sale_shipping";i:140;s:15:"report/sale_tax";i:141;s:17:"sale/custom_field";i:142;s:13:"sale/customer";i:143;s:20:"sale/customer_ban_ip";i:144;s:19:"sale/customer_group";i:145;s:10:"sale/order";i:146;s:14:"sale/recurring";i:147;s:11:"sale/return";i:148;s:12:"sale/voucher";i:149;s:18:"sale/voucher_theme";i:150;s:15:"setting/setting";i:151;s:13:"setting/store";i:152;s:16:"shipping/auspost";i:153;s:17:"shipping/citylink";i:154;s:14:"shipping/fedex";i:155;s:13:"shipping/flat";i:156;s:13:"shipping/free";i:157;s:13:"shipping/item";i:158;s:23:"shipping/parcelforce_48";i:159;s:15:"shipping/pickup";i:160;s:19:"shipping/royal_mail";i:161;s:12:"shipping/ups";i:162;s:13:"shipping/usps";i:163;s:15:"shipping/weight";i:164;s:11:"tool/backup";i:165;s:14:"tool/error_log";i:166;s:11:"tool/upload";i:167;s:12:"total/coupon";i:168;s:12:"total/credit";i:169;s:14:"total/handling";i:170;s:16:"total/klarna_fee";i:171;s:19:"total/low_order_fee";i:172;s:12:"total/reward";i:173;s:14:"total/shipping";i:174;s:15:"total/sub_total";i:175;s:9:"total/tax";i:176;s:11:"total/total";i:177;s:13:"total/voucher";i:178;s:8:"user/api";i:179;s:9:"user/user";i:180;s:20:"user/user_permission";i:181;s:15:"module/parallax";i:182;s:11:"module/html";i:183;s:18:"module/tm_category";i:184;s:15:"module/tm_fbbox";i:185;s:15:"module/tm_fbbox";i:186;s:17:"module/bestseller";i:187;s:13:"module/latest";i:188;s:14:"module/special";i:189;s:16:"module/affiliate";i:190;s:18:"module/information";i:191;s:19:"module/tm_slideshow";i:192;s:15:"module/category";i:193;s:13:"shipping/free";i:194;s:17:"payment/pagseguro";i:195;s:18:"payment/pp_express";}s:6:"modify";a:196:{i:0;s:17:"catalog/attribute";i:1;s:23:"catalog/attribute_group";i:2;s:16:"catalog/category";i:3;s:16:"catalog/download";i:4;s:14:"catalog/filter";i:5;s:19:"catalog/information";i:6;s:20:"catalog/manufacturer";i:7;s:14:"catalog/option";i:8;s:15:"catalog/product";i:9;s:17:"catalog/recurring";i:10;s:14:"catalog/review";i:11;s:18:"common/column_left";i:12;s:18:"common/filemanager";i:13;s:11:"common/menu";i:14;s:14:"common/profile";i:15;s:12:"common/stats";i:16;s:18:"dashboard/activity";i:17;s:15:"dashboard/chart";i:18;s:18:"dashboard/customer";i:19;s:13:"dashboard/map";i:20;s:16:"dashboard/online";i:21;s:15:"dashboard/order";i:22;s:16:"dashboard/recent";i:23;s:14:"dashboard/sale";i:24;s:13:"design/banner";i:25;s:13:"design/layout";i:26;s:14:"extension/feed";i:27;s:19:"extension/installer";i:28;s:22:"extension/modification";i:29;s:16:"extension/module";i:30;s:17:"extension/openbay";i:31;s:17:"extension/payment";i:32;s:18:"extension/shipping";i:33;s:15:"extension/total";i:34;s:16:"feed/google_base";i:35;s:19:"feed/google_sitemap";i:36;s:15:"feed/openbaypro";i:37;s:20:"localisation/country";i:38;s:21:"localisation/currency";i:39;s:21:"localisation/geo_zone";i:40;s:21:"localisation/language";i:41;s:25:"localisation/length_class";i:42;s:21:"localisation/location";i:43;s:25:"localisation/order_status";i:44;s:26:"localisation/return_action";i:45;s:26:"localisation/return_reason";i:46;s:26:"localisation/return_status";i:47;s:25:"localisation/stock_status";i:48;s:22:"localisation/tax_class";i:49;s:21:"localisation/tax_rate";i:50;s:25:"localisation/weight_class";i:51;s:17:"localisation/zone";i:52;s:19:"marketing/affiliate";i:53;s:17:"marketing/contact";i:54;s:16:"marketing/coupon";i:55;s:19:"marketing/marketing";i:56;s:14:"module/account";i:57;s:16:"module/affiliate";i:58;s:20:"module/amazon_button";i:59;s:13:"module/banner";i:60;s:17:"module/bestseller";i:61;s:15:"module/carousel";i:62;s:15:"module/category";i:63;s:11:"module/ebay";i:64;s:15:"module/featured";i:65;s:13:"module/filter";i:66;s:22:"module/google_hangouts";i:67;s:11:"module/html";i:68;s:18:"module/information";i:69;s:13:"module/latest";i:70;s:16:"module/pp_button";i:71;s:15:"module/pp_login";i:72;s:16:"module/slideshow";i:73;s:14:"module/special";i:74;s:12:"module/store";i:75;s:14:"openbay/amazon";i:76;s:22:"openbay/amazon_listing";i:77;s:22:"openbay/amazon_product";i:78;s:16:"openbay/amazonus";i:79;s:24:"openbay/amazonus_listing";i:80;s:24:"openbay/amazonus_product";i:81;s:12:"openbay/ebay";i:82;s:20:"openbay/ebay_profile";i:83;s:21:"openbay/ebay_template";i:84;s:12:"openbay/etsy";i:85;s:20:"openbay/etsy_product";i:86;s:21:"openbay/etsy_shipping";i:87;s:17:"openbay/etsy_shop";i:88;s:23:"payment/amazon_checkout";i:89;s:24:"payment/authorizenet_aim";i:90;s:24:"payment/authorizenet_sim";i:91;s:21:"payment/bank_transfer";i:92;s:22:"payment/bluepay_hosted";i:93;s:24:"payment/bluepay_redirect";i:94;s:14:"payment/cheque";i:95;s:11:"payment/cod";i:96;s:17:"payment/firstdata";i:97;s:24:"payment/firstdata_remote";i:98;s:21:"payment/free_checkout";i:99;s:22:"payment/klarna_account";i:100;s:22:"payment/klarna_invoice";i:101;s:14:"payment/liqpay";i:102;s:14:"payment/nochex";i:103;s:15:"payment/paymate";i:104;s:16:"payment/paypoint";i:105;s:13:"payment/payza";i:106;s:26:"payment/perpetual_payments";i:107;s:18:"payment/pp_express";i:108;s:18:"payment/pp_payflow";i:109;s:25:"payment/pp_payflow_iframe";i:110;s:14:"payment/pp_pro";i:111;s:21:"payment/pp_pro_iframe";i:112;s:19:"payment/pp_standard";i:113;s:14:"payment/realex";i:114;s:21:"payment/realex_remote";i:115;s:22:"payment/sagepay_direct";i:116;s:22:"payment/sagepay_server";i:117;s:18:"payment/sagepay_us";i:118;s:24:"payment/securetrading_pp";i:119;s:24:"payment/securetrading_ws";i:120;s:14:"payment/skrill";i:121;s:19:"payment/twocheckout";i:122;s:28:"payment/web_payment_software";i:123;s:16:"payment/worldpay";i:124;s:16:"report/affiliate";i:125;s:25:"report/affiliate_activity";i:126;s:22:"report/affiliate_login";i:127;s:24:"report/customer_activity";i:128;s:22:"report/customer_credit";i:129;s:21:"report/customer_login";i:130;s:22:"report/customer_online";i:131;s:21:"report/customer_order";i:132;s:22:"report/customer_reward";i:133;s:16:"report/marketing";i:134;s:24:"report/product_purchased";i:135;s:21:"report/product_viewed";i:136;s:18:"report/sale_coupon";i:137;s:17:"report/sale_order";i:138;s:18:"report/sale_return";i:139;s:20:"report/sale_shipping";i:140;s:15:"report/sale_tax";i:141;s:17:"sale/custom_field";i:142;s:13:"sale/customer";i:143;s:20:"sale/customer_ban_ip";i:144;s:19:"sale/customer_group";i:145;s:10:"sale/order";i:146;s:14:"sale/recurring";i:147;s:11:"sale/return";i:148;s:12:"sale/voucher";i:149;s:18:"sale/voucher_theme";i:150;s:15:"setting/setting";i:151;s:13:"setting/store";i:152;s:16:"shipping/auspost";i:153;s:17:"shipping/citylink";i:154;s:14:"shipping/fedex";i:155;s:13:"shipping/flat";i:156;s:13:"shipping/free";i:157;s:13:"shipping/item";i:158;s:23:"shipping/parcelforce_48";i:159;s:15:"shipping/pickup";i:160;s:19:"shipping/royal_mail";i:161;s:12:"shipping/ups";i:162;s:13:"shipping/usps";i:163;s:15:"shipping/weight";i:164;s:11:"tool/backup";i:165;s:14:"tool/error_log";i:166;s:11:"tool/upload";i:167;s:12:"total/coupon";i:168;s:12:"total/credit";i:169;s:14:"total/handling";i:170;s:16:"total/klarna_fee";i:171;s:19:"total/low_order_fee";i:172;s:12:"total/reward";i:173;s:14:"total/shipping";i:174;s:15:"total/sub_total";i:175;s:9:"total/tax";i:176;s:11:"total/total";i:177;s:13:"total/voucher";i:178;s:8:"user/api";i:179;s:9:"user/user";i:180;s:20:"user/user_permission";i:181;s:15:"module/parallax";i:182;s:11:"module/html";i:183;s:18:"module/tm_category";i:184;s:15:"module/tm_fbbox";i:185;s:15:"module/tm_fbbox";i:186;s:17:"module/bestseller";i:187;s:13:"module/latest";i:188;s:14:"module/special";i:189;s:16:"module/affiliate";i:190;s:18:"module/information";i:191;s:19:"module/tm_slideshow";i:192;s:15:"module/category";i:193;s:13:"shipping/free";i:194;s:17:"payment/pagseguro";i:195;s:18:"payment/pp_express";}}'),
 (10, 'Demonstration', '');
 
 -- --------------------------------------------------------
@@ -4484,15 +3381,9 @@ CREATE TABLE `oc_voucher_theme_description` (
 --
 
 INSERT INTO `oc_voucher_theme_description` (`voucher_theme_id`, `language_id`, `name`) VALUES
-(6, 1, 'Christmas'),
-(7, 1, 'Birthday'),
-(8, 1, 'General'),
-(6, 2, 'Christmas'),
-(7, 2, 'Birthday'),
-(8, 2, 'General'),
-(6, 3, 'Christmas'),
-(7, 3, 'Birthday'),
-(8, 3, 'General');
+(6, 4, 'Christmas'),
+(7, 4, 'Birthday'),
+(8, 4, 'General');
 
 -- --------------------------------------------------------
 
@@ -4533,18 +3424,10 @@ CREATE TABLE `oc_weight_class_description` (
 --
 
 INSERT INTO `oc_weight_class_description` (`weight_class_id`, `language_id`, `title`, `unit`) VALUES
-(1, 1, 'Kilogram', 'kg'),
-(2, 1, 'Gram', 'g'),
-(5, 1, 'Pound ', 'lb'),
-(6, 1, 'Ounce', 'oz'),
-(1, 2, 'Kilogram', 'kg'),
-(2, 2, 'Gram', 'g'),
-(5, 2, 'Pound ', 'lb'),
-(6, 2, 'Ounce', 'oz'),
-(1, 3, 'Kilogram', 'kg'),
-(2, 3, 'Gram', 'g'),
-(5, 3, 'Pound ', 'lb'),
-(6, 3, 'Ounce', 'oz');
+(1, 4, 'Kilogram', 'kg'),
+(2, 4, 'Gram', 'g'),
+(5, 4, 'Pound ', 'lb'),
+(6, 4, 'Ounce', 'oz');
 
 -- --------------------------------------------------------
 
@@ -9288,6 +8171,18 @@ ALTER TABLE `oc_order_voucher`
  ADD PRIMARY KEY (`order_voucher_id`);
 
 --
+-- Indexes for table `oc_paypal_order`
+--
+ALTER TABLE `oc_paypal_order`
+ ADD PRIMARY KEY (`paypal_order_id`);
+
+--
+-- Indexes for table `oc_paypal_order_transaction`
+--
+ALTER TABLE `oc_paypal_order_transaction`
+ ADD PRIMARY KEY (`paypal_order_transaction_id`);
+
+--
 -- Indexes for table `oc_product`
 --
 ALTER TABLE `oc_product`
@@ -9553,7 +8448,7 @@ ALTER TABLE `oc_zone_to_geo_zone`
 -- AUTO_INCREMENT for table `oc_address`
 --
 ALTER TABLE `oc_address`
-MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `oc_affiliate`
 --
@@ -9578,7 +8473,7 @@ MODIFY `affiliate_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_api`
 --
 ALTER TABLE `oc_api`
-MODIFY `api_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `api_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `oc_attribute`
 --
@@ -9598,7 +8493,7 @@ MODIFY `banner_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 -- AUTO_INCREMENT for table `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
-MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=175;
+MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=184;
 --
 -- AUTO_INCREMENT for table `oc_category`
 --
@@ -9628,17 +8523,17 @@ MODIFY `coupon_product_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_currency`
 --
 ALTER TABLE `oc_currency`
-MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `oc_customer`
 --
 ALTER TABLE `oc_customer`
-MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `oc_customer_activity`
 --
 ALTER TABLE `oc_customer_activity`
-MODIFY `activity_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
+MODIFY `activity_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `oc_customer_ban_ip`
 --
@@ -9658,7 +8553,7 @@ MODIFY `customer_history_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
-MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `oc_customer_login`
 --
@@ -9698,7 +8593,7 @@ MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_extension`
 --
 ALTER TABLE `oc_extension`
-MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=440;
+MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=443;
 --
 -- AUTO_INCREMENT for table `oc_filter`
 --
@@ -9718,12 +8613,12 @@ MODIFY `geo_zone_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT for table `oc_information`
 --
 ALTER TABLE `oc_information`
-MODIFY `information_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+MODIFY `information_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `oc_language`
 --
 ALTER TABLE `oc_language`
-MODIFY `language_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `language_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `oc_layout`
 --
@@ -9773,7 +8668,7 @@ MODIFY `modification_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=71;
 -- AUTO_INCREMENT for table `oc_module`
 --
 ALTER TABLE `oc_module`
-MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=50;
+MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=51;
 --
 -- AUTO_INCREMENT for table `oc_option`
 --
@@ -9788,7 +8683,7 @@ MODIFY `option_value_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=52;
 -- AUTO_INCREMENT for table `oc_order`
 --
 ALTER TABLE `oc_order`
-MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `oc_order_custom_field`
 --
@@ -9798,7 +8693,7 @@ MODIFY `order_custom_field_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
-MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `oc_order_option`
 --
@@ -9808,7 +8703,7 @@ MODIFY `order_option_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=34;
 -- AUTO_INCREMENT for table `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
-MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=29;
+MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=31;
 --
 -- AUTO_INCREMENT for table `oc_order_recurring`
 --
@@ -9823,22 +8718,32 @@ MODIFY `order_recurring_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_order_status`
 --
 ALTER TABLE `oc_order_status`
-MODIFY `order_status_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+MODIFY `order_status_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
-MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=41;
+MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=47;
 --
 -- AUTO_INCREMENT for table `oc_order_voucher`
 --
 ALTER TABLE `oc_order_voucher`
 MODIFY `order_voucher_id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `oc_paypal_order`
+--
+ALTER TABLE `oc_paypal_order`
+MODIFY `paypal_order_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `oc_paypal_order_transaction`
+--
+ALTER TABLE `oc_paypal_order_transaction`
+MODIFY `paypal_order_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `oc_product`
 --
 ALTER TABLE `oc_product`
-MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=50;
+MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=51;
 --
 -- AUTO_INCREMENT for table `oc_product_discount`
 --
@@ -9863,7 +8768,7 @@ MODIFY `product_option_value_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=
 -- AUTO_INCREMENT for table `oc_product_reward`
 --
 ALTER TABLE `oc_product_reward`
-MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=788;
+MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=790;
 --
 -- AUTO_INCREMENT for table `oc_product_special`
 --
@@ -9908,7 +8813,7 @@ MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
 -- AUTO_INCREMENT for table `oc_setting`
 --
 ALTER TABLE `oc_setting`
-MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4711;
+MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5305;
 --
 -- AUTO_INCREMENT for table `oc_stock_status`
 --
@@ -9943,7 +8848,7 @@ MODIFY `upload_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1134;
+MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1142;
 --
 -- AUTO_INCREMENT for table `oc_user`
 --

@@ -1,4 +1,11 @@
 <?php echo $header; ?>
+
+<style type="text/css">
+	.product-title {
+		font-family: 'Lobster', cursive; color: #34373a; font-size: 32px;
+	}
+</style>
+
 <div class="container">	
 
 	<div class="row">
@@ -31,6 +38,14 @@
 			<!-- Content left -->
 			<div class="<?php echo $content_left; ?> product_page-left">				
 				<!-- product image -->
+				<img src="/image/one-dollar-bill.jpg" style="width: 100%; margin-top: 10px; margin-bottom: 20px;" width="100%">
+				<div class="text-home2">Nunca faltará dinheiro na carteira</div>
+				<div class="text-home3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.<br><br>
+				É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</div>
+
+
+
+
 				<div id="default_gallery" class="product-gallery">
 					<?php if ($thumb || $images) { ?>
 							<?php if ($images|| $thumb) { ?>
@@ -128,16 +143,6 @@
 					</div>
 					<?php } ?>
 
-					<ul class="list-unstyled product-section">
-						<?php if ($manufacturer) { ?>
-						<li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
-						<?php } ?>
-						<li><?php echo $text_model; ?> <span><?php echo $model; ?></span></li>
-						<?php if ($reward) { ?>
-						<li><?php echo $text_reward; ?> <span><?php echo $reward; ?></span></li>
-						<?php } ?>
-						<li><?php echo $text_stock; ?> <span><?php echo $stock; ?></span></li>
-					</ul>
 				</div>
 				
 				<div id="product">
@@ -307,7 +312,7 @@
 						<button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-add"><?php echo $button_cart; ?></button>
 					</div>
 
-					<ul class="product-buttons">
+					<ul class="product-buttons" style="display: none;">
 						<li><button class="btn btn-icon" onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="fa fa-heart hidden-sm hidden-xs"></i> <span><?php echo $button_wishlist; ?></span></button></li>
 						<li><button type="button" class="btn btn-icon" onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange hidden-sm hidden-xs"></i> <span><?php echo $button_compare; ?></span></button></li>
 					</ul>					
@@ -341,7 +346,7 @@
 		</div>
 		
 		<!-- Product description -->
-		<div id="tab-description" class="product-desc product-section">
+		<div id="tab-description" class="product-desc product-section" style="display: none;">
 			<h3 class="product-section_title"><?php echo $tab_description; ?></h3>
 			<?php echo $description; ?>
 			<div class="clearfix"></div>

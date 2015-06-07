@@ -4,6 +4,7 @@ body {
 	color: #1d1f20;
 	font-size: 14px;
 	line-height: 20px;
+	background-image: url('/image/bg.jpg');
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Ubuntu', sans-serif;
@@ -97,12 +98,11 @@ div.required .control-label:before {
 /* top */
 #top {
 	display:inline-block;
-	width:100%;
 	padding:0 20px 0 20px;
 	line-height:70px;
 	height:70px;
 	color:#fff;
-	background:#333;
+	margin-left: 300px;
 	}
 #top .container {
 	padding: 0 20px;
@@ -111,10 +111,11 @@ div.required .control-label:before {
 	text-align: left;
 }
 #top-links a {
-	color:#fff;
-	font-size:17px;
+	color:#007941;
+	font-size:24px;
 	font-weight:500;
 }
+
 #top .btn-link, #top-links li {
 	text-decoration: none;
 }
@@ -128,6 +129,9 @@ div.required .control-label:before {
 #top-links li a:hover i,
 #top-links li a.active i {
 	color:#007941;
+}
+#top-links a:hover {
+	color:#DD0000;
 }
 #top-links li a i {
 	color:#fff;
@@ -166,8 +170,9 @@ div.required .control-label:before {
 }
 /* logo */
 #logo {
-	margin:20px 0 20px;
-	float:left;
+  margin: auto;
+  width: 400px;
+  text-align: center;
 }
 /* phone  */
 .phone {
