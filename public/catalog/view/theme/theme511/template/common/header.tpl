@@ -258,7 +258,7 @@
 
 
 
-							<div class="box-right" style="display: block; float: left; position: absolute; margin-top: 50px;">			
+							<div class="box-right" style="display: block; float: left; position: absolute; margin-top: 50px; z-index: 1000;">			
 								<?php echo $language; ?>
 								<?php echo $currency; ?>
 								<span class="button-top">
